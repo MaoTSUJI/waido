@@ -1,0 +1,82 @@
+
+
+
+
+
+
+
+footer {
+  position: relative;
+  margin: 0 3.6603221083vw 50px;
+  padding-top: 30px;
+  display: flex;
+  justify-content: space-between;
+  background-image: url(../img/contents/top/section--bottom--line.png);
+  background-repeat: repeat-x;
+  background-size: auto 5px;
+  background-position: top;
+  white-space: nowrap; }
+  footer .footer__link {
+    display: flex;
+    flex-wrap: nowrap;
+    font-size: 12px; }
+    footer .footer__link li {
+      margin-right: 15px;
+      transition-duration: 0.3s;
+      transition-timing-function: cubic-bezier(0.7, 0, 0.3, 1);
+      -ms-transition-duration: 0.3s;
+      -ms-transition-timing-function: cubic-bezier(0.7, 0, 0.3, 1);
+      -webkit-transition-duration: 0.3s;
+      -webkit-transition-timing-function: cubic-bezier(0.7, 0, 0.3, 1);
+      　-moz-transition-duration: 0.3s;
+      -moz-transition-timing-function: cubic-bezier(0.7, 0, 0.3, 1); }
+      footer .footer__link li a {
+        color: #e60012;
+        line-height: 30px; }
+      footer .footer__link li:hover {
+        opacity: .7; }
+  footer .pagetop {
+    position: relative;
+    font-size: 10px;
+    color: #e60012;
+    line-height: 30px;
+    padding-right: 17px;
+    cursor: pointer;
+    font-family: 'MyWebFontBold';
+    letter-spacing: 0.15em;
+    font-style: normal;
+    font-weight: normal;
+    transition-duration: 0.3s;
+    transition-timing-function: cubic-bezier(0.7, 0, 0.3, 1);
+    -ms-transition-duration: 0.3s;
+    -ms-transition-timing-function: cubic-bezier(0.7, 0, 0.3, 1);
+    -webkit-transition-duration: 0.3s;
+    -webkit-transition-timing-function: cubic-bezier(0.7, 0, 0.3, 1);
+    　-moz-transition-duration: 0.3s;
+    -moz-transition-timing-function: cubic-bezier(0.7, 0, 0.3, 1); }
+    footer .pagetop:after {
+      content: " ";
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      width: 13px;
+      height: 10px;
+      top: 11px;
+      left: auto;
+      right: 0;
+      background: url(../img/common/pagetop--arrow.svg) no-repeat center right;
+      background-size: 100% auto;
+      transition-duration: 0.3s;
+      transition-timing-function: cubic-bezier(0.7, 0, 0.3, 1);
+      -ms-transition-duration: 0.3s;
+      -ms-transition-timing-function: cubic-bezier(0.7, 0, 0.3, 1);
+      -webkit-transition-duration: 0.3s;
+      -webkit-transition-timing-function: cubic-bezier(0.7, 0, 0.3, 1);
+      　-moz-transition-duration: 0.3s;
+      -moz-transition-timing-function: cubic-bezier(0.7, 0, 0.3, 1); }
+    footer .pagetop:hover {
+      opacity: .7; }
+      footer .pagetop:hover:after {
+        top: 9px; }
