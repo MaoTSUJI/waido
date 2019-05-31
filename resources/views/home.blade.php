@@ -1,7 +1,7 @@
 @extends('layout')
 
 @section('tittle')
-Home Page
+Home Page!!
 @endsection
 
 @section('content')
