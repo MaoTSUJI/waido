@@ -4,7 +4,6 @@
 	<meta charset="UTF-8">
 	<title>@yield('title')</title>
     {{-- cssへのリンク --}}
-	<link rel="stylesheet" type="text/css" href="/css/app.css">
     {{-- bootstrap記述するときのリンク --}}
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     {{-- fontawesameの記述 --}}
@@ -22,6 +21,7 @@
         {{-- {{ Auth::user()->name }} --}}
     @endguest
 
+    
     {{-- navバーを表示 --}}
         <nav class="navbar navbar-expand-lg navbar-light bg-light">
         {{-- ロゴ出力 --}}
@@ -33,41 +33,42 @@
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav mr-auto">
                     <li class="nav-item active">
-                         <a class="nav-link" href="#">ホーム <span class="sr-only">(current)</span></a>
+                        <button type="button" class="btn btn-light"><a class="nav-link" href="#">ホーム<span class="sr-only">(current)</span></a></button>
+                        
                     </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">クイズ</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#" >ランキング</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#" >辞書</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#" >ユーザ登録</a>
-                    </li>
-
-                    <li class="nav-item">
-                        <a class="nav-link" href="#" >ログイン</a>
+                    <li class="nav-item active">
+                        <button type="button" class="btn btn-light"><a class="nav-link" href="#">クイズ<span class="sr-only">(current)</span></a></button>
+                        
+                    </li><li class="nav-item active">
+                        <button type="button" class="btn btn-light"><a class="nav-link" href="#">ランキング<span class="sr-only">(current)</span></a></button>
+                        
+                    </li><li class="nav-item active">
+                        <button type="button" class="btn btn-light"><a class="nav-link" href="#">辞書<span class="sr-only">(current)</span></a></button>
+                        
+                    </li><li class="nav-item active">
+                        <button type="button" class="btn btn-light"><a class="nav-link" href="#">ユーザ登録<span class="sr-only">(current)</span></a></button>
+                        
+                    </li><li class="nav-item active">
+                        <button type="button" class="btn btn-light"><a class="nav-link" href="#">ログイン<span class="sr-only">(current)</span></a></button>
+                        
                     </li>
                 </ul>
             </div>
-
         </nav>
+        
 	@yield('content')
 
     <footer class="footer">
-        <ul class="navbar-nav mr-auto">
-            <li class="nav-item">
-                <a class="nav-link" href="#" >Language</a>
+        <ul class="footer__link">
+            <li class>
+                <a href="#" >Language</a>
             </li>
 
-            <li class="nav-item">
-                <a class="nav-link" href="#" >スペシャルサンクス</a>
+            <li class>
+                <a href="#" >スペシャルサンクス</a>
             </li>
         </ul>
-        <p>©2019 M5</p>
+        <p class="pagetop">©2019 M5</p>
 
     </footer>
 
