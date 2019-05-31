@@ -11,5 +11,24 @@
 |
 */
 
+//ホーム画面に遷移
+Route::get('/', 'QuizController@home')->name('home');
+//クイズ画面に遷移
+Route::get('/quizlist/', 'QuizController@choose')->name('quiz.quizlist');
+//地域選択(クイズをはじめる)画面に遷移
+Route::get('/quizlist_start/', 'QuizController@start')->name('quiz.quizlist_start');
 
-Route::get('/', 'QuizController@home')->name('quiz.home');
+//ランキング画面に遷移
+Route::get('/ranking/', 'QuizController@ranking')->name('ranking');
+//辞書画面に遷移
+Route::get('/dictionary/', 'QuizController@dictionary')->name('dictionary');
+
+//ユーザー登録画面に遷移
+Route::get('/signup/', 'QuizController@signup')->name('signup');
+//ログイン画面に遷移
+Route::get('/login/', 'QuizController@login')->name('login');
+
+
+
+//サンクス画面に遷移
+Route::get('/specialthanks/', 'QuizController@specialthanks')->name('specialthanks');

@@ -13,15 +13,14 @@
 	<link rel="stylesheet" href="/css/navbar.css">
 </head>
 <body>
-    @guest
+    {{-- @guest --}}
         {{-- ログインしていない(ゲスト状態)場合の処理 --}}
         
-    @else
+    {{-- @else --}}
         {{-- ログインしている場合の処理 --}}
         {{-- {{ Auth::user()->name }} --}}
-    @endguest
+    {{-- @endguest --}}
 
-    
     {{-- navバーを表示 --}}
         <nav class="navbar navbar-expand-lg navbar-light bg-light">
         {{-- ロゴ出力 --}}
@@ -37,13 +36,13 @@
                         
                     </li>
                     <li class="nav-item active">
-                        <button type="button" class="btn btn-light"><a class="nav-link" href="#">クイズ<span class="sr-only">(current)</span></a></button>
+                        <button type="button" class="btn btn-light"><a class="nav-link" href="{{ route('quiz.quizlist') }}">クイズ<span class="sr-only">(current)</span></a></button>
                         
                     </li><li class="nav-item active">
-                        <button type="button" class="btn btn-light"><a class="nav-link" href="#">ランキング<span class="sr-only">(current)</span></a></button>
+                        <button type="button" class="btn btn-light"><a class="nav-link" href="{{ route('ranking') }}">ランキング<span class="sr-only">(current)</span></a></button>
                         
                     </li><li class="nav-item active">
-                        <button type="button" class="btn btn-light"><a class="nav-link" href="#">辞書<span class="sr-only">(current)</span></a></button>
+                        <button type="button" class="btn btn-light"><a class="nav-link" href="{{ route('dictionary') }}">辞書<span class="sr-only">(current)</span></a></button>
                         
                     </li><li class="nav-item active">
                         <button type="button" class="btn btn-light"><a class="nav-link" href="#">ユーザ登録<span class="sr-only">(current)</span></a></button>
@@ -61,11 +60,11 @@
     <footer class="footer">
         <ul class="footer__link">
             <li class>
-                <a href="#" >Language</a>
+                <a href="" >Language</a>
             </li>
 
             <li class>
-                <a href="#" >スペシャルサンクス</a>
+                <a href={{ route('specialthanks') }} >スペシャルサンクス</a>
             </li>
         </ul>
         <p class="pagetop">©2019 M5</p>
