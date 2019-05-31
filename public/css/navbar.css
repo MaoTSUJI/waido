@@ -17,6 +17,7 @@ footer {
   background-position: top;
   white-space: nowrap; }
   footer .footer__link {
+    list-style: none;
     display: flex;
     flex-wrap: nowrap;
     font-size: 12px; }
