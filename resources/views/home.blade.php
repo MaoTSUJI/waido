@@ -6,8 +6,9 @@ Home Page!!
 
 @section('content')
 	{{-- カルーセル --}}
+	<p>{{ $proverb->japanese }}</p>
 	<div class="container">
-		<h3>ここにカルーセル</h3>
+		{{-- カルーセル --}}
 		<div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
 		  <div class="carousel-inner">
 		    <div class="carousel-item active">

@@ -6,18 +6,25 @@ use Illuminate\Http\Request;
 
 use Illuminate\Support\Facades\Auth;
 //Authクラスを使えるようにする
+use App\Quiz;  //  App/Quizクラスを使用する宣言
+use App\Proverb;  //  App/Proverbクラスを使用する宣言
 
 class QuizController extends Controller
 {
   //一覧画面を表示
 	public function home() {
 
+        $cnt = Proverb::count();    //prooverbsテーブルのレコード数を取得
+        $proverb = Proverb::find(rand(1,$cnt));
+        // proverbsテーブルのデータのランダムなレコードを取得
+
     	// return view('diaries.index', ['diaries' => $diaries]);
-    	return view('home');
+    	return view('home',['proverb'=> $proverb]);
         //view(C, [B => A]);
         // Aの変数を、Bの変数名に変えてCのViewに送る
-
   	}
+
+
 
   	//クイズ地域選択画面
     public function choose(){

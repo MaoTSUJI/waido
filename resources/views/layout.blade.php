@@ -32,7 +32,7 @@
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav mr-auto">
                     <li class="nav-item active">
-                        <button type="button" class="btn btn-light"><a class="nav-link" href="#">ホーム<span class="sr-only">(current)</span></a></button>
+                        <button type="button" class="btn btn-light"><a class="nav-link" href="{{ route('home') }}">ホーム<span class="sr-only">(current)</span></a></button>
                         
                     </li>
                     <li class="nav-item active">
