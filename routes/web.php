@@ -28,7 +28,13 @@ Route::get('/signup/', 'QuizController@signup')->name('signup');
 //ログイン画面に遷移
 Route::get('/login/', 'QuizController@login')->name('login');
 
-
-
 //サンクス画面に遷移
 Route::get('/specialthanks/', 'QuizController@specialthanks')->name('specialthanks');
+
+Route::group(['middleware'=>'auth'], function(){
+//ログインした状態じゃないと入れない画面
+
+
+
+
+});
