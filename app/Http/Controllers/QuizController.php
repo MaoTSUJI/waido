@@ -4,8 +4,7 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 
-use Illuminate\Support\Facades\Auth;
-//Authクラスを使えるようにする
+use Illuminate\Support\Facades\Auth;    //Authクラスを使えるようにする
 use App\Quiz;  //  App/Quizクラスを使用する宣言
 use App\Proverb;  //  App/Proverbクラスを使用する宣言
 
