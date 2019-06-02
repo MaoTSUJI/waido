@@ -41,9 +41,9 @@ class QuizController extends Controller
     }
 
     //問題画面
-    public function solve(){
+    public function quiz(){
 
-        return view('quizzes.quiz_area1');
+        return view('quizzes.quiz_area');
     }
     //結果表示画面
     public function result(){

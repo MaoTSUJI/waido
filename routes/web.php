@@ -18,6 +18,10 @@ Route::get('/quizlist/', 'QuizController@choose')->name('quiz.quizlist');
 //地域選択(クイズをはじめる)画面に遷移
 Route::get('/quizlist_start/', 'QuizController@start')->name('quiz.quizlist_start');
 
+//クイズ画面に遷移
+Route::get('/quiz_area/', 'QuizController@quiz')->name('quiz.quiz_area');
+
+
 //ランキング画面に遷移
 Route::get('/ranking/', 'QuizController@ranking')->name('ranking');
 //辞書画面に遷移
@@ -33,8 +37,6 @@ Route::get('/specialthanks/', 'QuizController@specialthanks')->name('specialthan
 
 Route::group(['middleware'=>'auth'], function(){
 //ログインした状態じゃないと入れない画面
-
-
 
 
 });
