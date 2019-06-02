@@ -67,6 +67,11 @@
                 <a href={{ route('specialthanks') }} >スペシャルサンクス</a>
             </li>
         </ul>
+
+        <a href="http://twitter.com/share?url=http://qiita.com/katsuma"><i class="fab fa-twitter"></i></a>
+        <a href="https://www.facebook.com/sharer/sharer.php?u=http://qiita.com/katsuma"><i class="fab fa-facebook-f"></i></a>
+        <a href="http://line.me/R/msg/text/?http://qiita.com/katsuma"><i class="fab fa-line"></i></a>
+
         <p class="pagetop">©2019 M5</p>
 
     </footer>

@@ -15,6 +15,7 @@ class QuizController extends Controller
 	public function home() {
 
         $cnt = Proverb::count();    //prooverbsテーブルのレコード数を取得
+        
         $proverb = Proverb::find(rand(1,$cnt));
         // proverbsテーブルのデータのランダムなレコードを取得
 
