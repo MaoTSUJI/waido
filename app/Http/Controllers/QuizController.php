@@ -7,6 +7,7 @@ use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;    //Authクラスを使えるようにする
 use App\Quiz;  //  App/Quizクラスを使用する宣言
 use App\Proverb;  //  App/Proverbクラスを使用する宣言
+use App\Area;   //Areaクラスを使用
 
 class QuizController extends Controller
 {
@@ -28,7 +29,9 @@ class QuizController extends Controller
   	//クイズ地域選択画面
     public function choose(){
 
-    	return view('quizzes.quizlist');
+        $areas = Area::all();    //areasテーブルのデータを全件取得
+        
+    	return view('quizzes.quizlist',['areas'=>$areas]);
     }
     //クイズスタート画面
     public function start(){
