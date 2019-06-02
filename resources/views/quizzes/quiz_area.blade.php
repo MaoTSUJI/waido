@@ -8,8 +8,8 @@ QuizList
 {{-- ここに中身をかく --}}
 	<p>地域：{{ $_GET['name'] }}</p>
 
-	<p>問題：</p>
+	<p>問題：{{ $quiz['miyako_'. $_GET{'name'}] }}</p>
 
-	<p>選択肢1</p>
+	<p>選択肢1	: {{ $quiz['japanese'] }}</p>
 
 @endsection

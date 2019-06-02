@@ -5,9 +5,10 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 
 use Illuminate\Support\Facades\Auth;    //Authクラスを使えるようにする
-use App\Quiz;  //  App/Quizクラスを使用する宣言
+use App\Dialect;  //  App/Quizクラスを使用する宣言
 use App\Proverb;  //  App/Proverbクラスを使用する宣言
 use App\Area;   //Areaクラスを使用
+
 
 class QuizController extends Controller
 {
@@ -34,6 +35,8 @@ class QuizController extends Controller
         
     	return view('quizzes.quizlist',['areas'=>$areas]);
     }
+
+
     //クイズスタート画面
     public function start(){
 
@@ -43,8 +46,14 @@ class QuizController extends Controller
     //問題画面
     public function quiz(){
 
-        return view('quizzes.quiz_area');
+        $cnt = Dialect::count();
+        $quiz = Dialect::find(rand(1,$cnt));
+        $answers = Dialect::find(rand(1,$cnt));
+
+        return view('quizzes.quiz_area', ['quiz' => $quiz ]);
     }
+
+
     //結果表示画面
     public function result(){
         return view('quizzes.result');
