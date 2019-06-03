@@ -49,18 +49,38 @@ class QuizController extends Controller
         $quizzes = Dialect::inRandomOrder()->limit(5)->get();  //方言データをランダムに並び替えてレコードを5件取得
 
         $answer = $quizzes[1]['japanese'];   //正解を選択肢に格納
+        $answer_id = $quizzes[1]['id'];
 
         // dd($quizzes[3]['id']);
 
-        //選択肢
-        $samecategories = Dialect::select('id')->where('category_id',$quizzes[1]['category_id'])->inRandomOrder()->limit(5)->get();
-        dd($samecategories[1]);
+        //同じカテゴリーを持つデータをランダムに5件取得
+        $samecategories = Dialect::where('category_id',$quizzes[1]['category_id'])->inRandomOrder()->get();
 
-        // foreach($samecategories as $samecategory){
-        //     $samecategory_id = array_column($samecategory, 'id');
-        // }
+        //問題と同じカテゴリーのidを配列に挿入
+        $cnt = count($samecategories);
+        for($i = 0; $i < $cnt; $i++){
+            $samecategory_id[] = $samecategories[$i]['id'];
+        }
 
-        dd($samecategory_id);
+        $choices[] = $answer_id;    //選択肢配列に答えを格納
+        $rand = rand(0, $cnt-1);   //ランダムな数値を変数にセット
+
+        // 選択肢idを4つ並べた配列を作成
+        while(count($choices) < 4){
+            $rand = rand(0, $cnt-1);   //ランダムな数値を変数にセット
+            //  問題と同じカテゴリー配列が回答と被らないよう配列を作成
+            if(in_array($samecategory_id[$rand], $choices)){
+
+            }else{
+                // 選択肢が被らなかった場合、idを挿入
+                $choices[] = $samecategory_id[$rand];
+            }
+        }
+
+        shuffle($choices);  //配列をシャッフル
+        dd($answer_id, $choices);
+
+
 
         // for(){
         //     if($quizzes[3]['id'] == $answer_wrong['id']){
