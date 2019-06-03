@@ -1,7 +1,7 @@
 @extends('layout')
 
 @section('tittle')
-QuizList
+SpecialThanks
 @endsection
 
 @section('content')
