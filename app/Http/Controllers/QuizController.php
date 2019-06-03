@@ -57,7 +57,7 @@ class QuizController extends Controller
         $answer_wrong = Dialect::where('category_id',$quizzes[1]['category_id'])->inRandomOrder()->limit(3)->get();
         $answer_wrong = $answer_wrong[1];
 
-        dd($quizzes[3]['id'], $answer_wrong['id']);
+        // dd($quizzes[3]['id'], $answer_wrong['id']);
 
         if($quizzes[3]['id'] == $answer_wrong['id']){
              $test = 'true';
