@@ -20,7 +20,7 @@ Route::get('/quizlist_start/', 'QuizController@start')->name('quiz.quizlist_star
 
 //クイズ画面に遷移
 Route::get('/quiz_area/', 'QuizController@quiz')->name('quiz.quiz_area');
-
+// Route::get('/quiz_area/', 'QuizController@answer')->name('quiz.quiz_area');
 
 //ランキング画面に遷移
 Route::get('/ranking/', 'QuizController@ranking')->name('ranking');
