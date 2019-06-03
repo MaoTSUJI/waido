@@ -51,16 +51,21 @@ class QuizController extends Controller
         $answer = $quizzes[1]['japanese'];   //正解を選択肢に格納
         $answer_id = $quizzes[1]['id'];
 
-        //選択肢
-        $answer_wrong = Dialect::where('category_id',$quizzes[1]['category_id'])->inRandomOrder()->first();
+        // dd($quizzes[3]['id']);
 
-        if($quizzes[3]['id'] = $answer_wrong['id']){
+        //選択肢
+        $answer_wrong = Dialect::where('category_id',$quizzes[1]['category_id'])->inRandomOrder()->limit(3)->get();
+        $answer_wrong = $answer_wrong[1];
+
+        dd($quizzes[3]['id'], $answer_wrong['id']);
+
+        if($quizzes[3]['id'] == $answer_wrong['id']){
              $test = 'true';
         }else{
             $test = 'false';
         }
 
-        dd($quizzes[3]['id'], $answer_wrong['id']);
+
 
 
         return view('quizzes.quiz_area', ['quizzes' => $quizzes ]);
