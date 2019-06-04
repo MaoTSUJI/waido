@@ -91,11 +91,12 @@ class QuizController extends Controller
 
         }
 
-        
-        $num = 3;
-        dd($quizzes[$num-1]['miyako_nishibe'], $answer[$num-1], $choices[$num-1]);
 
-        return view('quizzes.quiz_area', ['quizzes' => $quizzes ]);
+        // $num = 3;
+        // dd($quizzes, $answer, $choices);
+
+
+        return view('quizzes.quiz_area', ['quizzes' => $quizzes, 'answer' =>$answer, 'choices' =>$choices  ]);
     }
 
 

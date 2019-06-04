@@ -21,18 +21,11 @@ QuizList
 				<br>
 				<br>
 				<!-- ↓四択 -->
-				<a href="#" class="btn-flat-dashed-filled">{{ $quizzes[1]['japanese'] }}</a>
-					<br>
-					<br>
-				<a href="#" class="btn-flat-dashed-filled">{{ $quizzes[1]['japanese'] }}</a>
-					<br>
-					<br>
-				<a href="#" class="btn-flat-dashed-filled">{{ $quizzes[1]['japanese'] }}</a>
-					<br>
-					<br>
-				<a href="#" class="btn-flat-dashed-filled">{{ $quizzes[1]['japanese'] }}</a>
-					<br>
-					<br>
+				@for($i=0; $i<4; $i++)
+					<a href="#" class="btn-flat-dashed-filled">{{ $choices[1][$i] }}</a>
+						<br>
+						<br>
+				@endfor
 			</div>
 			<!-- ハイビスカスを使って問題数を表す -->
 			<div class="hibiscus">
