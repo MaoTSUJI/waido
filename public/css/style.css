@@ -1,0 +1,219 @@
+/*結果発表ページ*/
+
+
+.result {
+    text-align: center;
+    background-color: #FFFAF0;
+    width:70%;
+	display: block;
+	margin-left: auto;
+    margin-right: auto;
+}
+
+.score {
+    color:#33CC99;
+    width:600px;
+    height: 100%;
+    display: inline-block;   
+    text-align: center;
+    font-size: 40px;
+}
+
+
+img.ribbon {
+	opacity: 0.8;
+}
+
+span::before {
+	content:"『";
+	/*::beforeと::afterを使用することで記述を加えることが可能。
+	そして検索エンジンにはひっかがらない*/
+}
+
+span::after {
+	content:"』";
+}
+
+a.cp_btn {
+	display: inline-block;
+	position: relative;
+	width: 160px;
+	padding: 0.8em;
+	text-align: center;
+	border-top: 2px solid #33CC99;
+	border-bottom: 2px solid #33CC99;
+	text-decoration: none;
+	font-weight: bold;
+	color: #33CC99;
+}
+a.cp_btn:before, a.cp_btn:after {
+	content: '';
+	position: absolute;
+	top: -7px;
+	width: 2px;
+	height: calc(100% + 14px);
+	background-color: #33CC99;
+	transition: .3s;
+}
+a.cp_btn:before {
+	left: 7px;
+}
+a.cp_btn:after {
+	right: 7px;
+}
+a.cp_btn:hover:before{
+	top: 0px;
+	left:0;
+	height: 100%;
+}
+a.cp_btn:hover:after{
+	top: 0px;
+	right: 0;
+	height: 100%;
+}
+
+a.go_ranking, .town {
+	color:black;
+}
+
+/*ーーーーーーーーーーーーーーーー*/
+/*問題表示*/
+.hint {
+	color:#FFCC00;
+	padding-bottom:30px;
+}
+
+.hint1 p{
+	color:black;
+}
+
+.quiz {
+    text-align: center;
+    background-color: #FFFAF0;
+    width:90%;
+	display: block;
+	margin-left: auto;
+    margin-right: auto;
+}
+
+.btn-flat-dashed-filled {
+ 
+	display: inline-block;
+	width:600px;
+	padding: 0.5em 1em;
+	text-decoration: none;
+	color: #67c5ff;
+	border: dashed 1px #67c5ff;
+	background: #f2fcff;
+	border-radius: 3px;
+	transition: .4s;
+}
+
+.btn-flat-dashed-filled:hover {
+	background: #cbedff;
+	color: #FFF;
+}
+
+
+}
+.btn-flat-dashed-filled {
+	display: inline-block;
+	padding: 1em 1em;
+	text-decoration: none;
+	color: #67c5ff;
+	border: dashed 1px #67c5ff;
+	background: #f2fcff;
+	border-radius: 3px;
+	transition: .4s;
+}
+
+.btn-flat-dashed-filled:hover {
+	background: #cbedff;
+	color: #FFF;
+}
+
+img.hibiscus{
+	padding:30;
+}
+
+img.hibiscus2 {
+	opacity: 0.4;
+}
+
+
+a.cp_btn {
+	display: inline-block;
+	position: relative;
+	width: 160px;
+	padding: 0.8em;
+	text-align: center;
+	border-top: 2px solid #33CC99;
+	border-bottom: 2px solid #33CC99;
+	text-decoration: none;
+	font-weight: bold;
+	color: #33CC99;
+}
+a.cp_btn:before, a.cp_btn:after {
+	content: '';
+	position: absolute;
+	top: -7px;
+	width: 2px;
+	height: calc(100% + 14px);
+	background-color: #33CC99;
+	transition: .3s;
+}
+a.cp_btn:before {
+	left: 7px;
+}
+a.cp_btn:after {
+	right: 7px;
+}
+a.cp_btn:hover:before{
+	top: 0px;
+	left:0;
+	height: 100%;
+}
+a.cp_btn:hover:after{
+	top: 0px;
+	right: 0;
+	height: 100%;
+}
+
+
+.ranking {
+	position: relative;
+    text-align: center;
+    background-color: #FFFAF0;
+    width:90%;
+	display: block;
+	margin-left: auto;
+    margin-right: auto;
+
+}
+
+td {
+	padding-right: 20px;
+	padding-left: 20px;
+	padding-bottom: 10px;
+}
+
+table {
+	position: relative;
+	width: 100%;
+	text-align: center;
+}
+
+p,td {
+	font-size:30px;
+	font-family: 'Kosugi Maru', sans-serif;
+
+}
+
+
+
+
+
+
+
+
+
