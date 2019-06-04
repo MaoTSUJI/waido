@@ -49,7 +49,7 @@ Home Page!!
 			また、SNSでシェアすることで多くの人にみゃーくふつに興味を持ってもらうきっかけになればと思っております。
 		</p>
 		<div class=container>
-			<a href="{{ route('quiz.quizlist') }}">クイズをはじめる</a>
+			<a href="{{ route('quiz.quizlist') }}" class="cp_btn">クイズを始める</a>
 		</div>
 	</div>
 
