@@ -38,10 +38,10 @@ Ranking
 								ガーヒー
 							</td>
 							<td>
-								みゃーくふつ
+								キジムナー
 							</td>
 							<td>
-								<img src="./img/youkai_hitotsume.png" alt="一つ目小僧" width="100px">
+								<img src="./img/kijimuna-.png" alt="キジムナー" width="200px">
 							</td>
 						</tr>
 						<tr>
@@ -52,10 +52,10 @@ Ranking
 								TsujiMao
 							</td>
 							<td>
-								ハイビスカス
+								ジンベイザメ
 							</td>
 							<td>
-								<img src="./img/flower_hibiscus.png" alt="ハイビスカス" width="100px">
+								<img src="./img/jinbeizame.png" alt="ジンベイザメ" width="200px">
 							</td>
 						</tr>
 						<tr>
@@ -66,10 +66,10 @@ Ranking
 								まさき
 							</td>
 							<td>
-								one
+								ジュゴン
 							</td>
 							<td>
-								<img src="./img/no1.png" alt="one" width="100px">
+								<img src="./img/dugong.png" alt="ジュゴン" width="200px">
 							</td>
 						</tr>
 						<tr>
@@ -80,10 +80,10 @@ Ranking
 								Mariko
 							</td>
 							<td>
-								seven
+								イルカ
 							</td>
 							<td>
-								<img src="./img/no7.png" alt="seven" width="100px">
+								<img src="./img/dolphin.png" alt="イルカ" width="200px">
 							</td>
 						</tr>
 						<tr>
@@ -94,10 +94,10 @@ Ranking
 								Shinya
 							</td>
 							<td>
-								ミシゲー
+								ウミガメ
 							</td>
 							<td>
-								<img src="./img/mishige.png" alt="しゃもじ" width="100px">
+								<img src="./img/umigame.png" alt="ウミガメ" width="200px">
 							</td>
 						</tr>
 

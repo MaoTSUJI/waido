@@ -194,6 +194,7 @@ a.cp_btn:hover:after{
 td {
 	padding-right: 20px;
 	padding-left: 20px;
+	padding-bottom: 10px;
 }
 
 table {
@@ -204,6 +205,8 @@ table {
 
 p,td {
 	font-size:30px;
+	font-family: 'Kosugi Maru', sans-serif;
+
 }
 
 
