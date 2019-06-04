@@ -32,7 +32,6 @@ class QuizController extends Controller
     public function choose(){
 
         $areas = Area::all();    //areasテーブルのデータを全件取得
-        
     	return view('quizzes.quizlist',['areas'=>$areas]);
     }
 
@@ -48,28 +47,50 @@ class QuizController extends Controller
 
         $quizzes = Dialect::inRandomOrder()->limit(5)->get();  //方言データをランダムに並び替えてレコードを5件取得
 
-        $answer = $quizzes[1]['japanese'];   //正解を選択肢に格納
-        $answer_id = $quizzes[1]['id'];
 
-        // dd($quizzes[3]['id']);
+        $answer[1] = $quizzes[1]['japanese'];   //正解を選択肢に格納
+        $answer_id[1] = $quizzes[1]['id'];
 
-        //選択肢
-        $answer_wrong = Dialect::where('category_id',$quizzes[1]['category_id'])->inRandomOrder()->limit(3)->get();
-        $answer_wrong = $answer_wrong[1];
+        //同じカテゴリーを持つデータをランダムに5件取得
+        $samecategories[1] = Dialect::where('category_id',$quizzes[1]['category_id'])->inRandomOrder()->get();
 
-        // dd($quizzes[3]['id'], $answer_wrong['id']);
-
-        if($quizzes[3]['id'] == $answer_wrong['id']){
-             $test = 'true';
-        }else{
-            $test = 'false';
+        //問題と同じカテゴリーのidを配列に挿入
+        $cnt = count($samecategories[1]);
+        $samecategory_id[1] = [];
+        for($i = 0; $i < $cnt; $i++){
+            $samecategory_id[1][] = $samecategories[1][$i]['id'];
         }
 
+        $choices_id[1] = [];    //選択肢の方言idを入れる配列を用意　
+        $choices_id[1][] = $answer_id[1];    //選択肢配列に答えの方言idを格納
 
+        // 同カテゴリ数中からランダムな数値を抽出
+        while(count($choices_id[1]) < 4){
+            // 同カテゴリ数中からランダムな数値を抽出
+            $rand = rand(0, $cnt-1);
+            //  問題と同じカテゴリー配列が回答と被らないよう配列を作成
+            if(in_array($samecategory_id[1][$rand], $choices_id[1])){
+                    // 選択肢が被った場合、スルー
+            }else{
+                    // 選択肢が被らなかった場合、idを挿入
+                    $choices_id[1][] = $samecategory_id[1][$rand];
+            }
+        }
 
+        shuffle($choices_id[1]);  //答えが常に最初に来ないように配列をシャッフル
+        // dd($answer_id[1], $choices_id[1]);
+
+        foreach($choices_id[1] as $choice_id) {
+            $choice = $samecategories[1]->where('id', $choice_id)->first();
+            $choices[1][] = $choice['japanese'];
+
+        }
+
+        dd($quizzes[1]['miyako_nishibe'], $answer, $choices[1]);
 
         return view('quizzes.quiz_area', ['quizzes' => $quizzes ]);
     }
+
 
     public function answer(){
 

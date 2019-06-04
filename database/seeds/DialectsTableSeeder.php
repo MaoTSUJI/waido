@@ -19,8 +19,7 @@ class DialectsTableSeeder extends Seeder
         $dialects = [
         	[
         		'japanese' => '家族',
-	        	'miyako_nishibe' => 'ヤーニンジュ
-	        	',
+	        	'miyako_nishibe' => 'ヤーニンジュ',
 	        	'miyako_hirara' => 'ヤーディ',
 	        	'miyako_tarama' => 'ヤーティーンナ',
 	        	'english' => 'family',
@@ -57,7 +56,63 @@ class DialectsTableSeeder extends Seeder
 	        	'miyako_tarama' => 'アンナー',
 	        	'english' => 'mother',
 	        	'hint' => '強しです',
-        	]
+        	],
+          [
+            'japanese' => 'お兄ちゃん',
+            'miyako_nishibe' => 'スンジャ',
+            'miyako_hirara' => 'アザ',
+            'miyako_tarama' => 'アジャー',
+            'english' => 'Big-brother',
+            'hint' => 'よくケンカします',
+          ],
+          [
+            'japanese' => 'お姉ちゃん',
+            'miyako_nishibe' => 'アニィ',
+            'miyako_hirara' => 'アンガ',
+            'miyako_tarama' => 'ネーネー',
+            'english' => 'Big-sister',
+            'hint' => 'よくケンカします',
+          ],
+          [
+            'japanese' => '弟',
+            'miyako_nishibe' => 'ビッキ',
+            'miyako_hirara' => 'ウトゥドゥ',
+            'miyako_tarama' => 'ウットゥ',
+            'english' => 'Young-brother',
+            'hint' => 'うるさいです',
+          ],
+          [
+            'japanese' => '妹',
+            'miyako_nishibe' => 'ミイー',
+            'miyako_hirara' => 'ウトゥガー',
+            'miyako_tarama' => 'ウィトウ',
+            'english' => 'Young-sister',
+            'hint' => 'うるさいです',
+          ],
+          [
+            'japanese' => '甥、姪',
+            'miyako_nishibe' => 'ミュウイ',
+            'miyako_hirara' => '',
+            'miyako_tarama' => '',
+            'english' => 'nephew',
+            'hint' => 'かわいいです',
+          ],
+          [
+            'japanese' => '親子',
+            'miyako_nishibe' => 'ンザァファ',
+            'miyako_hirara' => 'ンマッファ',
+            'miyako_tarama' => 'フファンマガ',
+            'english' => 'Parent and child',
+            'hint' => '大切な関係です',
+          ],
+          [
+            'japanese' => '息子',
+            'miyako_nishibe' => 'ビキ',
+            'miyako_hirara' => 'ビキウバ',
+            'miyako_tarama' => 'フッファ',
+            'english' => 'son',
+            'hint' => 'キャッチボールしたいです',
+          ],
         ];
 
       foreach ($dialects as $dialect) {
