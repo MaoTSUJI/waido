@@ -11,13 +11,13 @@ class UserController extends Controller
 // サインアップ機能
 public function signup(){
 
-        return view('signup');
+        return view('auth.signup');
     }
 
 // ログイン機能
 public function login(){
 
-        return view('login');
+        return view('auth.login');
     }
 
 // マイページ機能

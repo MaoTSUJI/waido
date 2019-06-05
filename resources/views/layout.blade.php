@@ -49,7 +49,7 @@
                         <button type="button" class="btn btn-light"><a class="nav-link" href="{{ route('dictionary') }}">辞書<span class="sr-only">(current)</span></a></button>
 
                     </li><li class="nav-item active">
-                        <button type="button" class="btn btn-light"><a class="nav-link" href="{{ route('signup') }}">ユーザー登録<span class="sr-only">(current)</span></a></button>
+                        <button type="button" class="btn btn-light"><a class="nav-link" href="{{ route('auth.signup') }}">ユーザー登録<span class="sr-only">(current)</span></a></button>
 
                     </li><li class="nav-item active">
                         <button type="button" class="btn btn-light"><a class="nav-link" href="{{ route('login') }}">ログイン<span class="sr-only">(current)</span></a></button>

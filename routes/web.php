@@ -28,9 +28,9 @@ Route::get('/ranking/', 'QuizController@ranking')->name('ranking');
 Route::get('/dictionary/', 'QuizController@dictionary')->name('dictionary');
 
 //ユーザー登録画面に遷移
-Route::get('/signup/', 'UserController@signup')->name('signup');
+Route::get('/signup/', 'UserController@signup')->name('auth.signup');
 //ログイン画面に遷移
-Route::get('/login/', 'UserController@login')->name('login');
+Route::get('/login/', 'UserController@login')->name('auth.login');
 
 //サンクス画面に遷移
 Route::get('/specialthanks/', 'QuizController@specialthanks')->name('specialthanks');
