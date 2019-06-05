@@ -20,7 +20,12 @@ Route::get('/quizlist_start/', 'QuizController@start')->name('quiz.quizlist_star
 
 //クイズ画面に遷移
 Route::get('/quiz_area/', 'QuizController@quiz')->name('quiz.quiz_area');
-// Route::get('/quiz_area/', 'QuizController@answer')->name('quiz.quiz_area');
+
+// 答え画面に遷移
+Route::get('/answer/', 'QuizController@answer')->name('quiz.answer');
+
+//選択した地域を画面に表示
+// Route::get('/quiz_area/', 'QuizController@showarea')->name('quiz.showarea');
 
 //ランキング画面に遷移
 Route::get('/ranking/', 'QuizController@ranking')->name('ranking');
