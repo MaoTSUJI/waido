@@ -203,13 +203,34 @@ table {
 	text-align: center;
 }
 
-p,td {
+#all_ranking {
 	font-size:30px;
 	font-family: 'Kosugi Maru', sans-serif;
 
 }
 
+.container {
+	text-align: center;
+	font-family: 'Noto Serif JP', serif;
 
+}
+
+div.container > h3 {
+	text-align: left;
+	padding:10px 5px;
+
+}
+
+div.carousel-inner > p {
+	position: absolute;
+	color: white;
+	font-size:50px;
+	text-align: center;
+}
+
+.navbar {
+	color: #808080;
+}
 
 
 

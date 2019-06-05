@@ -6,7 +6,6 @@ Home Page!!
 
 @section('content')
 	{{-- カルーセル --}}
-	<p>{{ $proverb->japanese }}</p>
 	<div class="container">
 		{{-- カルーセル --}}
 		<div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
@@ -20,6 +19,8 @@ Home Page!!
 		    <div class="carousel-item">
 		      <img src="{{ asset('/img/background/beach3.jpg') }}" class="d-block w-100" alt="...">
 		    </div>
+		    	<p>{{ $proverb->japanese }}</p>
+
 		  </div>
 
 		  <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
@@ -49,7 +50,7 @@ Home Page!!
 			また、SNSでシェアすることで多くの人にみゃーくふつに興味を持ってもらうきっかけになればと思っております。
 		</p>
 		<div class=container>
-			<a href="{{ route('quiz.quizlist') }}">クイズをはじめる</a>
+			<a href="{{ route('quiz.quizlist') }}" class="cp_btn">クイズを始める</a>
 		</div>
 	</div>
 
