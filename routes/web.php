@@ -28,15 +28,18 @@ Route::get('/ranking/', 'QuizController@ranking')->name('ranking');
 Route::get('/dictionary/', 'QuizController@dictionary')->name('dictionary');
 
 //ユーザー登録画面に遷移
-Route::get('/signup/', 'QuizController@signup')->name('signup');
+Route::get('/signup/', 'UserController@signup')->name('auth.signup');
 //ログイン画面に遷移
-Route::get('/login/', 'QuizController@login')->name('login');
+Route::get('/login/', 'UserController@login')->name('login');
 
 //サンクス画面に遷移
 Route::get('/specialthanks/', 'QuizController@specialthanks')->name('specialthanks');
 
 Route::group(['middleware'=>'auth'], function(){
 //ログインした状態じゃないと入れない画面
-
+//マイページ画面
+Route::get('/mypage/', 'UserController@mypage')->name('mypage');
 
 });
+
+Auth::routes();
