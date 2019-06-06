@@ -39,7 +39,8 @@ class QuizController extends Controller
     //クイズスタート画面
     public function start(){
 
-        return view('quizzes.quizlist_start');
+        $areas = Area::all();   //areasテーブルのデータを全件取得
+        return view('quizzes.quizlist_start',['areas'=>$areas]);
     }
 
     //問題画面
@@ -91,12 +92,12 @@ class QuizController extends Controller
 
         }
 
-
         // $num = 3;
         // dd($quizzes, $answer, $choices);
 
+        $areas = Area::all();   //areasテーブルのデータを全件取得
 
-        return view('quizzes.quiz_area', ['quizzes' => $quizzes, 'answer' =>$answer, 'choices' =>$choices  ]);
+        return view('quizzes.quiz_area', ['quizzes' => $quizzes, 'answer' =>$answer, 'choices' =>$choices, 'areas'=>$areas ]);
     }
 
 
