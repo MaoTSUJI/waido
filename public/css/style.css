@@ -34,7 +34,7 @@ span::after {
 	content:"』";
 }
 
-a.cp_btn {
+a .cp_btn {
 	display: inline-block;
 	position: relative;
 	width: 160px;
@@ -209,11 +209,17 @@ p,td {
 
 }
 
-
-
-
-
-
+input, button, textarea, select {
+  margin: 0;
+  padding: 0;
+  background: none;
+  border: none;
+  border-radius: 0;
+  outline: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
 
 
 

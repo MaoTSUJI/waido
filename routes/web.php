@@ -22,7 +22,8 @@ Route::get('/quizlist_start/', 'QuizController@start')->name('quiz.quizlist_star
 Route::get('/quiz_area/', 'QuizController@quiz')->name('quiz.quiz_area');
 
 // 答え画面に遷移
-Route::get('/answer/', 'QuizController@answer')->name('quiz.answer');
+Route::post('/answer/', 'QuizController@answer')->name('quiz.answer');
+// Route::match(['post'], '/answer/', 'QuizController@answer');
 
 //選択した地域を画面に表示
 // Route::get('/quiz_area/', 'QuizController@showarea')->name('quiz.showarea');

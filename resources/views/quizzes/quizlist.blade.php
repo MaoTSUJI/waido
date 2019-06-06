@@ -11,9 +11,13 @@ QuizList
 	<div class="text">
 
 @foreach($areas as $area)
-				<a href="{{ route('quiz.quizlist_start') }}?name={{ $area->english }} " class="">
-					<h3>{{ $area->area }}</h3>
-				</a>
+				<form action="{{ route('quiz.quizlist_start') }}" method="get" class="btn-flat-dashed-filled">
+					@csrf
+					<input type="submit" name="area_jpn" value="{{ $area->area }}">
+					<input type="hidden" name="area_id" value="{{ $area->id }}">
+					<input type="hidden" name="area_eng" value="{{ $area->english }}">
+				</form>
+
 @endforeach
 	</div>
 </div>
