@@ -224,14 +224,11 @@ div.container > h3 {
 <<<<<<< HEAD
 
 .quiz {
-	height: 700px;
-=======
-div.carousel-inner > p {
+	height: 800px;
 	position: absolute;
 	color: white;
 	font-size:50px;
 	text-align: center;
->>>>>>> 3603cbcb235912b5b7b3715be33fdd676bdf1eaf
 }
 
 .navbar {
