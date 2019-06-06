@@ -19,12 +19,12 @@ QuizList
 				<br>
 
 				<!-- ↑クイズ -->
-				<a class="hint" href="{{ route('quiz.answer') }}"><i class="fas fa-lightbulb fa-3x"></i><br><p style="color:black">ヒント</p></a>
+				<a class="hint" href=""><i class="fas fa-lightbulb fa-3x"></i><br><p style="color:black">ヒント</p></a>
 				<br>
 				<br>
 				<!-- ↓四択 -->
 				@for($i=0; $i<4; $i++)
-					<a href="#" class="btn-flat-dashed-filled">{{ $choices[$j][$i] }}</a>
+					<a href="{{ route('quiz.answer') }}" class="btn-flat-dashed-filled">{{ $choices[$j][$i] }}</a>
 						<br>
 						<br>
 				@endfor

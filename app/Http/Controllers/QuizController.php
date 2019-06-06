@@ -110,7 +110,7 @@ class QuizController extends Controller
     public function answer(){
 
 
-        // return view('quizzes.answer', ['answer' => $answer]);
+        return view('quizzes.answer');
     }
 
 
