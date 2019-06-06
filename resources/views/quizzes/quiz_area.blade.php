@@ -29,15 +29,25 @@ QuizList
 				<br>
 				<br>
 				<!-- ↓四択 -->
-				@for($i=0; $i<4; $i++)
+				
 
-					<form action="{{ route('quiz.answer') }}" method="POST" class="btn-flat-dashed-filled">
-						<input type="submit" name="answer" value="{{ $choices[$j][$i] }}">
+					<form action="{{ route('quiz.answer') }}" method="POST" >
+						@csrf
+						{{-- 選択肢を４つ表示 --}}
+						@for($i=0; $i<4; $i++)
+							<div></div>
+							<input type="radio" name="answer" value="{{ $choices[$j][$i] }}" id="{{ $choices[$j][$i] }}" class="">
+							<label for="{{ $choices[$j][$i] }}"></label>{{ $choices[$j][$i] }}
+
+							<br>
+						@endfor
+
+						{{-- 選択肢た地域情報を次の画面に返す --}}
 						<input type="hidden" name="area_jpn" value="{{ $_POST['area_jpn'] }}">
 						<input type="hidden" name="area_id" value="{{ $_POST['area_id'] }}">
 						<input type="hidden" name="area_eng" value="{{ $_POST['area_eng'] }}">
-						@csrf
-{{-- 						<input type="hidden" name="qnum" value="{{ $j }}"> --}}
+
+						<input type="submit" value="解答" class="cp_btn">
 					</form>
 
 
@@ -45,7 +55,7 @@ QuizList
 					<br>
 					<br>
 
-				@endfor
+				
 
 				{{-- @if($_SERVER['REQUEST_METHOD'] === 'POST')
 					@if($_POST['answer'] == "$quizzes[$_POST['qnum']]['miyako_'. $_POST{'name'}]]")
