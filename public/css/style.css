@@ -203,12 +203,13 @@ table {
 	text-align: center;
 }
 
-p,td {
+#all_ranking {
 	font-size:30px;
 	font-family: 'Kosugi Maru', sans-serif;
 
 }
 
+<<<<<<< HEAD
 input, button, textarea, select {
   margin: 0;
   padding: 0;
@@ -220,6 +221,37 @@ input, button, textarea, select {
   -moz-appearance: none;
   appearance: none;
 }
+=======
+.container {
+	text-align: center;
+	font-family: 'Noto Serif JP', serif;
+
+}
+
+div.container > h3 {
+	text-align: left;
+	padding:10px 5px;
+
+}
+
+<<<<<<< HEAD
+
+.quiz {
+	height: 800px;
+	position: absolute;
+	color: white;
+	font-size:50px;
+	text-align: center;
+}
+
+.navbar {
+	color: #808080;
+}
+
+
+
+
+>>>>>>> 17fe01ef3a686ad270fd96987a56cdca7f2cb419
 
 
 

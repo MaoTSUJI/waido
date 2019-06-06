@@ -49,7 +49,7 @@ class QuizController extends Controller
 
         // dd($area);
         $num_quiz = 10;
-        $quizzes = Dialect::inRandomOrder()->limit($num_quiz)->get();  //方言データをランダムに並び替えてレコードを5件取得
+        $quizzes = Dialect::inRandomOrder()->limit($num_quiz)->get();  //方言データをランダムに並び替えてレコードを10s件取得
 
         //10問分の問題、答え、選択肢4つを用意
         for($j=0; $j<$num_quiz; $j++){

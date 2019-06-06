@@ -5,7 +5,10 @@ Answer
 @endsection
 
 @section('content')
-<p>解答</p>
+
+<p>解答画面</p>
+<h1>あい上お</h1>
+
 
 {{-- ここに○か×のイラストを用意 --}}
 {{-- @if($_POST['choices'] == "妹")
@@ -22,8 +25,16 @@ Answer
 
 
 
+<form action="{{ route('quiz.quiz_area') }}" method="POST" class="btn-flat-dashed-filled">
+	<input type="submit" name="answer" value="次の問題">
+	@csrf
+	<input type="hidden" name="area_jpn" value="{{ $_POST['area_jpn'] }}">
+	<input type="hidden" name="area_id" value="{{ $_POST['area_id'] }}">
+	<input type="hidden" name="area_eng" value="{{ $_POST['area_eng'] }}">
 
-<a href="{{ route('quiz.quiz_area') }}" class="cp_btn">次の問題</a>
+</form>
+
+
 {{-- 遷移できない問題は後日解決 --}}
 
 

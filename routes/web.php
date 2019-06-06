@@ -16,10 +16,10 @@ Route::get('/', 'QuizController@home')->name('home');
 //クイズ画面に遷移
 Route::get('/quizlist/', 'QuizController@choose')->name('quiz.quizlist');
 //地域選択(クイズをはじめる)画面に遷移
-Route::get('/quizlist_start/', 'QuizController@start')->name('quiz.quizlist_start');
+Route::post('/quizlist_start/', 'QuizController@start')->name('quiz.quizlist_start');
 
 //クイズ画面に遷移
-Route::get('/quiz_area/', 'QuizController@quiz')->name('quiz.quiz_area');
+Route::post('/quiz_area/', 'QuizController@quiz')->name('quiz.quiz_area');
 
 // 答え画面に遷移
 Route::post('/answer/', 'QuizController@answer')->name('quiz.answer');
