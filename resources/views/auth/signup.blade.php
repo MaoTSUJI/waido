@@ -13,11 +13,11 @@ signup
                 <div class="card-header text-md-center">{{ __('ユーザー登録') }}</div>
 
                 <div class="card-body">
-                    <form method="POST" action="{{ route('register') }}">
+                    <form method="POST" action="{{ route('auth.signup') }}">
                         @csrf
 
                         <div class="form-group row">
-                            <h2 for="name" class="col-md-4 col-form-label text-md-right">{{ __('ユーザー名') }}</h2>
+                            <label for="name" class="col-md-4 col-form-label text-md-right">{{ __('ユーザー名') }}</label>
 
                             <div class="col-md-6">
                                 <input id="name" type="text" class="form-control{{ $errors->has('name') ? ' is-invalid' : '' }}" name="name" value="{{ old('name') }}" required autofocus>
@@ -29,21 +29,7 @@ signup
                                 @endif
                             </div>
                         </div>
-{{-- 
-                        <div class="form-group row">
-                            <label for="email" class="col-md-4 col-form-label text-md-right">{{ __('メールアドレス') }}</label>
 
-                            <div class="col-md-6">
-                                <input id="age" type="number" class="form-control{{ $errors->has('age') ? ' is-invalid' : '' }}" name="age" value="{{ old('age') }}" required autofocus>
-
-                                @if ($errors->has('age'))
-                                    <span class="invalid-feedback" role="alert">
-                                        <strong>{{ $errors->first('age') }}</strong>
-                                    </span>
-                                @endif
-                            </div>
-                        </div>
- --}}
                         <div class="form-group row">
                             <label for="email" class="col-md-4 col-form-label text-md-right">{{ __('メールアドレス') }}</label>
 
