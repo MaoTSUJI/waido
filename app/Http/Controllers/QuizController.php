@@ -95,17 +95,22 @@ class QuizController extends Controller
         // $num = 3;
         // dd($quizzes, $answer, $choices);
 
-        $areas = Area::all();   //areasテーブルのデータを全件取得
-
-        return view('quizzes.quiz_area', ['quizzes' => $quizzes, 'answer' =>$answer, 'choices' =>$choices, 'areas'=>$areas ]);
+        return view('quizzes.quiz_area', ['quizzes' => $quizzes, 'answer' =>$answer, 'choices' =>$choices]);
     }
 
+    public function showarea($area){
+
+        $areas = Area::all()->where('english', $area)->first();   //areasテーブルのデータを全件取得
+        $areas = $areas['area'];
+
+        return view('quizzes.quiz_area', ['areas' => $areas ]);
+
+    }
 
     public function answer(){
 
-        $answer = Dialect::find(1);
 
-        return view('quizzes.quiz_area', ['answer' => $answer]);
+        return view('quizzes.answer');
     }
 
 
