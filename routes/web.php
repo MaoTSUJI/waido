@@ -34,8 +34,13 @@ Route::get('/dictionary/', 'QuizController@dictionary')->name('dictionary');
 
 //ユーザー登録画面に遷移
 Route::get('/signup/', 'UserController@signup')->name('auth.signup');
+// ユーザー登録チェック画面へ遷移
+Route::post('/signup_check/','UserController@signup_check')->name('auth.signup_check');
+// ユーザー登録完了画面へ遷移
+Route::post('/signup_thanks/','UserController@signup_thanks')->name('auth.signup_thanks');
+
 //ログイン画面に遷移
-Route::get('/login/', 'UserController@login')->name('login');
+Route::get('/login/', 'UserController@login')->name('auth.login');
 
 //サンクス画面に遷移
 Route::get('/specialthanks/', 'QuizController@specialthanks')->name('specialthanks');
@@ -43,8 +48,8 @@ Route::get('/specialthanks/', 'QuizController@specialthanks')->name('specialthan
 Route::group(['middleware'=>'auth'], function(){
 //ログインした状態じゃないと入れない画面
 //マイページ画面
-Route::get('/mypage/', 'UserController@mypage')->name('mypage');
+Route::get('/mypage/', 'UserController@mypage')->name('auth.mypage');
 
 });
 
-Auth::routes();
+// Auth::routes();

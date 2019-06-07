@@ -21,12 +21,12 @@
 <body>
     {{-- @guest --}}
         {{-- ログインしていない(ゲスト状態)場合の処理 --}}
-
+    {{-- ゲスト --}}
     {{-- @else --}}
         {{-- ログインしている場合の処理 --}}
-        {{-- {{ A
-    @endguest
-     <nav class="navbar navbar-expand-md navbar-light navbar-laravel">
+    {{-- ログイン --}}
+    {{-- @endguest --}}
+     {{-- <nav class="navbar navbar-expand-md navbar-light navbar-laravel">
             <div class="container">
                 <a class="navbar-brand" href="{{ url('/') }}">
                     {{ config('app.name', 'Laravel') }}
@@ -36,17 +36,17 @@
                 </button>
 
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                    <!-- Left Side Of Navbar -->
+                    <! Left Side Of Navbar >
                     <ul class="navbar-nav mr-auto">
-                   
+
                     </ul>
 
-                    <!-- Right Side Of Navbar -->
+                    <! Right Side Of Navbar >
                     <ul class="navbar-nav ml-auto">
-                        <!-- Authentication Links -->
+                        <! Authentication Links >
                         @guest
                             <li class="nav-item">
-                                <a class="nav-link" href="{{ route('login') }}">{{ __('Login') }}</a>
+                                <a class="nav-link" href="{{ route('auth.login') }}">{{ __('Login') }}</a>
                             </li>
                             @if (Route::has('register'))
                                 <li class="nav-item">
@@ -78,14 +78,14 @@
                     </ul>
                 </div>
             </div>
-        </nav>
+        </nav> --}}
 
 
     {{-- @yield('content') --}}
 
-    {{-- @endguest --}}
+    {{-- @endguest
 
-    {{-- navバーを表示 --}}
+    {{ navバーを表示 --}}
         <nav class="navbar navbar-expand-lg navbar-light bg-light">
         {{-- ロゴ出力 --}}
             <a class="navbar-brand" href="#">Logo</a>
@@ -112,7 +112,7 @@
                         <button type="button" class="btn btn-light"><a class="nav-link" href="{{ route('auth.signup') }}">ユーザー登録<span class="sr-only">(current)</span></a></button>
 
                     </li><li class="nav-item active">
-                        <button type="button" class="btn btn-light"><a class="nav-link" href="{{ route('login') }}">ログイン<span class="sr-only">(current)</span></a></button>
+                        <button type="button" class="btn btn-light"><a class="nav-link" href="{{ route('auth.login') }}">ログイン<span class="sr-only">(current)</span></a></button>
 
                     </li>
                 </ul>
