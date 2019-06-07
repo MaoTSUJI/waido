@@ -41,7 +41,7 @@ Ranking
 								キジムナー
 							</td>
 							<td>
-								<img src="./img/kijimuna-.png" alt="キジムナー" width="200px">
+								<img src="./img/kijimuna-.png" alt="キジムナー" width="150px">
 							</td>
 						</tr>
 						<tr>
@@ -55,7 +55,7 @@ Ranking
 								ジンベイザメ
 							</td>
 							<td>
-								<img src="./img/jinbeizame.png" alt="ジンベイザメ" width="200px">
+								<img src="./img/jinbeizame.png" alt="ジンベイザメ" width="150px">
 							</td>
 						</tr>
 						<tr>
@@ -69,7 +69,7 @@ Ranking
 								ジュゴン
 							</td>
 							<td>
-								<img src="./img/dugong.png" alt="ジュゴン" width="200px">
+								<img src="./img/dugong.png" alt="ジュゴン" width="150px">
 							</td>
 						</tr>
 						<tr>
@@ -83,7 +83,7 @@ Ranking
 								イルカ
 							</td>
 							<td>
-								<img src="./img/dolphin.png" alt="イルカ" width="200px">
+								<img src="./img/dolphin.png" alt="イルカ" width="150px">
 							</td>
 						</tr>
 						<tr>
@@ -97,7 +97,7 @@ Ranking
 								ウミガメ
 							</td>
 							<td>
-								<img src="./img/umigame.png" alt="ウミガメ" width="200px">
+								<img src="./img/umigame.png" alt="ウミガメ" width="150px">
 							</td>
 						</tr>
 

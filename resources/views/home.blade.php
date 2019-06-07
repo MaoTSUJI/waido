@@ -23,23 +23,24 @@ Home Page!!
 
 		  </div>
 
-		  <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+		 {{--  <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
 		    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
 		    <span class="sr-only">Previous</span>
 		  </a>
 		  <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
 		    <span class="carousel-control-next-icon" aria-hidden="true"></span>
 		    <span class="sr-only">Next</span>
-		  </a>
+		  </a> --}}
 		</div>
 	</div>
 	{{-- カルーセル終わり --}}
 
 	{{-- サイト説明 --}}
 	<div class="container">
-		<h3>みゃーくふつを救え　「わいどー」</h3>
+		<h3>みゃーくふつを救え</h3>　
+		<img src="./img/logo.png" alt="わいどーロゴ" width="400px">
 		<h3>Concept</h3>
-		<p>	わいどーとは、宮古島の方言で「がんばろう」という意味です。<br>
+		<p>	{{-- わいどーとは、宮古島の方言で「がんばろう」という意味です。<br>
 			宮古島の方言は「みゃーくふつ」と呼ばれています。<br>
 			しかし、そのみゃーくふつが2009年にユネスコの発表する<a href="http://www.unesco.org/culture/languages-atlas/en/atlasmap/language-id-1973.html">消滅危機言語</a>に指定されてしまいました。<br>
 			美しい自然を持つ宮古島の文化の一つであるみゃーくふつ。<br>
@@ -47,7 +48,17 @@ Home Page!!
 			<br>
 			日常会話で用いられる単語を中心に、みゃーくふつを集めました。<br>
 			4択のクイズ形式なので、どなたでも気軽にお楽しみいただけます。<br>
-			また、SNSでシェアすることで多くの人にみゃーくふつに興味を持ってもらうきっかけになればと思っております。
+			また、SNSでシェアすることで多くの人にみゃーくふつに興味を持ってもらうきっかけになればと思っております。 --}}
+			宮古島固有の方言である<br>
+			<strong>『みゃーくふつ』</strong>
+			は現在その姿を消そうとしている。
+			<br>
+			<br>
+			2009年にユネスコが発表した
+			<a href="http://www.unesco.org/culture/languages-atlas/en/atlasmap/language-id-1973.html">消滅危機言語</a>
+			<br>
+			に指定され、日本国内
+
 		</p>
 		<div class=container>
 			<a href="{{ route('quiz.quizlist') }}" class="cp_btn">クイズを始める</a>
