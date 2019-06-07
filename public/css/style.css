@@ -34,7 +34,7 @@ span::after {
 	content:"』";
 }
 
-a.cp_btn {
+a .cp_btn {
 	display: inline-block;
 	position: relative;
 	width: 160px;
@@ -179,11 +179,79 @@ a.cp_btn:hover:after{
 	height: 100%;
 }
 
+
 .ranking {
+	position: relative;
     text-align: center;
     background-color: #FFFAF0;
     width:90%;
 	display: block;
 	margin-left: auto;
     margin-right: auto;
+
 }
+
+td {
+	padding-right: 20px;
+	padding-left: 20px;
+	padding-bottom: 10px;
+}
+
+table {
+	position: relative;
+	width: 100%;
+	text-align: center;
+}
+
+#all_ranking {
+	font-size:30px;
+	font-family: 'Kosugi Maru', sans-serif;
+
+}
+
+<<<<<<< HEAD
+input, button, textarea, select {
+  margin: 0;
+  padding: 0;
+  background: none;
+  border: none;
+  border-radius: 0;
+  outline: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
+=======
+.container {
+	text-align: center;
+	font-family: 'Noto Serif JP', serif;
+
+}
+
+div.container > h3 {
+	text-align: left;
+	padding:10px 5px;
+
+}
+
+<<<<<<< HEAD
+
+.quiz {
+	height: 800px;
+	position: absolute;
+	color: white;
+	font-size:50px;
+	text-align: center;
+}
+
+.navbar {
+	color: #808080;
+}
+
+
+
+
+>>>>>>> 17fe01ef3a686ad270fd96987a56cdca7f2cb419
+
+
+

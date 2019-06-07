@@ -12,12 +12,16 @@
     <link href="https://fonts.googleapis.com/css?family=Pacifico" rel="stylesheet">
 	<link rel="stylesheet" href="/css/navbar.css">
     <link rel="stylesheet" href="/css/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Kosugi+Maru&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Noto+Serif+JP&display=swap" rel="stylesheet">
+
+
 
 </head>
 <body>
     {{-- @guest --}}
         {{-- ログインしていない(ゲスト状態)場合の処理 --}}
-        
+
     {{-- @else --}}
         {{-- ログインしている場合の処理 --}}
         {{-- {{ Auth::user()->name }} --}}
@@ -35,28 +39,28 @@
                 <ul class="navbar-nav mr-auto">
                     <li class="nav-item active">
                         <button type="button" class="btn btn-light"><a class="nav-link" href="{{ route('home') }}">ホーム<span class="sr-only">(current)</span></a></button>
-                        
+
                     </li>
                     <li class="nav-item active">
                         <button type="button" class="btn btn-light"><a class="nav-link" href="{{ route('quiz.quizlist') }}">クイズ<span class="sr-only">(current)</span></a></button>
-                        
+
                     </li><li class="nav-item active">
                         <button type="button" class="btn btn-light"><a class="nav-link" href="{{ route('ranking') }}">ランキング<span class="sr-only">(current)</span></a></button>
-                        
+
                     </li><li class="nav-item active">
                         <button type="button" class="btn btn-light"><a class="nav-link" href="{{ route('dictionary') }}">辞書<span class="sr-only">(current)</span></a></button>
-                        
+
                     </li><li class="nav-item active">
-                        <button type="button" class="btn btn-light"><a class="nav-link" href="#">ユーザ登録<span class="sr-only">(current)</span></a></button>
-                        
+                        <button type="button" class="btn btn-light"><a class="nav-link" href="{{ route('auth.signup') }}">ユーザー登録<span class="sr-only">(current)</span></a></button>
+
                     </li><li class="nav-item active">
-                        <button type="button" class="btn btn-light"><a class="nav-link" href="#">ログイン<span class="sr-only">(current)</span></a></button>
-                        
+                        <button type="button" class="btn btn-light"><a class="nav-link" href="{{ route('login') }}">ログイン<span class="sr-only">(current)</span></a></button>
+
                     </li>
                 </ul>
             </div>
         </nav>
-        
+
 	@yield('content')
 
     <footer class="footer">

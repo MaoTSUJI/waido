@@ -1,7 +1,7 @@
 @extends('layout')
 
 @section('tittle')
-QuizList
+Signup_check
 @endsection
 
 @section('content')
