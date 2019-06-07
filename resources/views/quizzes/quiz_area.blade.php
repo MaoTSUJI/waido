@@ -19,7 +19,7 @@ QuizList
 				<br>
 
 				<!-- ↑クイズ -->
-				<a class="hint" href="#">
+				{{-- <a class="hint" href="#">
 					<i class="fas fa-comment-alt fa-3x"></i>
 					<br>
 					<i class="fas fa-lightbulb fa-3x"></i>
@@ -27,7 +27,7 @@ QuizList
 					<p style="color:black">ヒント</p>
 				</a>
 				<br>
-				<br>
+				<br> --}}
 				<!-- ↓四択 -->
 				@for($i=0; $i<4; $i++)
 					<a href="{{ route('quiz.answer') }}" class="btn-flat-dashed-filled">{{ $choices[$j][$i] }}</a>
@@ -51,7 +51,7 @@ QuizList
 			</div>
 
 					<br>
-				<a href="#" class="cp_btn">次の問題</a>
+				<form action="POST" class="cp_btn">次の問題</form>
 				<br>
 				<br>
 
