@@ -1,4 +1,12 @@
-/*結果発表ページ*/
+body { 
+	padding-top: 56px; 
+}
+
+
+.container {
+	background-color:#FFFAF0;
+	width:100%;
+}
 
 
 .result {
@@ -34,7 +42,15 @@ span::after {
 	content:"』";
 }
 
-a.cp_btn {
+<<<<<<< HEAD
+<<<<<<< HEAD
+a .cp_btn {
+=======
+form.cp_btn {
+>>>>>>> 5a1dfb51e222418cc18ac527a45e459672912a22
+=======
+form.cp_btn {
+>>>>>>> fb6742d4114fdef223874da553404e4e84b7edf6
 	display: inline-block;
 	position: relative;
 	width: 160px;
@@ -46,7 +62,7 @@ a.cp_btn {
 	font-weight: bold;
 	color: #33CC99;
 }
-a.cp_btn:before, a.cp_btn:after {
+form.cp_btn:before, form.cp_btn:after {
 	content: '';
 	position: absolute;
 	top: -7px;
@@ -55,24 +71,24 @@ a.cp_btn:before, a.cp_btn:after {
 	background-color: #33CC99;
 	transition: .3s;
 }
-a.cp_btn:before {
+form.cp_btn:before {
 	left: 7px;
 }
-a.cp_btn:after {
+form.cp_btn:after {
 	right: 7px;
 }
-a.cp_btn:hover:before{
+form.cp_btn:hover:before{
 	top: 0px;
 	left:0;
 	height: 100%;
 }
-a.cp_btn:hover:after{
+form.cp_btn:hover:after{
 	top: 0px;
 	right: 0;
 	height: 100%;
 }
 
-a.go_ranking, .town {
+for.go_ranking, .town {
 	color:black;
 }
 
@@ -141,7 +157,7 @@ img.hibiscus2 {
 }
 
 
-a.cp_btn {
+form.cp_btn {
 	display: inline-block;
 	position: relative;
 	width: 160px;
@@ -153,7 +169,7 @@ a.cp_btn {
 	font-weight: bold;
 	color: #33CC99;
 }
-a.cp_btn:before, a.cp_btn:after {
+form.cp_btn:before, form.cp_btn:after {
 	content: '';
 	position: absolute;
 	top: -7px;
@@ -162,18 +178,18 @@ a.cp_btn:before, a.cp_btn:after {
 	background-color: #33CC99;
 	transition: .3s;
 }
-a.cp_btn:before {
+form.cp_btn:before {
 	left: 7px;
 }
-a.cp_btn:after {
+form.cp_btn:after {
 	right: 7px;
 }
-a.cp_btn:hover:before{
+form.cp_btn:hover:before{
 	top: 0px;
 	left:0;
 	height: 100%;
 }
-a.cp_btn:hover:after{
+form.cp_btn:hover:after{
 	top: 0px;
 	right: 0;
 	height: 100%;
@@ -209,8 +225,10 @@ table {
 
 }
 
+
 .container {
 	text-align: center;
+	font-size:15px;
 	font-family: 'Noto Serif JP', serif;
 
 }
@@ -221,7 +239,8 @@ div.container > h3 {
 
 }
 
-div.carousel-inner > p {
+.quiz {
+	height: 800px;
 	position: absolute;
 	color: white;
 	font-size:50px;
@@ -232,6 +251,23 @@ div.carousel-inner > p {
 	color: #808080;
 }
 
+a.nav-link {
+	color:#33CC99;
+}
+
+
+.kaitou {
+	text-align: center;
+    background-color: #FFFAF0;
+    width:70%;
+	display: block;
+	margin-left: auto;
+    margin-right: auto;
+}
+
+div.kaitou > p {
+	font-size:30px;
+}
 
 
 

@@ -14,78 +14,31 @@
     <link rel="stylesheet" href="/css/style.css">
     <link href="https://fonts.googleapis.com/css?family=Kosugi+Maru&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Noto+Serif+JP&display=swap" rel="stylesheet">
-
-
-
 </head>
 <body>
+    @guest
+    {{-- ログインしていない状態の場合の処理 --}}
+    ゲスト
+    @else
+    {{-- ログインしている場合の処理 --}}
+    ログイン
+    {{Auth::user()->name}}
+    @endguest
     {{-- @guest --}}
         {{-- ログインしていない(ゲスト状態)場合の処理 --}}
     {{-- ゲスト --}}
     {{-- @else --}}
         {{-- ログインしている場合の処理 --}}
+
     {{-- ログイン --}}
     {{-- @endguest --}}
-     {{-- <nav class="navbar navbar-expand-md navbar-light navbar-laravel">
-            <div class="container">
-                <a class="navbar-brand" href="{{ url('/') }}">
-                    {{ config('app.name', 'Laravel') }}
-                </a>
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="{{ __('Toggle navigation') }}">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-
-                <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                    <! Left Side Of Navbar >
-                    <ul class="navbar-nav mr-auto">
-
-                    </ul>
-
-                    <! Right Side Of Navbar >
-                    <ul class="navbar-nav ml-auto">
-                        <! Authentication Links >
-                        @guest
-                            <li class="nav-item">
-                                <a class="nav-link" href="{{ route('auth.login') }}">{{ __('Login') }}</a>
-                            </li>
-                            @if (Route::has('register'))
-                                <li class="nav-item">
-                                    <a class="nav-link" href="{{ route('register') }}">{{ __('Register') }}</a>
-                                </li>
-                            @endif
-                        @else
-                            <li class="nav-item">
-                            <a class="nav-link" href="/mypage">My page</a>
-                            </li>
-                            <li class="nav-item dropdown">
-                                <a id="navbarDropdown" class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" v-pre>
-                                    {{ Auth::user()->name }} <span class="caret"></span>
-                                </a>
-
-                                <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
-                                    <a class="dropdown-item" href="{{ route('logout') }}"
-                                       onclick="event.preventDefault();
-                                                     document.getElementById('logout-form').submit();">
-                                        {{ __('Logout') }}
-                                    </a>
-
-                                    <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
-                                        @csrf
-                                    </form>
-                                </div>
-                            </li>
-                        @endguest
-                    </ul>
-                </div>
-            </div>
-        </nav> --}}
-
 
     {{-- @yield('content') --}}
 
     {{-- @endguest
 
     {{ navバーを表示 --}}
+    {{-- @guest --}}
         <nav class="navbar navbar-expand-lg navbar-light bg-light">
         {{-- ロゴ出力 --}}
             <a class="navbar-brand" href="#">Logo</a>
@@ -109,15 +62,14 @@
                         <button type="button" class="btn btn-light"><a class="nav-link" href="{{ route('dictionary') }}">辞書<span class="sr-only">(current)</span></a></button>
 
                     </li><li class="nav-item active">
-                        <button type="button" class="btn btn-light"><a class="nav-link" href="{{ route('auth.signup') }}">ユーザー登録<span class="sr-only">(current)</span></a></button>
+                        <button type="button" class="btn btn-light"><a class="nav-link" href="{{ route('signup') }}">ユーザー登録<span class="sr-only">(current)</span></a></button>
 
                     </li><li class="nav-item active">
-                        <button type="button" class="btn btn-light"><a class="nav-link" href="{{ route('auth.login') }}">ログイン<span class="sr-only">(current)</span></a></button>
+                        <button type="button" class="btn btn-light"><a class="nav-link" href="{{ route('login') }}">ログイン<span class="sr-only">(current)</span></a></button>
 
                     </li>
                 </ul>
             </div>
-        </nav>
 
 	@yield('content')
 

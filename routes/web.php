@@ -10,19 +10,20 @@
 | contains the "web" middleware group. Now create something great!
 |
 */
-
+//get('URLリクエスト','対象コントローラー＠対象メソッド')
 //ホーム画面に遷移
 Route::get('/', 'QuizController@home')->name('home');
 //クイズ画面に遷移
 Route::get('/quizlist/', 'QuizController@choose')->name('quiz.quizlist');
 //地域選択(クイズをはじめる)画面に遷移
-Route::get('/quizlist_start/', 'QuizController@start')->name('quiz.quizlist_start');
+Route::post('/quizlist_start/', 'QuizController@start')->name('quiz.quizlist_start');
 
 //クイズ画面に遷移
-Route::get('/quiz_area/', 'QuizController@quiz')->name('quiz.quiz_area');
+Route::post('/quiz_area/', 'QuizController@quiz')->name('quiz.quiz_area');
 
 // 答え画面に遷移
-Route::get('/answer/', 'QuizController@answer')->name('quiz.answer');
+Route::post('/answer/', 'QuizController@answer')->name('quiz.answer');
+// Route::match(['post'], '/answer/', 'QuizController@answer');
 
 //選択した地域を画面に表示
 // Route::get('/quiz_area/', 'QuizController@showarea')->name('quiz.showarea');
@@ -33,14 +34,14 @@ Route::get('/ranking/', 'QuizController@ranking')->name('ranking');
 Route::get('/dictionary/', 'QuizController@dictionary')->name('dictionary');
 
 //ユーザー登録画面に遷移
-Route::get('/signup/', 'UserController@signup')->name('auth.signup');
+Route::get('/signup/', 'UserController@signup')->name('signup');
 // ユーザー登録チェック画面へ遷移
-Route::post('/signup_check/','UserController@signup_check')->name('auth.signup_check');
+Route::post('/signup_check/','UserController@signup_check')->name('signup_check');
 // ユーザー登録完了画面へ遷移
-Route::post('/signup_thanks/','UserController@signup_thanks')->name('auth.signup_thanks');
+Route::post('/signup_thanks/','UserController@signup_thanks')->name('signup_thanks');
 
 //ログイン画面に遷移
-Route::get('/login/', 'UserController@login')->name('auth.login');
+Route::get('/login/', 'UserController@login')->name('login');
 
 //サンクス画面に遷移
 Route::get('/specialthanks/', 'QuizController@specialthanks')->name('specialthanks');
@@ -48,8 +49,12 @@ Route::get('/specialthanks/', 'QuizController@specialthanks')->name('specialthan
 Route::group(['middleware'=>'auth'], function(){
 //ログインした状態じゃないと入れない画面
 //マイページ画面
-Route::get('/mypage/', 'UserController@mypage')->name('auth.mypage');
+Route::get('/mypage/', 'UserController@mypage')->name('mypage');
+//ログアウトする
+// Route::get('/', 'UserController@logout')->name('home');
+
+
 
 });
 
-// Auth::routes();
+Auth::routes();

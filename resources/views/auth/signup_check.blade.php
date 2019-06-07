@@ -19,14 +19,14 @@ Signup_check
                 <div class="text-md-center">{{ __('ユーザー登録') }}</div>
 
                 <div class="card-body">
-                    <form method="POST" action="{{ route('auth.signup_thanks') }}">
+                    <form method="POST" action="{{ route('signup_thanks') }}">
                         @csrf
 
                         <div class="form-group row">
                             <label for="name" class="col-md-4 col-form-label text-md-right">{{ __('ユーザー名') }}</label>
 
                             <div class="col-md-6">
-                                <input id="name" type="text" class="form-control{{ $errors->has('name') ? ' is-invalid' : '' }}" name="name" value="{{ $_POST['name'] }}" required autofocus>
+                                <p id="name" type="text" class="{{ $errors->has('name') ? ' is-invalid' : '' }}" name="name"  required autofocus>{{ $_POST['name'] }}</p>
 
                                 @if ($errors->has('name'))
                                     <span class="invalid-feedback" role="alert">
@@ -40,7 +40,7 @@ Signup_check
                             <label for="email" class="col-md-4 col-form-label text-md-right">{{ __('メールアドレス') }}</label>
 
                             <div class="col-md-6">
-                                <input id="email" type="email" class="form-control{{ $errors->has('email') ? ' is-invalid' : '' }}" name="email" value="{{ $_POST['email'] }}" required>
+                                <p id="email" type="email" class="{{ $errors->has('email') ? ' is-invalid' : '' }}" name="email" required>{{ $_POST['email'] }}</p>
 
                                 @if ($errors->has('email'))
                                     <span class="invalid-feedback" role="alert">

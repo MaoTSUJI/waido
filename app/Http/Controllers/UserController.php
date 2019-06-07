@@ -38,5 +38,11 @@ public function mypage(){
         return view('auth.mypage');
     }
 
+public function logout(){
+
+        return view('home');
+    }
+
+
 
 }
