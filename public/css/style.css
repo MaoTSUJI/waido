@@ -1,11 +1,5 @@
 body { 
-	padding-top: 56px; 
-}
-
-
-.container {
-	background-color:#FFFAF0;
-	width:100%;
+	padding-top: 80px; 
 }
 
 
@@ -42,7 +36,7 @@ span::after {
 	content:"』";
 }
 
-form.cp_btn {
+form.cp_btn, a.cp_btn {
 	display: inline-block;
 	position: relative;
 	width: 160px;
@@ -54,7 +48,7 @@ form.cp_btn {
 	font-weight: bold;
 	color: #33CC99;
 }
-form.cp_btn:before, form.cp_btn:after {
+form.cp_btn, a.cp_btn:before, form.cp_btn, a.cp_btn:after {
 	content: '';
 	position: absolute;
 	top: -7px;
@@ -63,18 +57,18 @@ form.cp_btn:before, form.cp_btn:after {
 	background-color: #33CC99;
 	transition: .3s;
 }
-form.cp_btn:before {
+form.cp_btn, a.cp_btn:before {
 	left: 7px;
 }
-form.cp_btn:after {
+form.cp_btn, a.cp_btn:after {
 	right: 7px;
 }
-form.cp_btn:hover:before{
+form.cp_btn, a.cp_btn:hover:before{
 	top: 0px;
 	left:0;
 	height: 100%;
 }
-form.cp_btn:hover:after{
+form.cp_btn, a.cp_btn:hover:after{
 	top: 0px;
 	right: 0;
 	height: 100%;
@@ -149,7 +143,7 @@ img.hibiscus2 {
 }
 
 
-form.cp_btn {
+form.cp_btn , a.cp_btn{
 	display: inline-block;
 	position: relative;
 	width: 160px;
@@ -161,7 +155,8 @@ form.cp_btn {
 	font-weight: bold;
 	color: #33CC99;
 }
-form.cp_btn:before, form.cp_btn:after {
+
+form.cp_btn, a.cp_btn:before, form.cp_btn, a.cp_btn:after {
 	content: '';
 	position: absolute;
 	top: -7px;
@@ -170,18 +165,18 @@ form.cp_btn:before, form.cp_btn:after {
 	background-color: #33CC99;
 	transition: .3s;
 }
-form.cp_btn:before {
+form.cp_btn, a.cp_btn:before {
 	left: 7px;
 }
-form.cp_btn:after {
+form.cp_btn, a.cp_btn:after {
 	right: 7px;
 }
-form.cp_btn:hover:before{
+form.cp_btn, a.cp_btn:hover:before{
 	top: 0px;
 	left:0;
 	height: 100%;
 }
-form.cp_btn:hover:after{
+form.cp_btn, a.cp_btn:hover:after{
 	top: 0px;
 	right: 0;
 	height: 100%;
@@ -191,7 +186,7 @@ form.cp_btn:hover:after{
 .ranking {
 	position: relative;
     text-align: center;
-    background-color: #FFFAF0;
+    /*background-color: #FFFAF0;*/
     width:90%;
 	display: block;
 	margin-left: auto;
@@ -220,9 +215,10 @@ table {
 
 .container {
 	text-align: center;
-	font-size:15px;
+	font-size:20px;
 	font-family: 'Noto Serif JP', serif;
-
+	/*background-color:#FFFAF0;*/
+	width:100%;
 }
 
 div.container > h3 {
@@ -250,7 +246,7 @@ a.nav-link {
 
 .kaitou {
 	text-align: center;
-    background-color: #FFFAF0;
+    /*background-color: #FFFAF0;*/
     width:70%;
 	display: block;
 	margin-left: auto;
@@ -260,6 +256,13 @@ a.nav-link {
 div.kaitou > p {
 	font-size:30px;
 }
+
+strong {
+	color: #33CC99;
+	font-size:29px;
+}
+
+
 
 
 

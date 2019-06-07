@@ -6,7 +6,7 @@ Home Page!!
 
 @section('content')
 	{{-- カルーセル --}}
-	<div class="container">
+	<div class="acontainer">
 		{{-- カルーセル --}}
 		<div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
 		  <div class="carousel-inner">
@@ -50,18 +50,26 @@ Home Page!!
 			4択のクイズ形式なので、どなたでも気軽にお楽しみいただけます。<br>
 			また、SNSでシェアすることで多くの人にみゃーくふつに興味を持ってもらうきっかけになればと思っております。 --}}
 			宮古島固有の方言である<br>
-			<strong>『みゃーくふつ』</strong>
+			『<strong>みゃーくふつ</strong>』<br>
 			は現在その姿を消そうとしている。
 			<br>
 			<br>
 			2009年にユネスコが発表した
-			<a href="http://www.unesco.org/culture/languages-atlas/en/atlasmap/language-id-1973.html">消滅危機言語</a>
+			<a href="http://www.unesco.org/culture/languages-atlas/en/atlasmap/language-id-1973.html">消滅危機言語</a>			に指定され<br>
+			世界で話されている方言のうち、現在絶滅の危機に面している<br>
+			言語の一つとして取り上げられた。
 			<br>
-			に指定され、日本国内
-
+			<br>
+			この<strong>わいどー</strong>では<br>
+			美しい自然の残る宮古島
+		
+			<br>
+			<br>
 		</p>
 		<div class=container>
-			<a href="{{ route('quiz.quizlist') }}" class="cp_btn">クイズを始める</a>
+			<a href="{{ route('quiz.quizlist') }}" class="cp_btn">Start</a>
+			<br>
+			<br>
 		</div>
 	</div>
 

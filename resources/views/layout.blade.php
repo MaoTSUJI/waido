@@ -14,6 +14,7 @@
     <link rel="stylesheet" href="/css/style.css">
     <link href="https://fonts.googleapis.com/css?family=Kosugi+Maru&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Noto+Serif+JP&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Acme&display=swap" rel="stylesheet">
 
 
 
@@ -30,26 +31,26 @@
     {{-- navバーを表示 --}}
 <div>
         <nav class="navbar fixed-top navbar-expand-md flex-nowrap navbar-new-top">
-            <a href="/" class="navbar-brand"><img src="./img/logo.png" alt="わいどーロゴ" height="30px" /></a>
+            <a href="/" class="navbar-brand"><img src="./img/logo.png" alt="わいどーロゴ" height="50px" /></a>
             <ul class="nav navbar-nav mr-auto"></ul>
             <ul class="navbar-nav flex-row">
                 <li class="nav-item">
-                    <a class="nav-link px-2" href="{{ route('home') }}">ホーム</a>
+                    <a class="nav-link px-2" href="{{ route('home') }}">Home</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link px-2" href="{{ route('quiz.quizlist') }}">クイズ</a>
+                    <a class="nav-link px-2" href="{{ route('quiz.quizlist') }}">Quiz</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link px-2" href="{{ route('ranking') }}">ランキング</a>
+                    <a class="nav-link px-2" href="{{ route('ranking') }}">Ranking</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link px-2" href="{{ route('dictionary') }}">単語一覧</a>
+                    <a class="nav-link px-2" href="{{ route('dictionary') }}">List</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link px-2" href="{{ route('auth.signup') }}">ユーザー登録</a>
+                    <a class="nav-link px-2" href="{{ route('auth.signup') }}">Register</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link px-2" href="{{ route('login') }}">ログイン</a>
+                    <a class="nav-link px-2" href="{{ route('login') }}">Login</a>
                 </li>
             </ul>
             <button class="navbar-toggler ml-auto" type="button" data-toggle="collapse" data-target="#navbar2">
@@ -60,7 +61,7 @@
 
 	@yield('content')
 
-    <footer class="footer">
+    {{-- <footer class="footer">
         <ul class="footer__link">
             <li class>
                 <a href="" >Language</a>
@@ -75,7 +76,19 @@
         <a href="https://www.facebook.com/sharer/sharer.php?u=http://qiita.com/katsuma"><i class="fab fa-facebook-f"></i></a>
         <a href="http://line.me/R/msg/text/?http://qiita.com/katsuma"><i class="fab fa-line"></i></a>
 
-        <p class="pagetop">©2019 M5</p>
+        <p class="pagetop">©2019 M5</p> --}}
+
+    <div class="bottom section-padding">
+            <div class="acontainer">
+                <div class="row">
+                    <div class="col-md-12 text-center">
+                        <div class="copyright">
+                            <p>© 2019 <span>わいどー</span></a> All rights reserved.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
 
     </footer>
 

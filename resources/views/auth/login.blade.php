@@ -61,7 +61,7 @@ login
                                 <button type="submit" class="btn btn-primary">
                                     {{ __('ログインする') }}
                                 </button>
-
+                                    <br>
                                 @if (Route::has('password.request'))
                                     <a class="btn btn-link" href="{{ route('password.request') }}">
                                         {{ __('パスワードを忘れた方はこちら') }}
