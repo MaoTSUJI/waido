@@ -217,6 +217,7 @@ table {
 
 }
 
+
 .container {
 	text-align: center;
 	font-size:15px;
@@ -230,7 +231,8 @@ div.container > h3 {
 
 }
 
-div.carousel-inner > p {
+.quiz {
+	height: 800px;
 	position: absolute;
 	color: white;
 	font-size:50px;
@@ -258,6 +260,7 @@ a.nav-link {
 div.kaitou > p {
 	font-size:30px;
 }
+
 
 
 

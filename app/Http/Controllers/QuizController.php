@@ -37,17 +37,19 @@ class QuizController extends Controller
 
 
     //クイズスタート画面
-    public function start(){
+    public function start(Request $area){
 
+        // dd($area);
         $areas = Area::all();   //areasテーブルのデータを全件取得
         return view('quizzes.quizlist_start',['areas'=>$areas]);
     }
 
     //問題画面
-    public function quiz(){
+    public function quiz(Request $area){
 
+        // dd($area);
         $num_quiz = 10;
-        $quizzes = Dialect::inRandomOrder()->limit($num_quiz)->get();  //方言データをランダムに並び替えてレコードを5件取得
+        $quizzes = Dialect::inRandomOrder()->limit($num_quiz)->get();  //方言データをランダムに並び替えてレコードを10s件取得
 
         //10問分の問題、答え、選択肢4つを用意
         for($j=0; $j<$num_quiz; $j++){
@@ -98,17 +100,16 @@ class QuizController extends Controller
         return view('quizzes.quiz_area', ['quizzes' => $quizzes, 'answer' =>$answer, 'choices' =>$choices]);
     }
 
-    public function showarea($area){
+    public function showarea(Request $area){
 
-        $areas = Area::all()->where('english', $area)->first();   //areasテーブルのデータを全件取得
+        $areas = Area::all()->where('english', $request)->first();   //areasテーブルのデータを全件取得
         $areas = $areas['area'];
 
         return view('quizzes.quiz_area', ['areas' => $areas ]);
 
     }
 
-    public function answer(){
-
+    public function answer(Request $request){
 
         return view('quizzes.answer');
     }
