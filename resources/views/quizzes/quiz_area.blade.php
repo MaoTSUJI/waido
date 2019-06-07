@@ -24,9 +24,16 @@ QuizList
 				<br>
 
 				<!-- ↑クイズ -->
-				<a class="hint" href="#"><i class="fas fa-lightbulb fa-3x"></i><br><p style="color:black">ヒント</p></a>
+
+				{{-- <a class="hint" href="#">
+					<i class="fas fa-comment-alt fa-3x"></i>
+					<br>
+					<i class="fas fa-lightbulb fa-3x"></i>
+						<br>
+					<p style="color:black">ヒント</p>
+				</a>
 				<br>
-				<br>
+				<br> --}}
 
 				<!-- ↓四択 -->
 					<form action="{{ route('quiz.answer') }}" method="POST" >
@@ -80,7 +87,8 @@ QuizList
 
 					<br>
 
-				<a href="#" class="cp_btn">次の問題</a>
+				<form action="POST" class="cp_btn">次の問題</form>
+
 				<br>
 				<br>
 
