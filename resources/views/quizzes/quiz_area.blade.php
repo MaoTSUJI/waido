@@ -25,12 +25,10 @@ QuizList
 
 				<!-- ↑クイズ -->
 				<a class="hint" href="#"><i class="fas fa-lightbulb fa-3x"></i><br><p style="color:black">ヒント</p></a>
+				<br>
+				<br>
 
-				<br>
-				<br>
 				<!-- ↓四択 -->
-				
-
 					<form action="{{ route('quiz.answer') }}" method="POST" >
 						@csrf
 						{{-- 選択肢を４つ表示 --}}
@@ -43,6 +41,7 @@ QuizList
 						@endfor
 
 						{{-- 選択肢た地域情報を次の画面に返す --}}
+						<input type="hidden" name="quiz" value="{{ $quizzes[$j]['japanese'] }}">
 						<input type="hidden" name="area_jpn" value="{{ $_POST['area_jpn'] }}">
 						<input type="hidden" name="area_id" value="{{ $_POST['area_id'] }}">
 						<input type="hidden" name="area_eng" value="{{ $_POST['area_eng'] }}">
