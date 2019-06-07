@@ -7,6 +7,7 @@ Answer
 @section('content')
 
 <p>解答画面</p>
+
 	<div>
 		<div id="answer" class="kaitou">
 			<img src="./img/answer.png" alt="解答" width="500px">

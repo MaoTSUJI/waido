@@ -43,10 +43,14 @@ span::after {
 }
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 a .cp_btn {
 =======
 form.cp_btn {
 >>>>>>> 5a1dfb51e222418cc18ac527a45e459672912a22
+=======
+form.cp_btn {
+>>>>>>> fb6742d4114fdef223874da553404e4e84b7edf6
 	display: inline-block;
 	position: relative;
 	width: 160px;
@@ -221,19 +225,7 @@ table {
 
 }
 
-<<<<<<< HEAD
-input, button, textarea, select {
-  margin: 0;
-  padding: 0;
-  background: none;
-  border: none;
-  border-radius: 0;
-  outline: none;
-  -webkit-appearance: none;
-  -moz-appearance: none;
-  appearance: none;
-}
-=======
+
 .container {
 	text-align: center;
 	font-size:15px;
@@ -246,8 +238,6 @@ div.container > h3 {
 	padding:10px 5px;
 
 }
-
-<<<<<<< HEAD
 
 .quiz {
 	height: 800px;
@@ -280,7 +270,7 @@ div.kaitou > p {
 }
 
 
->>>>>>> 17fe01ef3a686ad270fd96987a56cdca7f2cb419
+
 
 
 
