@@ -235,7 +235,11 @@ div.container > h3 {
 	color: #808080;
 }
 
+.container{
+	margin-top: 150px;
+  margin-bottom: 200px;
 
+}
 
 
 
