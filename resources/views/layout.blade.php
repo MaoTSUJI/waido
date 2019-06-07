@@ -28,38 +28,35 @@
     {{-- @endguest --}}
 
     {{-- navバーを表示 --}}
-        <nav class="navbar navbar-expand-lg navbar-light bg-light">
-        {{-- ロゴ出力 --}}
-            <a class="navbar-brand" href="#">Logo</a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
+<div>
+        <nav class="navbar fixed-top navbar-expand-md flex-nowrap navbar-new-top">
+            <a href="/" class="navbar-brand"><img src="./img/logo.png" alt="わいどーロゴ" height="30px" /></a>
+            <ul class="nav navbar-nav mr-auto"></ul>
+            <ul class="navbar-nav flex-row">
+                <li class="nav-item">
+                    <a class="nav-link px-2" href="{{ route('home') }}">ホーム</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link px-2" href="{{ route('quiz.quizlist') }}">クイズ</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link px-2" href="{{ route('ranking') }}">ランキング</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link px-2" href="{{ route('dictionary') }}">単語一覧</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link px-2" href="{{ route('auth.signup') }}">ユーザー登録</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link px-2" href="{{ route('login') }}">ログイン</a>
+                </li>
+            </ul>
+            <button class="navbar-toggler ml-auto" type="button" data-toggle="collapse" data-target="#navbar2">
+                <span class="navbar-toggler-icon"></span>
             </button>
-
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav mr-auto">
-                    <li class="nav-item active">
-                        <button type="button" class="btn btn-light"><a class="nav-link" href="{{ route('home') }}">ホーム<span class="sr-only">(current)</span></a></button>
-
-                    </li>
-                    <li class="nav-item active">
-                        <button type="button" class="btn btn-light"><a class="nav-link" href="{{ route('quiz.quizlist') }}">クイズ<span class="sr-only">(current)</span></a></button>
-
-                    </li><li class="nav-item active">
-                        <button type="button" class="btn btn-light"><a class="nav-link" href="{{ route('ranking') }}">ランキング<span class="sr-only">(current)</span></a></button>
-
-                    </li><li class="nav-item active">
-                        <button type="button" class="btn btn-light"><a class="nav-link" href="{{ route('dictionary') }}">辞書<span class="sr-only">(current)</span></a></button>
-
-                    </li><li class="nav-item active">
-                        <button type="button" class="btn btn-light"><a class="nav-link" href="{{ route('auth.signup') }}">ユーザー登録<span class="sr-only">(current)</span></a></button>
-
-                    </li><li class="nav-item active">
-                        <button type="button" class="btn btn-light"><a class="nav-link" href="{{ route('login') }}">ログイン<span class="sr-only">(current)</span></a></button>
-
-                    </li>
-                </ul>
-            </div>
         </nav>
+</div>
 
 	@yield('content')
 

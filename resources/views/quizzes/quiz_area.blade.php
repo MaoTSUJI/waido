@@ -81,6 +81,8 @@ QuizList
 					<br>
 
 				<a href="#" class="cp_btn">次の問題</a>
+
+				<form action="POST" class="cp_btn">次の問題</form>
 				<br>
 				<br>
 
