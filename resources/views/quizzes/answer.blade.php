@@ -6,6 +6,8 @@ Answer
 
 @section('content')
 
+<p>{{ $qnum = intval($_POST['qnum']) + 1 }}</p>
+
 <p>解答画面!</p>
 
 {{-- ここに○か×のイラストを用意 --}}
@@ -43,7 +45,7 @@ Answer
 @endif
 
 
-<p>第1問の正解は...</p>
+<p>第{{ $qnum }}問の正解は...</p>
 <p>{{ $_POST['quiz'] }}</p>
 <p>あなたの選択肢</p>
 <p>{{ $_POST['answer'] }}</p>
@@ -56,6 +58,7 @@ Answer
 	<input type="hidden" name="area_jpn" value="{{ $_POST['area_jpn'] }}">
 	<input type="hidden" name="area_id" value="{{ $_POST['area_id'] }}">
 	<input type="hidden" name="area_eng" value="{{ $_POST['area_eng'] }}">
+	<input type="hidden" name="qnum" value="{{ $qnum }}">
 
 </form>
 

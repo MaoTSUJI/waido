@@ -7,6 +7,11 @@ QuizList
 @section('content')
 
 {{ $qnum = intval($_POST['qnum']) }}
+@if($qnum == 0)
+	<p>0です</p>
+@else
+	<p>0ではありません</p>
+@endif
 
 
 	{{-- {{ session_start() }}
@@ -53,6 +58,7 @@ QuizList
 						<input type="hidden" name="area_eng" value="{{ $_POST['area_eng'] }}">
 
 						<input type="submit" value="解答" class="cp_btn">
+						<input type="hidden" name="qnum" value="{{ $qnum }}">
 					</form>
 
 
