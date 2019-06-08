@@ -65,7 +65,7 @@ Answer
 @else
 	{{-- 問題が10問目の場合、結果画面に遷移 --}}
 	<form action="{{ route('quiz.result') }}" method="POST" class="btn-flat-dashed-filled">
-		<input type="submit" name="answer" value="次の問題">
+		<input type="submit" name="answer" value="結果発表">
 		@csrf
 		<input type="hidden" name="area_jpn" value="{{ $_POST['area_jpn'] }}">
 		<input type="hidden" name="area_id" value="{{ $_POST['area_id'] }}">
