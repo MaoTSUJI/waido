@@ -51,16 +51,32 @@ Answer
 <p>{{ $_POST['answer'] }}</p>
 
 
+@if($qnum < 10 )
+	{{-- 問題が1~9問目までの場合、問題画面に戻る --}}
+	<form action="{{ route('quiz.quiz_area') }}" method="POST" class="btn-flat-dashed-filled">
+		<input type="submit" name="answer" value="次の問題">
+		@csrf
+		<input type="hidden" name="area_jpn" value="{{ $_POST['area_jpn'] }}">
+		<input type="hidden" name="area_id" value="{{ $_POST['area_id'] }}">
+		<input type="hidden" name="area_eng" value="{{ $_POST['area_eng'] }}">
+		<input type="hidden" name="qnum" value="{{ $qnum }}">
+	</form>
 
-<form action="{{ route('quiz.quiz_area') }}" method="POST" class="btn-flat-dashed-filled">
-	<input type="submit" name="answer" value="次の問題">
-	@csrf
-	<input type="hidden" name="area_jpn" value="{{ $_POST['area_jpn'] }}">
-	<input type="hidden" name="area_id" value="{{ $_POST['area_id'] }}">
-	<input type="hidden" name="area_eng" value="{{ $_POST['area_eng'] }}">
-	<input type="hidden" name="qnum" value="{{ $qnum }}">
+@else
+	{{-- 問題が10問目の場合、結果画面に遷移 --}}
+	<form action="{{ route('quiz.result') }}" method="POST" class="btn-flat-dashed-filled">
+		<input type="submit" name="answer" value="次の問題">
+		@csrf
+		<input type="hidden" name="area_jpn" value="{{ $_POST['area_jpn'] }}">
+		<input type="hidden" name="area_id" value="{{ $_POST['area_id'] }}">
+		<input type="hidden" name="area_eng" value="{{ $_POST['area_eng'] }}">
+		<input type="hidden" name="qnum" value="{{ $qnum }}">
+	</form>
 
-</form>
+
+@endif
+
+
 
 
 {{-- 遷移できない問題は後日解決 --}}

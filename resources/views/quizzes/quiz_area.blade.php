@@ -6,16 +6,9 @@ QuizList
 
 @section('content')
 
+{{-- 【質問！】この行を非表示にしたい！ --}}
 {{ $qnum = intval($_POST['qnum']) }}
-@if($qnum == 0)
-	<p>0です</p>
-@else
-	<p>0ではありません</p>
-@endif
 
-
-	{{-- {{ session_start() }}
-	{{ $_SESSION['qnum'] = (string)$qnum }} --}}
 	<div>
 		<div id="quiz_page1" class="quiz">
 		　		<br>
