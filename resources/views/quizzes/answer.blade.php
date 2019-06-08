@@ -6,7 +6,14 @@ Answer
 
 @section('content')
 
-<p>{{ $qnum = intval($_POST['qnum']) + 1 }}</p>
+{{-- ここを非表示にさせたい！ --}}
+<p>{{ $qnum = intval($_POST['qnum'])+1 }}</p>
+@if($_POST['quiz'] == $_POST['answer'])
+	{{ $correct_num = intval($_POST['correct_num'])+1 }}
+@else
+	{{ $correct_num = intval($_POST['correct_num']) }}
+@endif
+
 
 <p>解答画面!</p>
 
@@ -60,6 +67,8 @@ Answer
 		<input type="hidden" name="area_id" value="{{ $_POST['area_id'] }}">
 		<input type="hidden" name="area_eng" value="{{ $_POST['area_eng'] }}">
 		<input type="hidden" name="qnum" value="{{ $qnum }}">
+		<input type="hidden" name="correct_num" value="{{ $correct_num }}">
+
 	</form>
 
 @else
@@ -71,6 +80,7 @@ Answer
 		<input type="hidden" name="area_id" value="{{ $_POST['area_id'] }}">
 		<input type="hidden" name="area_eng" value="{{ $_POST['area_eng'] }}">
 		<input type="hidden" name="qnum" value="{{ $qnum }}">
+		<input type="hidden" name="correct_num" value="{{ $correct_num }}">
 	</form>
 
 

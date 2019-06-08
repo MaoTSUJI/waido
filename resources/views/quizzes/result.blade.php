@@ -6,11 +6,16 @@ QuizList
 
 @section('content')
 {{-- ここに中身をかく --}}
+
+{{-- ここの行を非表示にしたい --}}
+{{ $correct_num = intval($_POST['correct_num']) }}
+
+
 	<div id="main_box" class="result">
 			<br>
 
 		<img class="result" src="./img/result.png" alt="結果発表">
-			<p class="score">正解率<strong>100</strong>%</p>
+			<p class="score">正解率<strong>{{ $correct_num * 10 }}</strong>%</p>
 			<br>
 		<span>あなたは<strong>みゃーくみつ</strong>!</span>
 			<br>
@@ -21,7 +26,7 @@ QuizList
 			<br>
 		{{-- クイズスタート画面に遷移 --}}
 		<div>
-			<form action="{{ route('quiz.quiz_area') }}" method="post" class="">
+			<form action="{{ route('quiz.quizlist_start') }}" method="post" class="">
 					@csrf
 					<button class="cp_btn">もう一度とく</button>
 					<input type="hidden" name="area_jpn" value="{{ $_POST['area_jpn'] }}">
