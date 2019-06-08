@@ -7,6 +7,7 @@ QuizList
 @section('content')
 
 {{-- 【質問！】この行を非表示にしたい！ --}}
+
 {{ $qnum = intval($_POST['qnum']) }}
 {{ $correct_num = intval($_POST['correct_num']) }}
 
@@ -52,6 +53,7 @@ QuizList
 						<input type="hidden" name="area_id" value="{{ $_POST['area_id'] }}">
 						<input type="hidden" name="area_eng" value="{{ $_POST['area_eng'] }}">
 
+						{{-- 【質問！】radioで選択してないと、画面遷移しないようにしたい --}}
 						<input type="submit" value="解答" class="">
 						<input type="hidden" name="qnum" value="{{ $qnum }}">
 						<input type="hidden" name="correct_num" value="{{ $correct_num }}">

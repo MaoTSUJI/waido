@@ -6,10 +6,10 @@ QuizList
 
 @section('content')
 {{-- ここに中身をかく --}}
-
+{{ $titles[0]['title'] }}
+	<br>
 {{-- ここの行を非表示にしたい --}}
 {{ $correct_num = intval($_POST['correct_num']) }}
-
 
 	<div id="main_box" class="result">
 			<br>
@@ -17,7 +17,7 @@ QuizList
 		<img class="result" src="./img/result.png" alt="結果発表">
 			<p class="score">正解率<strong>{{ $correct_num * 10 }}</strong>%</p>
 			<br>
-		<span>あなたは<strong>みゃーくみつ</strong>!</span>
+		<span>あなたは<strong>{{ $titles[$correct_num]['title'] }}</strong>!</span>
 			<br>
 			<br>
 		<img src="./img/youkai_hitotsume.png" alt="妖怪の写真" width="250px">
@@ -40,9 +40,9 @@ QuizList
 		<a href="#" class="cp_btn"><i class="fab fa-twitter"></i> シェア</a>
 			<br>
 			<br>
-		<a class="go_ranking" href="#"><i class="fas fa-trophy"></i> ランキングをみる</a>	
+		<a class="go_ranking" href="{{ route('ranking') }}"><i class="fas fa-trophy"></i> ランキングをみる</a>
 			<br>
-		<a class="town" href="{{ route('quiz.quizlist') }}"><i class="fas fa-map-marker-alt"></i> 地域選択へ戻る</a>	
+		<a class="town" href="{{ route('quiz.quizlist') }}"><i class="fas fa-map-marker-alt"></i> 地域選択へ戻る</a>
 			<br>
 			<br>
 		</div>
