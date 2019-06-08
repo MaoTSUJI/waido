@@ -8,15 +8,37 @@ Answer
 
 <p>解答画面!</p>
 
-
 {{-- ここに○か×のイラストを用意 --}}
 @if($_POST['quiz'] == $_POST['answer'])
 	{{-- 正解したときの画面 --}}
 	<h3>正解！</h3>
+	<div id="answer" class="kaitou">
+			<img src="./img/answer.png" alt="解答" width="500px">
+			<br>
+			<p>正解</p>
+			<img src="./img/quiz_seikai.png" alt="正解">
+
+				<br>
+				<br>
+			<a href="#" class="cp_btn">次の問題</a>
+				<br>
+				<br>
+		</div>
 
 @else()
 	{{-- 不正解のときの画面 --}}
 	<h3>不正解！</h3>
+	<div id="answer" class="kaitou">
+			<img src="./img/answer.png" alt="解答" width="500px">
+			<br>
+			<p>不正解</p>
+			<img src="./img/quiz_hazure.png" alt="正解">
+				<br>
+				<br>
+			<a href="#" class="cp_btn">次の問題</a>
+				<br>
+				<br>
+		</div>
 
 @endif
 

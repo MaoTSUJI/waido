@@ -18,11 +18,12 @@ QuizList_start
 				<input type="hidden" name="area_jpn" value="{{ $_POST['area_jpn'] }}">
 				<input type="hidden" name="area_id" value="{{ $_POST['area_id'] }}">
 				<input type="hidden" name="area_eng" value="{{ $_POST['area_eng'] }}">
+				<input type="hidden" name="qnum" value="0">
 			</form>
 
 
 		</div>
-	</div>
+</div>
 
 
 @endsection
