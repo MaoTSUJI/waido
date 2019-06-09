@@ -112,6 +112,7 @@ class QuizController extends Controller
 
     public function answer(Request $request){
 
+
         return view('quizzes.answer');
     }
 
