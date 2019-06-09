@@ -36,7 +36,7 @@ Answer
 
 @else()
 	{{-- 不正解のときの画面 --}}
-	<h3>不正解！</h3>
+{{-- 	<h3>不正解！</h3> --}}
 	<div id="answer" class="kaitou">
 			<img src="./img/answer.png" alt="解答" width="500px">
 			<br>

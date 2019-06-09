@@ -36,7 +36,7 @@ QuizList
 				<br> --}}
 
 				<!-- ↓四択 -->
-					<form action="{{ route('quiz.answer') }}" method="POST" >
+					<form action="{{ route('quiz.answer') }}" method="POST" class="four">
 						@csrf
 						{{-- 選択肢を４つ表示 --}}
 						@for($i=0; $i<4; $i++)
@@ -54,9 +54,10 @@ QuizList
 						<input type="hidden" name="area_eng" value="{{ $_POST['area_eng'] }}">
 
 						{{-- 【質問！】radioで選択してないと、画面遷移しないようにしたい --}}
-						<input type="submit" value="解答" class="">
+						<input type="submit" value="解答" class="answer">
 						<input type="hidden" name="qnum" value="{{ $qnum }}">
-						<input type="hidden" name="correct_num" value="{{ $correct_num }}">
+						<input type="hidden" name="correct_num" value="{{ $correct_num }}" >
+
 					</form>
 
 
