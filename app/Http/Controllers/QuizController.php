@@ -117,11 +117,17 @@ class QuizController extends Controller
 
 
     //結果表示画面
-    public function result(){
+    public function result(Request $request){
+
+        $correct_num = intval($_POST['correct_num']);
 
         $titles = Title::all();
+        $title = $titles->where('correct_num', $correct_num)->first();
+        $title = $title['title'];
+        // $img_url = $title['img_url'];
+        // dd($img_url);
 
-        return view('quizzes.result',['titles'=>$titles]);
+        return view('quizzes.result',['correct_num'=>$correct_num , 'title'=>$title]);
     }
     //ランキング
     public function ranking(){

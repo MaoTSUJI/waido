@@ -6,10 +6,7 @@ QuizList
 
 @section('content')
 {{-- ここに中身をかく --}}
-{{ $titles[0]['title'] }}
-	<br>
-{{-- ここの行を非表示にしたい --}}
-{{ $correct_num = intval($_POST['correct_num']) }}
+
 
 	<div id="main_box" class="result">
 			<br>
@@ -17,7 +14,9 @@ QuizList
 		<img class="result" src="./img/result.png" alt="結果発表">
 			<p class="score">正解率<strong>{{ $correct_num * 10 }}</strong>%</p>
 			<br>
-		<span>あなたは<strong>{{ $titles[$correct_num]['title'] }}</strong>!</span>
+		<span>あなたは
+			<strong>{{ $title }}</strong>
+			!</span>
 			<br>
 			<br>
 		<img src="./img/youkai_hitotsume.png" alt="妖怪の写真" width="250px">
