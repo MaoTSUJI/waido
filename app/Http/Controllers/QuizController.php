@@ -122,12 +122,11 @@ class QuizController extends Controller
         $correct_num = intval($_POST['correct_num']);
 
         $titles = Title::all();
-        $title = $titles->where('correct_num', $correct_num)->first();
-        $title = $title['title'];
-        // $img_url = $title['img_url'];
-        // dd($img_url);
+        $titles = $titles->where('correct_num', $correct_num)->first();
+        $title = $titles['title'];
+        $img_url = $titles['img_url'];
 
-        return view('quizzes.result',['correct_num'=>$correct_num , 'title'=>$title]);
+        return view('quizzes.result',['correct_num'=>$correct_num , 'title'=>$title, 'img_url'=>$img_url]);
     }
     //ランキング
     public function ranking(){
