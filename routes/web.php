@@ -23,10 +23,10 @@ Route::post('/quiz_area/', 'QuizController@quiz')->name('quiz.quiz_area');
 
 // 答え画面に遷移
 Route::post('/answer/', 'QuizController@answer')->name('quiz.answer');
-// Route::match(['post'], '/answer/', 'QuizController@answer');
 
-//選択した地域を画面に表示
-// Route::get('/quiz_area/', 'QuizController@showarea')->name('quiz.showarea');
+// 結果画面に遷移
+Route::post('/result/', 'QuizController@result')->name('quiz.result');
+
 
 //ランキング画面に遷移
 Route::get('/ranking/', 'QuizController@ranking')->name('ranking');

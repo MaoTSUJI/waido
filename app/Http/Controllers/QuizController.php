@@ -5,9 +5,10 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 
 use Illuminate\Support\Facades\Auth;    //Authクラスを使えるようにする
-use App\Dialect;  //  App/Quizクラスを使用する宣言
-use App\Proverb;  //  App/Proverbクラスを使用する宣言
-use App\Area;   //Areaクラスを使用
+use App\Dialect;
+use App\Proverb;
+use App\Area;
+use App\Title;
 
 
 class QuizController extends Controller
@@ -116,12 +117,20 @@ class QuizController extends Controller
 
 
     //結果表示画面
-    public function result(){
-        return view('quizzes.result');
+    public function result(Request $request){
+
+        $correct_num = intval($_POST['correct_num']);
+
+        $titles = Title::all();
+        $title = $titles->where('correct_num', $correct_num)->first();
+        $title = $title['title'];
+        // $img_url = $title['img_url'];
+        // dd($img_url);
+
+        return view('quizzes.result',['correct_num'=>$correct_num , 'title'=>$title]);
     }
     //ランキング
     public function ranking(){
-
         return view('ranking');
     }
 
