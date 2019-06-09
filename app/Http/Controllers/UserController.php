@@ -14,6 +14,7 @@ public function signup(){
         return view('auth.signup');
     }
 
+
 // ログイン機能
 public function login(){
 
