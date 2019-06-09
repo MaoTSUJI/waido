@@ -13,7 +13,7 @@ signup
                 <div class="card-header text-md-center">{{ __('ユーザー登録') }}</div>
 
                 <div class="card-body">
-                    <form method="POST" action="{{ route('auth.signup') }}">
+                    <form method="POST" action="{{ route('auth.signup_check') }}">
                         @csrf
 
                         <div class="form-group row">
