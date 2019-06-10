@@ -43,7 +43,6 @@ Route::post('/signup_check/','UserController@signup_check')->name('auth.signup_c
 Route::post('/signup_thanks/','UserController@signup_thanks')->name('auth.signup_thanks');
 
 //ログイン画面に遷移
-Route::get('/login/', 'UserController@login')->name('login');
 
 //サンクス画面に遷移
 Route::get('/specialthanks/', 'QuizController@specialthanks')->name('specialthanks');
@@ -56,5 +55,6 @@ Route::get('/mypage/', 'UserController@mypage')->name('mypage');
 });
 
 Auth::routes();
+// Route::get('/login/', 'UserController@login')->name('login');
 
 // Route::get('/home', 'HomeController@index')->name('home');

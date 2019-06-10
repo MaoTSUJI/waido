@@ -29,13 +29,13 @@ public function signup_thanks(){
 // ログイン機能
 public function login(){
 
-        return view('login');
+        return view('auth.login');
     }
 
 // マイページ機能
 public function mypage(){
 
-        return view('mypage');
+        return view('auth.mypage');
     }
 
 // ログアウト機能
