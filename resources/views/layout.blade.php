@@ -47,7 +47,7 @@
                         <a class="nav-link px-2" href="{{ route('dictionary') }}">List</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link px-2" href="{{ route('auth.signup') }}">Register</a>
+                        <a class="nav-link px-2" href="{{ route('register') }}">Register</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link px-2" href="{{ route('login') }}">Login</a>
