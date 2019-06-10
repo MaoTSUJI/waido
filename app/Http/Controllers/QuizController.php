@@ -40,9 +40,18 @@ class QuizController extends Controller
     //クイズスタート画面
     public function start(Request $area){
 
-        // dd($area);
         $areas = Area::all();   //areasテーブルのデータを全件取得
-        return view('quizzes.quizlist_start',['areas'=>$areas]);
+
+        $num_quiz = 10;
+        $dialects = Dialect::inRandomOrder()->limit($num_quiz)->get();
+        $id_array = [];
+        for($i=0; $i<$num_quiz; $i++){
+            $id_array[] = $dialects[$i]['id'];
+        }
+        shuffle($id_array);
+         // dd($id_array);
+
+        return view('quizzes.quizlist_start',['areas'=>$areas, 'id_array'=>$id_array]);
     }
 
     //問題画面

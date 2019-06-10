@@ -6,6 +6,9 @@ QuizList_start
 
 @section('content')
 {{-- ここに中身をかく --}}
+@foreach($id_array as $id)
+	{{ $id }}
+@endforeach
 <div class=contents>
 		<div id="main_box" class="quiz">
 			<img class="ribbon" src="img/quiz_start.png" alt="クイズをスタート！" width="500px">
@@ -20,6 +23,9 @@ QuizList_start
 				<input type="hidden" name="area_eng" value="{{ $_POST['area_eng'] }}">
 				<input type="hidden" name="qnum" value="0">
 				<input type="hidden" name="correct_num" value="0">
+				{{-- @foreach($id_array as $id)
+				<input type="hidden" name="id_array" value="{{ $id_array }}">
+				@endforeach --}}
 			</form>
 
 
