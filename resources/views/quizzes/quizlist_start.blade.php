@@ -6,6 +6,7 @@ QuizList_start
 
 @section('content')
 {{-- ここに中身をかく --}}
+
 <div class=contents>
 		<div id="main_box" class="quiz">
 			<img class="ribbon" src="img/quiz_start.png" alt="クイズをスタート！" width="500px">

@@ -1,5 +1,5 @@
 body { 
-	padding-top: 80px; 
+	padding-top: 70px; 
 }
 
 
@@ -98,7 +98,7 @@ for.go_ranking, .town {
     margin-right: auto;
 }
 
-.btn-flat-dashed-filled {
+/*.btn-flat-dashed-filled {
  
 	display: inline-block;
 	width:600px;
@@ -132,7 +132,7 @@ for.go_ranking, .town {
 .btn-flat-dashed-filled:hover {
 	background: #cbedff;
 	color: #FFF;
-}
+}*/
 
 img.hibiscus{
 	padding:30;
@@ -219,6 +219,7 @@ table {
 	font-family: 'Noto Serif JP', serif;
 	/*background-color:#FFFAF0;*/
 	width:100%;
+	padding-bottom: 40px;
 }
 
 div.container > h3 {
@@ -227,13 +228,20 @@ div.container > h3 {
 
 }
 
+div.container > p {
+	background-color: 
+}
+
 .quiz {
 	height: 800px;
-	position: absolute;
-	color: white;
+/*	position: absolute;
+*/	color: white;
 	font-size:50px;
 	text-align: center;
+	padding-bottom: 0px;
 }
+
+
 
 .navbar {
 	color: #808080;
@@ -259,7 +267,7 @@ div.kaitou > p {
 
 strong {
 	color: #33CC99;
-	font-size:29px;
+	font-size:29px<a href="#" class="cp_btn">次の問題</a>;
 }
 
 h2{
@@ -269,6 +277,4 @@ h2{
 .four {
 	color:black;
 }
-
-
 

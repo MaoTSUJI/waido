@@ -92,6 +92,7 @@
     {{-- ここに各ページのボディを表示 --}}
     @yield('content')
 
+
     {{-- <footer class="footer">
         <ul class="footer__link">
             <li class>

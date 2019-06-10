@@ -27,10 +27,11 @@ a:hover{
 }
 .section-padding {
     padding: 6px;
-   /* width: 100%;
+    width: 100%;
     height: 60px;
-    position: fixed;
-    bottom: 0;*/
+    /*position: fixed;*/
+    bottom: 0;
+    overflow: hidden;
 }
 .bottom {
     background-color: #444444;
