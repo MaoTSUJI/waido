@@ -52,6 +52,9 @@ Route::group(['middleware'=>'auth'], function(){
 //マイページ画面
 Route::get('/mypage/', 'UserController@mypage')->name('mypage');
 
+//マイページ修正画面へ
+Route::post('/verify/', 'UserController@verify')->name('verify');
+
 });
 
 Auth::routes();

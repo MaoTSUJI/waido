@@ -42,6 +42,13 @@ public function mypage(){
 public function logout(){
 
         return view('home');
+
+    }
+
+public function verify(){
+
+        return view('verify');
+
     }
 
 }
