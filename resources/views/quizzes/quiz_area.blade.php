@@ -10,9 +10,6 @@ QuizList
 
 <body>
 
-{{ $_POST['idnum_'.$_POST['qnum']] }}
-
-
 		<div id="quiz_page1" class="quiz">
 		　		<br>
 			<div class="question">

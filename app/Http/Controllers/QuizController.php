@@ -59,6 +59,8 @@ class QuizController extends Controller
         $qnum = intval($request['qnum']);
         //問題表示させる方言id
         $id_num = intval($request['idnum_'.$request['qnum']]);
+        //正当数
+        $correct_num = intval($request['correct_num']);
 
         $num_quiz = 10;
         $quizzes = Dialect::inRandomOrder()->limit($num_quiz)->get();  //方言データをランダムに並び替えてレコードを10s件取得
@@ -109,7 +111,7 @@ class QuizController extends Controller
         // $num = 3;
         // dd($quizzes, $answer, $choices);
 
-        return view('quizzes.quiz_area', ['quizzes' => $quizzes, 'answer' =>$answer, 'choices' =>$choices, 'qnum'=>$qnum, 'id_num'=>$id_num]);
+        return view('quizzes.quiz_area', ['quizzes' => $quizzes, 'answer' =>$answer, 'choices' =>$choices, 'qnum'=>$qnum, 'correct_num'=>$correct_num, 'id_num'=>$id_num]);
     }
 
     public function showarea(Request $area){
@@ -123,8 +125,18 @@ class QuizController extends Controller
 
     public function answer(Request $request){
 
+        $qnum = intval($_POST['qnum']) + 1;
+        $quiz = $request['quiz'];
+        $answer = $request['answer'];
+        $correct_num = intval($request['correct_num']);
 
-        return view('quizzes.answer');
+        if($quiz == $answer){
+            $correct_num++;
+        }else{
+
+        }
+
+        return view('quizzes.answer', ['qnum'=>$qnum, 'quiz'=>$quiz, 'answer' =>$answer, 'correct_num'=>$correct_num ]);
     }
 
 

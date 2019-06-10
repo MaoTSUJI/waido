@@ -7,18 +7,13 @@ Answer
 @section('content')
 
 {{-- ここを非表示にさせたい！ --}}
-<p>{{ $qnum = intval($_POST['qnum'])+1 }}</p>
-@if($_POST['quiz'] == $_POST['answer'])
-	{{ $correct_num = intval($_POST['correct_num'])+1 }}
-@else
-	{{ $correct_num = intval($_POST['correct_num']) }}
-@endif
+
 
 {{-- 
 <p>解答画面!</p> --}}
 
 {{-- ここに○か×のイラストを用意 --}}
-@if($_POST['quiz'] == $_POST['answer'])
+@if($qnum == $answer)
 	{{-- 正解したときの画面 --}}
 	{{-- <h3>正解！</h3> --}}
 	<div id="answer" class="kaitou">
@@ -53,9 +48,9 @@ Answer
 
 
 <p>第{{ $qnum }}問の正解は...</p>
-<p>{{ $_POST['quiz'] }}</p>
+<p>{{ $qnum }}</p>
 <p>あなたの選択肢</p>
-<p>{{ $_POST['answer'] }}</p>
+<p>{{ $answer }}</p>
 
 
 @if($qnum < 10 )
