@@ -1,5 +1,5 @@
 body { 
-	padding-top: 80px; 
+	padding-top: 70px; 
 }
 
 
@@ -219,6 +219,7 @@ table {
 	font-family: 'Noto Serif JP', serif;
 	/*background-color:#FFFAF0;*/
 	width:100%;
+	padding-bottom: 40px;
 }
 
 div.container > h3 {

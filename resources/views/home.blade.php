@@ -19,19 +19,13 @@ Home Page!!
 		    <div class="carousel-item">
 		      <img src="{{ asset('/img/background/beach3.jpg') }}" class="d-block w-100" alt="...">
 		    </div>
+		    <div class="proverb">
+		      <p>{{ $proverb->japanese }}</p>
+			</div>
 		  </div>
-		 {{--  <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
-		    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-		    <span class="sr-only">Previous</span>
-		  </a>
-		  <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
-		    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-		    <span class="sr-only">Next</span>
-		  </a> --}}
 		</div>
 	</div>
 	{{-- カルーセル終わり --}}
-	<p>{{ $proverb->japanese }}</p>
 
 	{{-- サイト説明 --}}
 	<div class="container">
@@ -58,8 +52,14 @@ Home Page!!
 			言語の一つとして取り上げられた。
 			<br>
 			<br>
-			この<strong>わいどー</strong>では<br>
-			美しい自然の残る宮古島
+			この<strong>わいどー</strong>は<br>
+			美しい自然の残る宮古島の文化のひとつである<br>
+			みゃーくふつを楽しみながら学んでもらおうと<br>
+			宮古島のご家族のご協力のもとみゃーくふつを集めたサイトである。<br>
+			<br>
+			<br>
+			
+			
 		
 			<br>
 			<br>
