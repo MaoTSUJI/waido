@@ -11,8 +11,9 @@ QuizList
 {{ $qnum = intval($_POST['qnum']) }}
 {{ $correct_num = intval($_POST['correct_num']) }}
 
+<body>
+	
 
-	<div>
 		<div id="quiz_page1" class="quiz">
 		　		<br>
 			<div class="question">
@@ -89,14 +90,13 @@ QuizList
 
 			</div>
 
-					<br>
-
+				<br>
 				<br>
 				<br>
 
 		</div>
-	</div>
 
 
+</body>
 
 @endsection

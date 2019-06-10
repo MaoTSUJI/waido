@@ -109,4 +109,5 @@ Ranking
 		</div>
 
 	</div>
+</body>
 @endsection
