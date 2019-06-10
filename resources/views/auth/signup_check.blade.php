@@ -68,7 +68,7 @@ Signup_check
 
                         <div class="form-group row mb-0">
                             <div class="col-md-6 offset-md-4">
-                                <button type="back" class="btn btn-primary" value="back" name="action">
+                                <button type="button" class="btn btn-primary" value="back" name="action" onclick="history.back()">
                                     {{ __('戻る') }}
                                 </button>
                             </div>
