@@ -7,12 +7,15 @@ QuizList
 @section('content')
 
 {{-- 【質問！】この行を非表示にしたい！ --}}
-
 {{ $qnum = intval($_POST['qnum']) }}
 {{ $correct_num = intval($_POST['correct_num']) }}
+<<<<<<< HEAD
 
 <body>
 	
+=======
+{{ $_POST['idnum_'.$_POST['qnum']] }}
+>>>>>>> create_controll
 
 		<div id="quiz_page1" class="quiz">
 		　		<br>
