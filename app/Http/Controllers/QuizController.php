@@ -27,8 +27,6 @@ class QuizController extends Controller
         // Aの変数を、Bの変数名に変えてCのViewに送る
   	}
 
-
-
   	//クイズ地域選択画面
     public function choose(){
 
@@ -55,9 +53,13 @@ class QuizController extends Controller
     }
 
     //問題画面
-    public function quiz(Request $area){
+    public function quiz(Request $request){
 
-        // dd($area);
+        //問題番号
+        $qnum = intval($request['qnum']);
+        //問題表示させる方言id
+        $id_num = intval($request['idnum_'.$request['qnum']]);
+
         $num_quiz = 10;
         $quizzes = Dialect::inRandomOrder()->limit($num_quiz)->get();  //方言データをランダムに並び替えてレコードを10s件取得
 
@@ -107,7 +109,7 @@ class QuizController extends Controller
         // $num = 3;
         // dd($quizzes, $answer, $choices);
 
-        return view('quizzes.quiz_area', ['quizzes' => $quizzes, 'answer' =>$answer, 'choices' =>$choices]);
+        return view('quizzes.quiz_area', ['quizzes' => $quizzes, 'answer' =>$answer, 'choices' =>$choices, 'qnum'=>$qnum, 'id_num'=>$id_num]);
     }
 
     public function showarea(Request $area){
