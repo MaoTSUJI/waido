@@ -55,21 +55,24 @@ class QuizController extends Controller
     //問題画面
     public function quiz(Request $request){
 
+        //地域
+        $area = $request['area_eng'];
+
         //問題番号
         $qnum = intval($request['qnum']);
         //問題表示させる方言id
         $id_num = intval($request['idnum_'.$request['qnum']]);
-        dd($id_num);
+        // dd($id_num);
         //正当数
         $correct_num = intval($request['correct_num']);
 
-        $num_quiz = 10;
-        $quizzes = Dialect::inRandomOrder()->limit($num_quiz)->get();  //方言データをランダムに並び替えてレコードを10s件取得
+        $quiz = Dialect::where('id', $id_num)->first();
+        $quiz = $quiz['miyako_' . $area];
+        // $num_quiz = 10;
+        // $quizzes = Dialect::inRandomOrder()->limit($num_quiz)->get();  //方言データをランダムに並び替えてレコードを10s件取得
 
         //10問分の問題、答え、選択肢4つを用意
-        for($j=0; $j<$num_quiz; $j++){
-
-            $answer[$j] = $quizzes[$j]['japanese'];   //正解を選択肢に格納
+                    $answer[$j] = $quizzes[$j]['japanese'];   //正解を選択肢に格納
             $answer_id[$j] = $quizzes[$j]['id'];
 
             //同じカテゴリーを持つデータをランダムに5件取得
@@ -106,11 +109,52 @@ class QuizController extends Controller
                 $choice = $samecategories[$j]->where('id', $choice_id)->first();
                 $choices[$j][] = $choice['japanese'];
             }
+        ///////////////////////////////////////////////////////////////////////
+        // for($j=0; $j<$num_quiz; $j++){
 
-        }
+        //     $answer[$j] = $quizzes[$j]['japanese'];   //正解を選択肢に格納
+        //     $answer_id[$j] = $quizzes[$j]['id'];
+
+        //     //同じカテゴリーを持つデータをランダムに5件取得
+        //     $samecategories[$j] = Dialect::where('category_id',$quizzes[$j]['category_id'])->inRandomOrder()->get();
+
+        //     //問題と同じカテゴリーのidを配列に挿入
+        //     $cnt = count($samecategories[$j]);
+        //     $samecategory_id[$j] = [];
+        //     for($i = 0; $i < $cnt; $i++){
+        //         $samecategory_id[$j][] = $samecategories[$j][$i]['id'];
+        //     }
+
+        //     $choices_id[$j] = [];    //選択肢の方言idを入れる配列を用意　
+        //     $choices_id[$j][] = $answer_id[$j];    //選択肢配列に答えの方言idを格納
+
+        //     // 同カテゴリ数中からランダムな数値を抽出
+        //     while(count($choices_id[$j]) < 4){
+        //         // 同カテゴリ数中からランダムな数値を抽出
+        //         $rand = rand(0, $cnt-1);
+        //         //  問題と同じカテゴリー配列が回答と被らないよう配列を作成
+        //         if(in_array($samecategory_id[$j][$rand], $choices_id[$j])){
+        //                 // 選択肢が被った場合、スルー
+        //         }else{
+        //                 // 選択肢が被らなかった場合、idを挿入
+        //                 $choices_id[$j][] = $samecategory_id[$j][$rand];
+        //         }
+        //     }
+
+        //     shuffle($choices_id[$j]);  //答えが常に最初に来ないように配列をシャッフル
+        //     // dd($answer_id[$j], $choices_id[$j]);
+
+        //     // 選択肢をidから日本語に返して、配列に格納
+        //     foreach($choices_id[$j] as $choice_id) {
+        //         $choice = $samecategories[$j]->where('id', $choice_id)->first();
+        //         $choices[$j][] = $choice['japanese'];
+        //     }
+
+        // }
+        ///////////////////////////////////////////////////////////////////////
 
         // $num = 3;
-        // dd($quizzes, $answer, $choices);
+        dd($quiz, $answer, $choices);
 
         return view('quizzes.quiz_area', ['quizzes' => $quizzes, 'answer' =>$answer, 'choices' =>$choices, 'qnum'=>$qnum, 'correct_num'=>$correct_num, 'id_num'=>$id_num]);
     }
