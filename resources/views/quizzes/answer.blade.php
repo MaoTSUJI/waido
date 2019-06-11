@@ -7,15 +7,15 @@ Answer
 @section('content')
 
 {{-- ここを非表示にさせたい！ --}}
-<p>{{ $qnum }}</p>
-<p>{{ $quiz }}</p>
-<p>{{ $answer }}</p>
+{{ $qnum }}
+<br>
+{{ $correct_num }}
 
 {{-- 
 <p>解答画面!</p> --}}
 
 {{-- ここに○か×のイラストを用意 --}}
-@if($quiz == $answer)
+@if($answer == $choose_answer)
 	{{-- 正解したときの画面 --}}
 	{{-- <h3>正解！</h3> --}}
 	<div id="answer" class="kaitou">
@@ -50,9 +50,10 @@ Answer
 
 
 <p>第{{ $qnum }}問の正解は...</p>
-<p>{{ $quiz }}</p>
+<p>{{ $answer }}</p>
 <p>あなたの選択肢</p>
 <p>{{ $answer }}</p>
+<p>{{ $id_array[1] }}</p>
 
 
 @if($qnum < 10 )
@@ -65,6 +66,9 @@ Answer
 		<input type="hidden" name="area_eng" value="{{ $_POST['area_eng'] }}">
 		<input type="hidden" name="qnum" value="{{ $qnum }}">
 		<input type="hidden" name="correct_num" value="{{ $correct_num }}">
+		@for($i=0; $i<10; $i++)
+			<input type="hidden" name="idnum_{{ (string)$i }}" value="{{ $id_array[$i] }}">
+		@endfor
 
 	</form>
 
@@ -78,6 +82,7 @@ Answer
 		<input type="hidden" name="area_eng" value="{{ $_POST['area_eng'] }}">
 		<input type="hidden" name="qnum" value="{{ $qnum }}">
 		<input type="hidden" name="correct_num" value="{{ $correct_num }}">
+		
 	</form>
 
 
