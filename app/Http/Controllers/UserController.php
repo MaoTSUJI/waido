@@ -41,7 +41,7 @@ public function mypage(){
 // ログアウト機能
 public function logout(){
 
-        return view('home');
+        return view('/');
 
     }
 
