@@ -60,17 +60,17 @@ Signup_check
 
                         <div class="form-group row mb-0">
                             <div class="col-md-6 offset-md-4">
-                                <button type="button" class="btn btn-primary" value="back" name="action" onclick="history.back()" style="display:inline-block;">
+                                <button type="button" class="btn btn-primary" value="back" name="action" onclick="history.back()" >
                                     {{ __('戻る') }}
+                                </button>
+                                <button type="submit" class="btn btn-primary" value="submit" name="action" >
+                                    {{ __('登録する') }}
                                 </button>
                             </div>
                         </div>
 
                         <div class="form-group row mb-0">
                             <div class="col-md-6 offset-md-4">
-                                <button type="submit" class="btn btn-primary" value="submit" name="action" >
-                                    {{ __('登録する') }}
-                                </button>
                             </div>
                         </div>
                     </form>
