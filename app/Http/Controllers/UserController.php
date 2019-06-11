@@ -14,7 +14,7 @@ public function signup(){
         return view('auth.signup');
     }
 
-//サインアップチェック画面へ 
+//サインアップチェック画面へ
 public function signup_check(){
 
         return view('auth.signup_check');
