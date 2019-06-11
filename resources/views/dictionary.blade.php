@@ -27,14 +27,14 @@ QuizList
       {{-- コピー開始 --}}
     <div id="wrapper" style="width: 100%;">
     <div class="left">
-      <div class="top-droppable folder tooltiper tooltiper-up" data-tooltip="0 file" id="folder1"><i class="fa fa-folder" aria-hidden="true"></i><i class="fa fa-check" aria-hidden="true"></i><p>Folder 1</p></div>
-      <div class="top-droppable folder tooltiper tooltiper-up" data-tooltip="0 file" id="folder2"><i class="fa fa-folder" aria-hidden="true"></i><i class="fa fa-check" aria-hidden="true"></i><p>Folder 2</p></div>
-      <div class="top-droppable folder tooltiper tooltiper-up" data-tooltip="0 file" id="folder3"><i class="fa fa-folder" aria-hidden="true"></i><i class="fa fa-check" aria-hidden="true"></i><p>Folder 3</p></div>
-      <div class="top-droppable folder tooltiper tooltiper-up" data-tooltip="0 file" id="folder4"><i class="fa fa-folder" aria-hidden="true"></i><i class="fa fa-check" aria-hidden="true"></i><p>Folder 4</p></div>
-      <div class="top-droppable folder tooltiper tooltiper-up" data-tooltip="0 file" id="folder5"><i class="fa fa-folder" aria-hidden="true"></i><i class="fa fa-check" aria-hidden="true"></i><p>Folder 5</p></div>
+      <div class="top-droppable folder tooltiper tooltiper-up" data-tooltip="0 file" id="folder"><i class="fa fa-check" aria-hidden="true"></i><p class="folder-text">ああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああいいいいいい</p></div>
+      <div class="top-droppable folder tooltiper tooltiper-up" data-tooltip="0 file" id="folder"><i class="fa fa-check" aria-hidden="true"></i><p>Folder 2</p></div>
+      <div class="top-droppable folder tooltiper tooltiper-up" data-tooltip="0 file" id="folder"><i class="fa fa-check" aria-hidden="true"></i><p>Folder 3</p></div>
+      <div class="top-droppable folder tooltiper tooltiper-up" data-tooltip="0 file" id="folder"><i class="fa fa-check" aria-hidden="true"></i><p>Folder 4</p></div>
+      <div class="top-droppable folder tooltiper tooltiper-up" data-tooltip="0 file" id="folder"><i class="fa fa-check" aria-hidden="true"></i><p>Folder 5</p></div>
     </div>
 
-  <div class="top-droppable folder-content easeout2 closed" id="folder1-content">
+ {{--  <div class="top-droppable folder-content easeout2 closed" id="folder1-content">
     <div class="close-folder-content"><i class="fa fa-times" aria-hidden="true"></i></div>
     <h2><i class="fa fa-folder" aria-hidden="true"></i><span>Folder 1</span></h2>
   </div>
@@ -58,7 +58,7 @@ QuizList
     <div class="close-folder-content"><i class="fa fa-times" aria-hidden="true"></i></div>
     <h2><i class="fa fa-folder" aria-hidden="true"></i><span>Folder 5</span></h2>
   </div>
-</div>
+</div> --}}
 
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
