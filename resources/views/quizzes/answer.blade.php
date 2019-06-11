@@ -7,13 +7,15 @@ Answer
 @section('content')
 
 {{-- ここを非表示にさせたい！ --}}
-
+<p>{{ $qnum }}</p>
+<p>{{ $quiz }}</p>
+<p>{{ $answer }}</p>
 
 {{-- 
 <p>解答画面!</p> --}}
 
 {{-- ここに○か×のイラストを用意 --}}
-@if($qnum == $answer)
+@if($quiz == $answer)
 	{{-- 正解したときの画面 --}}
 	{{-- <h3>正解！</h3> --}}
 	<div id="answer" class="kaitou">
@@ -48,7 +50,7 @@ Answer
 
 
 <p>第{{ $qnum }}問の正解は...</p>
-<p>{{ $qnum }}</p>
+<p>{{ $quiz }}</p>
 <p>あなたの選択肢</p>
 <p>{{ $answer }}</p>
 

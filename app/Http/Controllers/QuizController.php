@@ -59,6 +59,7 @@ class QuizController extends Controller
         $qnum = intval($request['qnum']);
         //問題表示させる方言id
         $id_num = intval($request['idnum_'.$request['qnum']]);
+        dd($id_num);
         //正当数
         $correct_num = intval($request['correct_num']);
 

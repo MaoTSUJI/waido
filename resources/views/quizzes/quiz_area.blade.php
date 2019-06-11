@@ -7,6 +7,9 @@ QuizList
 @section('content')
 
 {{-- 【質問！】この行を非表示にしたい！ --}}
+<p>{{ $qnum }}</p>
+<p>{{ $_POST['idnum_1'] }}</p>
+{{-- <p>{{ $answer }}</p> --}}
 
 <body>
 
@@ -16,7 +19,7 @@ QuizList
 				<img class="flower" src="./img/quiz{{ ($qnum)+1 }}.png" alt="第1問" width="500px">
 				{{-- <p>{{ $area($_POST['area_eng']) }}</p> --}}
 
-				<h2><img class="flower" src="./img/flower_hibiscus.png" alt="ハイビスカス" width="40px">{{ $quizzes[$qnum]['miyako_'. $_POST['area_eng']] }}<img class="flower" src="./img/flower_hibiscus.png" alt="ハイビスカス" width="40px"></h2>
+				<h2><img class="flower" src="./img/flower_hibiscus.png" alt="ハイビスカス" width="40px">{{ $quizzes[$id_num]['miyako_'. $_POST['area_eng']] }}<img class="flower" src="./img/flower_hibiscus.png" alt="ハイビスカス" width="40px"></h2>
 				<br>
 				<br>
 
