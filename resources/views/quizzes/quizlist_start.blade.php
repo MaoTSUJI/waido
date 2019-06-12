@@ -21,6 +21,9 @@ QuizList_start
 				<input type="hidden" name="area_eng" value="{{ $_POST['area_eng'] }}">
 				<input type="hidden" name="qnum" value="0">
 				<input type="hidden" name="correct_num" value="0">
+				@for($i=0; $i<count($id_array); $i++)
+					<input type="hidden" name="idnum_{{ (string)$i }}" value="{{ $id_array[$i] }}">
+				@endfor
 			</form>
 
 
