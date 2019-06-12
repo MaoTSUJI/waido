@@ -37,10 +37,9 @@ Signup_check
                 <div class="card-body">
                     <form method="POST" action="{{ route('auth.signup_thanks') }}">
                         @csrf
-
-                                <input type="hidden" value="{{$_POST['name']}}" name="name">
-                                <input type="hidden" value="{{$_POST['email']}}" name="email">
-                                <input type="hidden" value="{{$_POST['password']}}" name="password">
+                          <input type="hidden" value="{{$_POST['name']}}" name="name">
+                          <input type="hidden" value="{{$_POST['email']}}" name="email">
+                          <input type="hidden" value="{{$_POST['password']}}" name="password">
 
                         <div class="form-group row mb-0">
                             <div class="col-md-6 offset-md-4">
