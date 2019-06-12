@@ -7,10 +7,6 @@ QuizList
 @section('content')
 
 {{-- 【質問！】この行を非表示にしたい！ --}}
-<p>{{ $qnum }}</p>
-<p>{{ $_POST['idnum_1'] }}</p>
-<p>{{ $quiz }}</p>
-<p>{{ $answer }}</p>
 
 <body>
 

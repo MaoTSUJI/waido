@@ -47,10 +47,31 @@ label.cp_btn, a.cp_btn:hover:after{
 	height: 100%;
 }
 
-body { 
-	padding-top: 70px; 
+body {
+	padding-top: 70px;
 }
 /*    ここまで追加2019012 9am    */
+/*    ここから追加2019012 10am    */
+.area{
+		text-align: center;
+		padding-bottom: 0px;
+		background-color: #FFFAF0;
+    width:90%;
+		display: block;
+		margin-left: auto;
+    margin-right: auto;
+
+}
+
+.quiz {
+	height: 800px;
+/*	position: absolute;
+*/	color: white;
+	text-align: center;
+	padding-bottom: 0px;
+}
+
+/*    ここまで追加2019012 10am    */
 
 .result {
     text-align: center;
@@ -282,7 +303,7 @@ div.container > p {
 }
 
 .quiz {
-	height: 800px;
+	/*height: 800px;*/
 /*	position: absolute;
 */	color: white;
 	font-size:50px;
@@ -326,4 +347,5 @@ h2{
 .four {
 	color:black;
 }
+
 
