@@ -21,6 +21,14 @@ QuizList
 							<input type="hidden" name="area_eng" value="{{ $area->english }}">
 					@endforeach
 			</form>
+
+			<form method="post" name="form1" action="{{ route('quiz.quizlist_start') }}">
+				@csrf
+			  <input type="hidden" name="area_jpn" value="西部">
+			  <input type="hidden" name="area_id" value="1">
+				<input type="hidden" name="area_eng" value="nishibe">
+			  <a href="javascript:form1.submit()">西部</a>
+			</form>
 		
 			<div class="map">
 				<img class="miyakomap" src=img/miyakojima_.png alt="マップ" usemap="miyako" >
