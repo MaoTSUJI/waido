@@ -8,14 +8,14 @@ QuizList_start
 {{-- ここに中身をかく --}}
 
 <div class=contents>
-		<div id="main_box" class="quiz">
+		<div id="main_box" class="quiz3">
 			<img class="ribbon" src="img/quiz_start.png" alt="クイズをスタート！" width="500px">
 			<br>
-			<p>地域：{{ $_POST['area_jpn'] }}</p>
+			<p>選択地域：{{ $_POST['area_jpn'] }}</p>
 
-			<form action="{{ route('quiz.quiz_area') }}" method="post" class="">
+			<form action="{{ route('quiz.quiz_area') }}" method="post" class="quiz-start">
 				@csrf
-				<button class="cp_btn">スタート</button>
+				<button class="cp_btn1">スタート</button>
 				<input type="hidden" name="area_jpn" value="{{ $_POST['area_jpn'] }}">
 				<input type="hidden" name="area_id" value="{{ $_POST['area_id'] }}">
 				<input type="hidden" name="area_eng" value="{{ $_POST['area_eng'] }}">

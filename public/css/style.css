@@ -106,7 +106,7 @@ span::after {
 	content:"』";
 }
 
-form.cp_btn, a.cp_btn {
+form.cp_btn, a.cp_btn, {
 	display: inline-block;
 	position: relative;
 	width: 160px;
@@ -347,5 +347,56 @@ h2{
 .four {
 	color:black;
 }
+
+.quiz3 {
+	text-align: center;
+	font-family: 'Kosugi Maru', sans-serif;
+	padding-bottom: 20px;
+}
+
+button.cp_btn1 {
+	background-color: transparent;
+    border: none;
+    cursor: pointer;
+    outline: none;
+    padding: 0;
+    display: inline-block;
+	position: relative;
+	width: 160px;
+	padding: 0.8em;
+	text-align: center;
+	border-top: 2px solid #33CC99;
+	border-bottom: 2px solid #33CC99;
+	text-decoration: none;
+	font-weight: bold;
+	color: #33CC99;
+}
+
+button.cp_btn1:before, button.cp_btn1:after {
+	content: '';
+	position: absolute;
+	top: -7px;
+	width: 2px;
+	height: calc(100% + 14px);
+	background-color: #33CC99;
+	transition: .3s;
+}
+button.cp_btn1:before {
+	left: 7px;
+}
+button.cp_btn1:after {
+	right: 7px;
+}
+button.cp_btn1:hover:before{
+	top: 0px;
+	left:0;
+	height: 100%;
+}
+button.cp_btn1:hover:after{
+	top: 0px;
+	right: 0;
+	height: 100%;
+}
+
 
 
