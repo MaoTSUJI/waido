@@ -11,64 +11,42 @@ Signup_check
         <div class="col-md-8">
             <div class="card mt-5 mb-5">
                 <div class="text-md-center">{{ __('ユーザー登録') }}</div>
-
-                <div class="card-body">
-                    <form method="POST" action="{{ route('auth.signup_thanks') }}">
-                        @csrf
-
+                {{-- ただ受けるだけの場所 --}}
+                        {{-- {{$_POST['name']}} --}}
                         <div class="form-group row">
                             <label for="name" class="col-md-4 col-form-label text-md-right">{{ __('ユーザー名') }}</label>
-
                             <div class="col-md-6">
-                                <p id="name" type="text" class="{{ $errors->has('name') ? ' is-invalid' : '' }}" name="name"  required autofocus>{{ $_POST['name'] }}</p>
-
-                                @if ($errors->has('name'))
-                                    <span class="invalid-feedback" role="alert">
-                                        <strong>{{ $errors->first('name') }}</strong>
-                                    </span>
-                                @endif
+                                <p>{{$_POST['name']}} </p>
                             </div>
                         </div>
 
                         <div class="form-group row">
                             <label for="email" class="col-md-4 col-form-label text-md-right">{{ __('メールアドレス') }}</label>
-
                             <div class="col-md-6">
-                                <p id="email" type="email" class="{{ $errors->has('email') ? ' is-invalid' : '' }}" name="email" required>{{ $_POST['email'] }}</p>
-
-                                @if ($errors->has('email'))
-                                    <span class="invalid-feedback" role="alert">
-                                        <strong>{{ $errors->first('email') }}</strong>
-                                    </span>
-                                @endif
+                                <p>{{$_POST['email']}} </p>
                             </div>
                         </div>
 
-                        <div class="form-group row">
+                         <div class="form-group row">
                             <label for="password" class="col-md-4 col-form-label text-md-right">{{ __('パスワード') }}</label>
-
                             <div class="col-md-6">
-                                <input id="password" type="password" class="form-control{{ $errors->has('password') ? ' is-invalid' : '' }}" name="password" value="{{ $_POST['password'] }}" required>
-
-                                @if ($errors->has('password'))
-                                    <span class="invalid-feedback" role="alert">
-                                        <strong>{{ $errors->first('password') }}</strong>
-                                    </span>
-                                @endif
+                                <p type="password">{{$_POST['password']}} </p>
                             </div>
                         </div>
-{{--
-                        <div class="form-group row">
-                            <label for="password-confirm" class="col-md-4 col-form-label text-md-right">{{ __('パスワード （確認用）') }}</label>
 
-                            <div class="col-md-6">
-                                <input id="password-confirm" type="password" class="form-control" name="password_confirmation" required>
-                            </div>
-                        </div> --}}
+                <div class="card-body">
+                    <form method="POST" action="{{ route('auth.signup_thanks') }}">
+                        @csrf
+                          <input type="hidden" value="{{$_POST['name']}}" name="name">
+                          <input type="hidden" value="{{$_POST['email']}}" name="email">
+                          <input type="hidden" value="{{$_POST['password']}}" name="password">
 
                         <div class="form-group row mb-0">
                             <div class="col-md-6 offset-md-4">
-                                <button type="submit" class="btn btn-primary">
+                                <button type="button" class="btn btn-primary" value="back" name="action" onclick="history.back()" >
+                                    {{ __('戻る') }}
+                                </button>
+                                <button type="submit" class="btn btn-primary" value="submit" name="action" >
                                     {{ __('登録する') }}
                                 </button>
                             </div>
