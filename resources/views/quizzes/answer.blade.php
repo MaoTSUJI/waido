@@ -52,7 +52,7 @@ Answer
 <p>第{{ $qnum }}問の正解は...</p>
 <p>{{ $answer }}</p>
 <p>あなたの選択肢</p>
-<p>{{ $answer }}</p>
+<p>{{ $choose_answer	 }}</p>
 <p>{{ $id_array[1] }}</p>
 
 
