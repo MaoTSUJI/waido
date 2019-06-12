@@ -11,17 +11,18 @@ QuizList
 
 		<div>
 			<img class="ribbon" src="img/area_select.png" alt="地域選択" width="500px" >
-			<form action="{{ route('quiz.quizlist_start') }}" method="post" class="">
+
+			<form method="post" name="form1" action="{{ route('quiz.quizlist_start') }}">
+				@foreach($areas as $area)
 					@csrf
-					@foreach($areas as $area)
-							<label for="{{ $area->area }}" class="cp_btn">
-								<input type="submit" name="area_jpn" id="{{ $area->area }}" value="{{ $area->area }}">
-							</label>
-							<input type="hidden" name="area_id" value="{{ $area->id }}">
-							<input type="hidden" name="area_eng" value="{{ $area->english }}">
-					@endforeach
+				  <input type="hidden" name="area_jpn" value="{{ $area->area }}">
+				  <input type="hidden" name="area_id" value="{{ $area->id }}">
+					<input type="hidden" name="area_eng" value="{{ $area->english }}">
+				  <a class="cp_btn" href="javascript:form1.submit()">{{ $area->area }}</a>
+				@endforeach
 			</form>
-		
+
+
 			<div class="map">
 				<img class="miyakomap" src=img/miyakojima_.png alt="マップ" usemap="miyako" >
 				<map name="miyako">
