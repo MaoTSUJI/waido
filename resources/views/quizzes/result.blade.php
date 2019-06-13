@@ -19,6 +19,7 @@ QuizList
 			!</span>
 			<br>
 			<br>
+			<p>{{ $img_url }}</p>
 		<img src="./img/{{ $img_url }}" alt="妖怪の写真" width="250px">
 			<!-- 正解数に応じて妖怪を自動変更させる -->
 			<br>
