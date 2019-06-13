@@ -53,19 +53,19 @@ body {
 /*    ここまで追加2019012 9am    */
 /*    ここから追加2019012 10am    */
 .area{
-	text-align: center;
-	padding-bottom: 0px;
-	background-color: #FFFAF0;
+		text-align: center;
+		padding-bottom: 0px;
+		background-color: #FFFAF0;
     width:90%;
-	display: block;
-	margin-left: auto;
+		display: block;
+		margin-left: auto;
     margin-right: auto;
 
 }
 
 .quiz {
-/*	height: 800px;
-*//*	position: absolute;
+	height: 800px;
+/*	position: absolute;
 */	color: white;
 	text-align: center;
 	padding-bottom: 0px;
@@ -416,41 +416,4 @@ button.cp_btn1:hover:after{
 .ribbon {
 	margin-bottom: 30px;
 }
-
-.proverb {
-	padding-top:40px;
-	position: absolute;
-	color:white;
-	font-family: 'Noto Serif JP', serif;
-	font-size:50px;
-	text-align: center;
-	margin-left: auto;
-	margin-right: auto;
-}
-
-
-/*ログイン系*/
-
-div.container3 {
-	margin-top:230px;
-	margin-bottom: 150px;
-	margin-left:auto;
-	margin-right:auto;
-	text-align: center;
-}
-
-div.container4 {
-	margin-top:200px;
-	margin-bottom: 109px;
-	margin-left:auto;
-	margin-right:auto;
-	text-align: center;
-}
-
-
-
-
-
-
-
 
