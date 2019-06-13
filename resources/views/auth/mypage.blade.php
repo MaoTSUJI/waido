@@ -12,9 +12,12 @@ Mypage
                 <div class="card-header">{{ __('マイページ') }}</div>
 
                 <div class="card-body">
-                    <form method="POST" action="{{ route('verify') }}">
-                        @csrf
-
+                   {{--  <form method="POST" action="{{ route('verify') }}"> --}}
+                        {{-- @csrf --}}
+                    @foreach($users as $user)
+                    <p>{{ $diary['name']}}</p>
+                    <p>{{ $diary['email']}}</p>
+                    {{-- <p>{{ $diary['created_at']}}</p> --}}
                         <div class="form-group row">
                             <label for="name" class="col-md-4 col-form-label text-md-right">{{ __('ユーザー名') }}</label>
 
