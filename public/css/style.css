@@ -289,7 +289,7 @@ table {
 	font-family: 'Noto Serif JP', serif;
 	/*background-color:#FFFAF0;*/
 	width:100%;
-	padding-bottom: 40px;
+	padding-bottom: 10px;
 }
 
 div.container > h3 {
@@ -351,7 +351,11 @@ h2{
 .quiz3 {
 	text-align: center;
 	font-family: 'Kosugi Maru', sans-serif;
-	padding-bottom: 20px;
+	
+}
+
+p.quiz3 {
+	font-size:40px;
 }
 
 button.cp_btn1 {
@@ -370,6 +374,8 @@ button.cp_btn1 {
 	text-decoration: none;
 	font-weight: bold;
 	color: #33CC99;
+	margin-top: 50px;
+	margin-bottom: 60px;
 }
 
 button.cp_btn1:before, button.cp_btn1:after {
@@ -398,5 +404,15 @@ button.cp_btn1:hover:after{
 	height: 100%;
 }
 
+.cute {
+	float: right;
+	margin-right:30px;
+}
+.cute1 {
+	float: left;
+	margin-left:30px;
+}
 
-
+.ribbon {
+	margin-bottom: 30px;
+}

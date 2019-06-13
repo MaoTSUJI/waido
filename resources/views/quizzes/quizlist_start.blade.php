@@ -11,7 +11,7 @@ QuizList_start
 		<div id="main_box" class="quiz3">
 			<img class="ribbon" src="img/quiz_start.png" alt="クイズをスタート！" width="500px">
 			<br>
-			<p>選択地域：{{ $_POST['area_jpn'] }}</p>
+			<p><font size="5">選択地域：{{ $_POST['area_jpn'] }}</font></p>
 
 			<form action="{{ route('quiz.quiz_area') }}" method="post" class="quiz-start">
 				@csrf
