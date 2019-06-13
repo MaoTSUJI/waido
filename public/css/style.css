@@ -1,7 +1,77 @@
-body { 
-	padding-top: 80px; 
+/*    ここから追加20190612 9am    */
+
+button, input[type="submit"]{
+	-webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    padding: 0;
+    border: none;
+    outline: none;
+    background: transparent;
+}
+label.cp_btn , a.cp_btn{
+	display: inline-block;
+	position: relative;
+	width: 160px;
+	padding: 0.8em;
+	text-align: center;
+	border-top: 2px solid #33CC99;
+	border-bottom: 2px solid #33CC99;
+	text-decoration: none;
+	font-weight: bold;
+	color: #33CC99;
 }
 
+label.cp_btn, a.cp_btn:before, label.cp_btn, a.cp_btn:after {
+	content: '';
+	position: relative;
+	top: -7px;
+	height: calc(100% + 14px);
+	background-color: #33CC99;
+	transition: .3s;
+}
+label.cp_btn, a.cp_btn:before {
+	left: 7px;
+}
+label.cp_btn, a.cp_btn:after {
+	right: 7px;
+}
+label.cp_btn, a.cp_btn:hover:before{
+	top: 0px;
+	left:0;
+	height: 100%;
+}
+label.cp_btn, a.cp_btn:hover:after{
+	top: 0px;
+	right: 0;
+	height: 100%;
+}
+
+body {
+	padding-top: 70px;
+}
+/*    ここまで追加2019012 9am    */
+/*    ここから追加2019012 10am    */
+.area{
+		text-align: center;
+		padding-bottom: 0px;
+		background-color: #FFFAF0;
+    width:90%;
+		display: block;
+		margin-left: auto;
+    margin-right: auto;
+
+}
+
+.quiz {
+	height: 800px;
+/*	position: absolute;
+*/	color: white;
+	text-align: center;
+	padding-bottom: 0px;
+}
+
+/*    ここまで追加2019012 10am    */
 
 .result {
     text-align: center;
@@ -36,7 +106,7 @@ span::after {
 	content:"』";
 }
 
-form.cp_btn, a.cp_btn {
+form.cp_btn, a.cp_btn, {
 	display: inline-block;
 	position: relative;
 	width: 160px;
@@ -98,7 +168,7 @@ for.go_ranking, .town {
     margin-right: auto;
 }
 
-.btn-flat-dashed-filled {
+/*.btn-flat-dashed-filled {
  
 	display: inline-block;
 	width:600px;
@@ -132,7 +202,7 @@ for.go_ranking, .town {
 .btn-flat-dashed-filled:hover {
 	background: #cbedff;
 	color: #FFF;
-}
+}*/
 
 img.hibiscus{
 	padding:30;
@@ -219,6 +289,7 @@ table {
 	font-family: 'Noto Serif JP', serif;
 	/*background-color:#FFFAF0;*/
 	width:100%;
+	padding-bottom: 10px;
 }
 
 div.container > h3 {
@@ -227,13 +298,20 @@ div.container > h3 {
 
 }
 
+div.container > p {
+	background-color: 
+}
+
 .quiz {
-	height: 800px;
-	position: absolute;
-	color: white;
+	/*height: 800px;*/
+/*	position: absolute;
+*/	color: white;
 	font-size:50px;
 	text-align: center;
+	padding-bottom: 0px;
 }
+
+
 
 .navbar {
 	color: #808080;
@@ -259,7 +337,7 @@ div.kaitou > p {
 
 strong {
 	color: #33CC99;
-	font-size:29px;
+	font-size:29px<a href="#" class="cp_btn">次の問題</a>;
 }
 
 h2{
@@ -270,10 +348,72 @@ h2{
 	color:black;
 }
 
-.container{
-	margin-top: 150px;
-  margin-bottom: 200px;
-
+.quiz3 {
+	text-align: center;
+	font-family: 'Kosugi Maru', sans-serif;
+	
 }
 
+p.quiz3 {
+	font-size:40px;
+}
 
+button.cp_btn1 {
+	background-color: transparent;
+    border: none;
+    cursor: pointer;
+    outline: none;
+    padding: 0;
+    display: inline-block;
+	position: relative;
+	width: 160px;
+	padding: 0.8em;
+	text-align: center;
+	border-top: 2px solid #33CC99;
+	border-bottom: 2px solid #33CC99;
+	text-decoration: none;
+	font-weight: bold;
+	color: #33CC99;
+	margin-top: 50px;
+	margin-bottom: 60px;
+}
+
+button.cp_btn1:before, button.cp_btn1:after {
+	content: '';
+	position: absolute;
+	top: -7px;
+	width: 2px;
+	height: calc(100% + 14px);
+	background-color: #33CC99;
+	transition: .3s;
+}
+button.cp_btn1:before {
+	left: 7px;
+}
+button.cp_btn1:after {
+	right: 7px;
+}
+button.cp_btn1:hover:before{
+	top: 0px;
+	left:0;
+	height: 100%;
+}
+button.cp_btn1:hover:after{
+	top: 0px;
+	right: 0;
+	height: 100%;
+}
+
+.cute {
+	float: right;
+	margin-right:30px;
+}
+.cute1 {
+	float: left;
+	margin-left:30px;
+}
+
+.ribbon {
+	margin-bottom: 30px;
+}
+S
