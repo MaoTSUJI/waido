@@ -25,9 +25,9 @@ QuizList
 			<br>
 		{{-- クイズスタート画面に遷移 --}}
 		<div>
-			<form action="{{ route('quiz.quizlist_start') }}" method="post" class="">
+			<form action="{{ route('quiz.quizlist_start') }}" method="post" class="" name="form1">
 					@csrf
-					<button class="cp_btn">もう一度とく</button>
+						<a style="font-size:16px;" class="cp_btn" href="javascript:form1.submit()">もう一度とく</a>
 					<input type="hidden" name="area_jpn" value="{{ $_POST['area_jpn'] }}">
 					<input type="hidden" name="area_id" value="{{ $_POST['area_id'] }}">
 					<input type="hidden" name="area_eng" value="{{ $_POST['area_eng'] }}">
