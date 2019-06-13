@@ -26,7 +26,7 @@
 
     @else
         {{-- ログインしている場合の処理 --}}
-        {{ Auth::user()->name }}
+       {{--  {{ Auth::user()->name }} --}}
     @endguest
 
     {{-- navバーを表示 --}}
@@ -67,12 +67,12 @@
                                 </li>
                             @endif --}}
                         @else
-                            <li class="nav-item">
+                            <li class="nav-item" style="list-style: none;">
                             <a class="nav-link" href="/mypage">My page</a>
                             </li>
-                            <li class="nav-item dropdown">
+                            <li class="nav-item dropdown" style="list-style: none;">
                                 <a id="navbarDropdown" class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" v-pre>
-                                    {{ Auth::user()->name }} <span class="caret"></span>
+                                    {{ Auth::user()->name }} {{-- <span class="caret"></span> --}}
                                 </a>
 
                                 <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">

@@ -27,6 +27,21 @@ QuizList_start
 			</form>
 
 
+
+			{{-- <form method="post" name="form1" action="{{ route('quiz.quiz_area') }}">
+					@csrf
+				  <input type="hidden" name="area_jpn" value="{{ $_POST['area_jpn'] }}">
+					<input type="hidden" name="area_id" value="{{ $_POST['area_id'] }}">
+					<input type="hidden" name="area_eng" value="{{ $_POST['area_eng'] }}">
+					<input type="hidden" name="qnum" value="0">
+					<input type="hidden" name="correct_num" value="0">
+					@for($i=0; $i<count($id_array); $i++)
+						<input type="hidden" name="idnum_{{ (string)$i }}" value="{{ $id_array[$i] }}">
+					@endfor
+				  <a class="cp_btn" href="javascript:form1.submit()">スタート</a>
+			</form> --}}
+
+
 		</div>
 </div>
 

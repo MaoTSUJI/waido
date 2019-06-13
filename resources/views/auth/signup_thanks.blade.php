@@ -14,16 +14,27 @@ Signup_thanks
 
 
 {{-- <li class="nav-item active"> --}}
-                        <button type="button" class="btn btn-light"><a class="nav-link" href="{{ route('quiz.quizlist') }}">クイズをはじめる<span class="sr-only">(current)</span></a></button>
-                    {{-- </li> --}}
+                            <div class="form-group row">
+                                    <label for="name" class="col-md-4 col-form-label text-md-right">{{ __('ユーザー名') }}</label>
+                                    <div class="col-md-6">
+                                        <p>{{$_POST['name']}} </p>
+                                    </div>
+                                </div>
 
-                        {{-- <div class="form-group row mb-0"> --}}
-                           {{--  <div class="col-md-6 offset-md-4">
-                                <button type="submit" class="btn btn-primary" href="">
-                                    {{ __('クイズをはじめる') }}
-                                </button>
-                            </div> --}}
-                        {{-- </div> --}}
+                                <div class="form-group row">
+                                    <label for="email" class="col-md-4 col-form-label text-md-right">{{ __('メールアドレス') }}</label>
+                                    <div class="col-md-6">
+                                        <p>{{$_POST['email']}} </p>
+                                    </div>
+                                </div>
+
+                                 <div class="form-group row">
+                                    <label for="password" class="col-md-4 col-form-label text-md-right">{{ __('パスワード') }}</label>
+                                    <div class="col-md-6">
+                                        <p type="password">{{$_POST['password']}} </p>
+                                    </div>
+                                </div>
+                        <button type="button" class="btn btn-light"><a class="nav-link" href="{{ route('quiz.quizlist') }}">クイズをはじめる<span class="sr-only">(current)</span></a></button>
                     </div>
                 </div>
             </div>
