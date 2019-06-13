@@ -27,33 +27,82 @@ QuizList
       {{-- コピー開始 --}}
     <div id="wrapper" style="width: 100%;">
     <div class="left">
-      <div class="top-droppable folder tooltiper tooltiper-up" data-tooltip="0 file" id="folder"><i class="fa fa-check" aria-hidden="true"></i><p class="folder-text">ミディン　</p></div>
-      <div class="top-droppable folder tooltiper tooltiper-up" data-tooltip="0 file" id="folder"><i class="fa fa-check" aria-hidden="true"></i><p class="folder-text1">おおおおおおおおおおおおおおおおおおおおおおおおおおおおおおおおおおおおお</p></div>
-      <div class="top-droppable folder tooltiper tooltiper-up" data-tooltip="0 file" id="folder"><i class="fa fa-check" aria-hidden="true"></i><p class="folder-text2">Folder 3おおおおおおおおおおおおおおおおおおおおおおおおおおおおおおおお</p></div>
-      <div class="top-droppable folder tooltiper tooltiper-up" data-tooltip="0 file" id="folder"><i class="fa fa-check" aria-hidden="true"></i><p class="folder-text3">Folder 4ももおももももももももおおおおおおおおおおおおおおおおおおおおおおおおお</p></div>
-      <div class="top-droppable folder tooltiper tooltiper-up" data-tooltip="0 file" id="folder"><i class="fa fa-check" aria-hidden="true"></i><p class=folder-text4>ううううううううううううううううううううううううううううううううううううううううううううう</p></div>
+
+      <div class="top-droppable folder tooltiper tooltiper-up" data-tooltip="0 file" id="folder">
+        <i class="fa fa-check" aria-hidden="true"></i>
+        <h1>name</h1>
+          <p class="folder-text">
+            higa house<br>
+            幹樹<br>
+            mizuki<br>
+            serina<br>
+            yuko<br>
+            kenei<br>
+        　</p>
+      </div>
+
+
+      <div class="top-droppable folder tooltiper tooltiper-up" data-tooltip="0 file" id="folder">
+        <i class="fa fa-check" aria-hidden="true"></i>
+        <h1>食べ物</h1>
+        <p class="folder-text1">
+          ゴーヤー<br>
+          スパム<br>
+          島唐辛子<br>
+          油味噌<br>
+          ジューシー<br>
+        </p>
+      </div>
+
+      <div class="top-droppable folder tooltiper tooltiper-up" data-tooltip="0 file" id="folder">
+        <i class="fa fa-check" aria-hidden="true"></i>
+        <h1>家族</h1>
+        <p class="folder-text2">
+          mother<br>
+          father<br>
+          sister<br>
+          brother<br>
+          grandfather<br>
+        </p>
+      </div>
+
+      <div class="top-droppable folder tooltiper tooltiper-up" data-tooltip="0 file" id="folder">
+        <i class="fa fa-check" aria-hidden="true"></i>
+        <p class="folder-text3">Folder 4ももおももももももももおおおおおおおおおおおおおおおおおおおおおおおおお</p>
+      </div>
+
+      <div class="top-droppable folder tooltiper tooltiper-up" data-tooltip="0 file" id="folder">
+        <i class="fa fa-check" aria-hidden="true"></i>
+        <p class=folder-text4>ううううううううううううううううううううううううううううううううううううううううううううう</p>
+      </div>
+
+      <div class="top-droppable folder tooltiper tooltiper-up" data-tooltip="0 file" id="folder">
+        <i class="fa fa-check" aria-hidden="true"></i>
+        <p class=folder-text5>ううううううううううううううううううううううううううううううううううううううううううううう</p>
+      </div>
+
     </div>
- 
+
  {{--  <div class="top-droppable folder-content easeout2 closed" id="folder1-content">
     <div class="close-folder-content"><i class="fa fa-times" aria-hidden="true"></i></div>
     <h2><i class="fa fa-folder" aria-hidden="true"></i><span>Folder 1</span></h2>
   </div>
-  
+
   <div class="top-droppable folder-content easeout2 closed" id="folder2-content">
     <div class="close-folder-content"><i class="fa fa-times" aria-hidden="true"></i></div>
     <h2><i class="fa fa-folder" aria-hidden="true"></i><span>Folder 2</span></h2>
   </div>
-  
+
   <div class="top-droppable folder-content easeout2 closed" id="folder3-content">
     <div class="close-folder-content"><i class="fa fa-times" aria-hidden="true"></i></div>
     <h2><i class="fa fa-folder" aria-hidden="true"></i><span>Folder 3</span></h2>
   </div>
-  
+
   <div class="top-droppable folder-content easeout2 closed" id="folder4-content">
     <div class="close-folder-content"><i class="fa fa-times" aria-hidden="true"></i></div>
     <h2><i class="fa fa-folder" aria-hidden="true"></i><span>Folder 4</span></h2>
   </div>
-  
+
   <div class="top-droppable folder-content easeout2 closed" id="folder5-content">
     <div class="close-folder-content"><i class="fa fa-times" aria-hidden="true"></i></div>
     <h2><i class="fa fa-folder" aria-hidden="true"></i><span>Folder 5</span></h2>

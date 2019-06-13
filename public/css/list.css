@@ -65,28 +65,38 @@ h1{font-size:50px;margin-bottom:30px}
 
 .folder-text{
 	height: 180px!important;
-	border: solid 1px black;
+	border: solid 3px blue;
 }
 
 .folder-text1{
   height: 180px!important;
-  border: solid 1px black;
+  border: solid 3px blue;
 }
 
 .folder-text2{
   height: 180px!important;
-  border: solid 1px black;
+  border: solid 3px blue;
 }
 
 .folder-text3{
   height: 180px!important;
-  border: solid 1px black;
+  border: solid 3px blue;
+  margin-top:130px;
 }
 
 .folder-text4{
   height: 180px!important;
-  border: solid 1px black;
+  border: solid 3px blue;
+  margin-top:130px;
+
 }
+
+.folder-text5{
+  height: 180px!important;
+  border: solid 3px blue;
+  margin-top:130px;
+}
+
 /*#folder button{
   color: red;
   background-color: transparent;
@@ -117,7 +127,10 @@ h1{font-size:50px;margin-bottom:30px}
 .tooltiper-up a{
   text-decoration: none;
 }
-
+.top-droppable {
+  margin-left: 50px;
+  margin-right: 50px;
+}
 
 
 .folder{float:left;width:150px;height:150px;background:rgba(0,0,0,0);transition:.2s background-color ease-out;text-align:center}
