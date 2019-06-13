@@ -434,7 +434,9 @@ button.cp_btn1:hover:after{
 	padding-top: 140px;	
 }
 
-
+input[type=radio] {
+	display: none; /* ラジオボタンを非表示にする */
+}
 
 
 
