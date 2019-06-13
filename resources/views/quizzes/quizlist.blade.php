@@ -13,7 +13,7 @@ QuizList
 			<img class="ribbon" src="img/area_select.png" alt="地域選択" width="500px">
 			<br>
 			
-			<br>	
+			<br>
 
 			<div class="map" style="position: relative;">
 				<img class="miyakomap" src=img/miyakojima_.png alt="マップ" usemap="miyako" >
