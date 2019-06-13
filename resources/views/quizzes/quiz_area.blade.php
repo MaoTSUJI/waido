@@ -39,7 +39,7 @@ QuizList
 						@for($i=0; $i<4; $i++)
 							<div></div>
 							<input type="radio" name="choose_answer" value="{{ $choices[$i] }}" id="{{ $choices[$i] }}" class="">
-							<label for="{{ $choices[$i] }}">{{ $choices[$i] }}</label>
+							<label for="{{ $choices[$i] }}" class="choice">{{ $choices[$i] }}</label>
 
 							<br>
 						@endfor
