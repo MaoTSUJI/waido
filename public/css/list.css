@@ -14,7 +14,7 @@ h1{font-size:50px;margin-bottom:30px}
   width: 100%;
   max-width: 1050px;
   margin: 0 100px;
-  padding: 220px 120px;
+  padding: 100px 120px;
 }
 #wrapper h1{
   font-family:'Hiragino Kaku Gothic Pro','ヒラギノ角ゴ Pro W3','メイリオ',Meiryo,'ＭＳ Ｐゴシック',sans-serif;
@@ -27,7 +27,7 @@ h1{font-size:50px;margin-bottom:30px}
 .folder{
 	/*border: solid;*/
   position: absolute;
-  margin-top: 50px;
+  margin-top: -40px;
   margin-bottom: 30px;
   box-sizing: border-box;
   position: relative;
@@ -68,19 +68,38 @@ h1{font-size:50px;margin-bottom:30px}
 	border: solid 1px black;
 }
 
-#folder button{
+.folder-text1{
+  height: 180px!important;
+  border: solid 1px black;
+}
+
+.folder-text2{
+  height: 180px!important;
+  border: solid 1px black;
+}
+
+.folder-text3{
+  height: 180px!important;
+  border: solid 1px black;
+}
+
+.folder-text4{
+  height: 180px!important;
+  border: solid 1px black;
+}
+/*#folder button{
   color: red;
   background-color: transparent;
   border-color: transparent;
-}
+}*/
 
-#folder .new-botton{
+/*#folder .new-botton{
   color: black;
   opacity: none;
-}
-.main div {
+}*/
+/*.main div {
     display: none;
-}
+}*/
 .tooltiper-up p{
   overflow: scroll;
   height: 18em;
