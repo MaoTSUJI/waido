@@ -1,16 +1,11 @@
 @extends('layout')
 
-@section('tittle')
-signup
-@endsection
-
 @section('content')
-{{-- ここに中身をかく --}}
 <div class="container">
     <div class="row justify-content-center">
         <div class="col-md-8">
             <div class="card">
-                <div class="card-header text-md-center">{{ __('ユーザー登録') }}</div>
+                <div class="card-header">{{ __('ユーザー登録') }}</div>
 
                 <div class="card-body">
                     <form method="POST" action="{{ route('auth.signup_check') }}">
@@ -79,5 +74,4 @@ signup
         </div>
     </div>
 </div>
-
 @endsection

@@ -15,17 +15,19 @@
     <link href="https://fonts.googleapis.com/css?family=Kosugi+Maru&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Noto+Serif+JP&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Acme&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Kosugi+Maru&display=swap" rel="stylesheet">
+
 
 
 </head>
 <body>
-    {{-- @guest --}}
+    @guest
         {{-- ログインしていない(ゲスト状態)場合の処理 --}}
 
-    {{-- @else --}}
+    @else
         {{-- ログインしている場合の処理 --}}
-        {{-- {{ Auth::user()->name }} --}}
-    {{-- @endguest --}}
+       {{--  {{ Auth::user()->name }} --}}
+    @endguest
 
     {{-- navバーを表示 --}}
     <div>
@@ -46,7 +48,7 @@
                         <a class="nav-link px-2" href="{{ route('dictionary') }}">List</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link px-2" href="{{ route('auth.signup') }}">Register</a>
+                        <a class="nav-link px-2" href="{{ route('register') }}">Register</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link px-2" href="{{ route('login') }}">Login</a>
@@ -55,11 +57,43 @@
                 <button class="navbar-toggler ml-auto" type="button" data-toggle="collapse" data-target="#navbar2">
                     <span class="navbar-toggler-icon"></span>
                 </button>
+                @guest
+                            {{-- <li class="nav-item">
+                                <a class="nav-link" href="{{ route('login') }}">{{ __('Login') }}</a>
+                            </li>
+                            @if (Route::has('register'))
+                                <li class="nav-item">
+                                    <a class="nav-link" href="{{ route('register') }}">{{ __('Register') }}</a>
+                                </li>
+                            @endif --}}
+                        @else
+                            <li class="nav-item" style="list-style: none;">
+                            <a class="nav-link" href="/mypage">My page</a>
+                            </li>
+                            <li class="nav-item dropdown" style="list-style: none;">
+                                <a id="navbarDropdown" class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" v-pre>
+                                    {{ Auth::user()->name }} {{-- <span class="caret"></span> --}}
+                                </a>
+
+                                <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
+                                    <a class="dropdown-item" href="{{ route('logout') }}"
+                                       onclick="event.preventDefault();
+                                                     document.getElementById('logout-form').submit();">
+                                        {{ __('Logout') }}
+                                    </a>
+
+                                    <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
+                                        @csrf
+                                    </form>
+                                </div>
+                            </li>
+                        @endguest
             </nav>
     </div>
 
     {{-- ここに各ページのボディを表示 --}}
     @yield('content')
+
 
     {{-- <footer class="footer">
         <ul class="footer__link">
@@ -77,7 +111,8 @@
         <a href="http://line.me/R/msg/text/?http://qiita.com/katsuma"><i class="fab fa-line"></i></a>
 
         <p class="pagetop">©2019 M5</p> --}}
-
+    <img src="./img/yanbarukuina.png" alt="ヤンバルクイナ" height="100px" class="cute">
+    <img src="./img/kijimuna-.png" alt="ヤンバルクイナ" height="100px" class="cute1">
     <div class="bottom section-padding">
         <div class="acontainer">
             <div class="row">

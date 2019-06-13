@@ -8,18 +8,15 @@ QuizList
 
 {{-- 【質問！】この行を非表示にしたい！ --}}
 
-{{ $qnum = intval($_POST['qnum']) }}
-{{ $correct_num = intval($_POST['correct_num']) }}
+<body>
 
-
-	<div>
 		<div id="quiz_page1" class="quiz">
 		　		<br>
 			<div class="question">
 				<img class="flower" src="./img/quiz{{ ($qnum)+1 }}.png" alt="第1問" width="500px">
 				{{-- <p>{{ $area($_POST['area_eng']) }}</p> --}}
 
-				<h2><img class="flower" src="./img/flower_hibiscus.png" alt="ハイビスカス" width="40px">{{ $quizzes[$qnum]['miyako_'. $_POST['area_eng']] }}<img class="flower" src="./img/flower_hibiscus.png" alt="ハイビスカス" width="40px"></h2>
+				<h2><img class="flower" src="./img/flower_hibiscus.png" alt="ハイビスカス" width="40px">{{ $quiz }}<img class="flower" src="./img/flower_hibiscus.png" alt="ハイビスカス" width="40px"></h2>
 				<br>
 				<br>
 
@@ -41,22 +38,26 @@ QuizList
 						{{-- 選択肢を４つ表示 --}}
 						@for($i=0; $i<4; $i++)
 							<div></div>
-							<input type="radio" name="answer" value="{{ $choices[$qnum][$i] }}" id="{{ $choices[$qnum][$i] }}" class="">
-							<label for="{{ $choices[$qnum][$i] }}"></label>{{ $choices[$qnum][$i] }}
+							<input type="radio" name="choose_answer" value="{{ $choices[$i] }}" id="{{ $choices[$i] }}" class="">
+							<label for="{{ $choices[$i] }}">{{ $choices[$i] }}</label>
 
 							<br>
 						@endfor
 
 						{{-- 選択肢た地域情報を次の画面に返す --}}
-						<input type="hidden" name="quiz" value="{{ $quizzes[$qnum]['japanese'] }}">
+						<input type="hidden" name="quiz" value="{{ $quiz }}">
+						<input type="hidden" name="answer" value="{{ $answer }}">
 						<input type="hidden" name="area_jpn" value="{{ $_POST['area_jpn'] }}">
 						<input type="hidden" name="area_id" value="{{ $_POST['area_id'] }}">
 						<input type="hidden" name="area_eng" value="{{ $_POST['area_eng'] }}">
 
 						{{-- 【質問！】radioで選択してないと、画面遷移しないようにしたい --}}
-						<input type="submit" value="解答" class="answer">
+						<input type="submit" value="解答" class="">
 						<input type="hidden" name="qnum" value="{{ $qnum }}">
 						<input type="hidden" name="correct_num" value="{{ $correct_num }}" >
+						@for($i=0; $i<10; $i++)
+							<input type="hidden" name="idnum_{{ (string)$i }}" value="{{ $id_array[$i] }}">
+						@endfor
 
 					</form>
 
@@ -89,14 +90,13 @@ QuizList
 
 			</div>
 
-					<br>
-
+				<br>
 				<br>
 				<br>
 
 		</div>
-	</div>
 
 
+</body>
 
 @endsection
