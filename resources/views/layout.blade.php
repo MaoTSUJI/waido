@@ -112,8 +112,8 @@
         <a href="http://line.me/R/msg/text/?http://qiita.com/katsuma"><i class="fab fa-line"></i></a>
 
         <p class="pagetop">©2019 M5</p> --}}
-    <img src="./img/yanbarukuina.png" alt="ヤンバルクイナ" height="100px" class="cute">
-    <img src="./img/kijimuna-.png" alt="ヤンバルクイナ" height="100px" class="cute1">
+    <img src="./img/sisaright.png" alt="シーサー" height="100px" class="cute">
+    <img src="./img/sisaleft.png" alt="シーサー" height="100px" class="cute1">
     <div class="bottom section-padding">
         <div class="acontainer">
             <div class="row">
