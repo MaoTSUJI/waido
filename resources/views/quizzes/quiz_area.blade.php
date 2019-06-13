@@ -44,7 +44,7 @@ QuizList
 							<br>
 						@endfor
 
-							<a class="cp_btn" href="javascript:form1.submit()">解答</a>
+							<a style="font-size:16px;" class="cp_btn" href="javascript:form1.submit()">解答</a>
 
 						{{-- 選択肢た地域情報を次の画面に返す --}}
 						<input type="hidden" name="quiz" value="{{ $quiz }}">
