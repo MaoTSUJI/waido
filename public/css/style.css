@@ -422,16 +422,16 @@ button.cp_btn1:hover:after{
 	text-align: center;
 	font-family: 'Noto Serif JP', serif;
 	width:100%;
-	padding-bottom: 150px;
 	padding-top: 160px;
+	padding-bottom: 150px;
 }
 
 .container2 {
 	text-align: center;
 	font-family: 'Noto Serif JP', serif;
 	width:100%;
-	padding-bottom: 143px;
-	padding-top: 140px;	
+	padding-top: 160px;	
+	padding-bottom: 213px;
 }
 
 

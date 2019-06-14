@@ -6,7 +6,7 @@ login
 
 @section('content')
 {{-- ここに中身をかく --}}
-<div class="container3">
+<div class="container2">
     <div class="row justify-content-center">
         <div class="col-md-8">
             <div class="card">
