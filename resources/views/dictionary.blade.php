@@ -25,82 +25,112 @@ QuizList
   <div>
     <div id="all_ranking" class="ranking container">
       {{-- コピー開始 --}}
-    <div id="wrapper" style="width: 100%;">
-    <div class="left">
+      <div id="wrapper" style="width: 100%;">
+        <div class="left">
 
-      <div class="top-droppable folder tooltiper tooltiper-up" data-tooltip="0 file" id="folder">
-        <i class="fa fa-check" aria-hidden="true"></i>
-        <div class="folder-1">
-        <h1 class="aisatu">挨拶</h1>
-          <p class="folder-text">
-            higa house<br>
-            幹樹<br>
-            mizuki<br>
-            serina<br>
-            yuko<br>
-            kenei<br>
-        　</p>
-      </div>
-      </div>
-
-
-      <div class="top-droppable folder tooltiper tooltiper-up" data-tooltip="0 file" id="folder">
-        <i class="fa fa-check" aria-hidden="true"></i>
-        <div class="folder-2">
-        <h1>食べ物</h1>
-        <p class="folder-text1">
-          ゴーヤー<br>
-          スパム<br>
-          島唐辛子<br>
-          油味噌<br>
-          ジューシー<br>
-        </p>
-      </div>
-      </div>
-
-      <div class="top-droppable folder tooltiper tooltiper-up" data-tooltip="0 file" id="folder">
-        <i class="fa fa-check" aria-hidden="true"></i>
-        <div class="folder-3">
-        <h1>家族</h1>
-        <p class="folder-text2">
-          mother<br>
-          father<br>
-          sister<br>
-          brother<br>
-          grandfather<br>
-        </p>
-      </div>
-      </div>
+          {{-- 1 start --}}
+          <div class="top-droppable folder tooltiper tooltiper-up" data-tooltip="0 file" id="folder">
+            <i class="fa fa-check" aria-hidden="true"></i>
+            <div class="folder-1">
+              <h1 class="aisatu">挨拶</h1>
+              <p class="folder-text">
+                higa house<br>
+                幹樹<br>
+                mizuki<br>
+                serina<br>
+                yuko<br>
+                kenei<br>
+            　</p>
+            </div>
+          </div>
+          {{-- 1 end --}}
 
 
-      <div class="top-droppable folder tooltiper tooltiper-up" data-tooltip="0 file" id="folder">
-        <i class="fa fa-check" aria-hidden="true"></i>
-        <div class="folder-3">
-        <h1>higa</h1>
-        <p class="folder-text2">
-          mother<br>
-          father<br>
-          sister<br>
-          brother<br>
-          grandfather<br>
-        </p>
-      </div>
-      </div>
+          <div class="top-droppable folder tooltiper tooltiper-up" data-tooltip="0 file" id="folder">
+            <i class="fa fa-check" aria-hidden="true"></i>
+            <div class="folder-2">
+              <h1>食べ物</h1>
+              <p class="folder-text1">
+                ゴーヤー<br>
+                スパム<br>
+                島唐辛子<br>
+                油味噌<br>
+                ジューシー<br>
+              </p>
+            </div>
+          </div>
+          {{-- 2 end --}}
+
+          <div class="top-droppable folder tooltiper tooltiper-up" data-tooltip="0 file" id="folder">
+            <i class="fa fa-check" aria-hidden="true"></i>
+            <div class="folder-2">
+              <h1>家族</h1>
+              <p class="folder-text2">
+                mother<br>
+                father<br>
+                sister<br>
+                brother<br>
+                grandfather<br>
+              </p>
+            </div>
+          </div>
+          {{-- 3 end --}}
+
+
+          <div class="top-droppable folder tooltiper tooltiper-up" data-tooltip="0 file" id="folder">
+            <i class="fa fa-check" aria-hidden="true"></i>
+            <div class="folder-2">
+              <h1>higa</h1>
+              <p class="folder-text2">
+                mother<br>
+                father<br>
+                sister<br>
+                brother<br>
+                grandfather<br>
+              </p>
+            </div>
+          </div>
+          {{-- 4 end --}}
+
       {{-- <div class="top-droppable folder tooltiper tooltiper-up" data-tooltip="0 file" id="folder">
         <i class="fa fa-check" aria-hidden="true"></i>
         <h1>motoki</h1>
         <p class="folder-text3">Folder 4ももおももももももももおおおおおおおおおおおおおおおおおおおおおおおおお</p>
       </div>
  --}}
-      <div class="top-droppable folder tooltiper tooltiper-up" data-tooltip="0 file" id="folder">
+          <div class="top-droppable folder tooltiper tooltiper-up" data-tooltip="0 file" id="folder">
+            <i class="fa fa-check" aria-hidden="true"></i>
+            <div class="folder-3">
+              <h1>higa</h1>
+              <p class="folder-text2">
+                mother<br>
+                father<br>
+                sister<br>
+                brother<br>
+                grandfather<br>
+              </p>
+            </div>
+          </div>
+          {{-- 5 end --}}
+      {{-- <div class="top-droppable folder tooltiper tooltiper-up" data-tooltip="0 file" id="folder">
         <i class="fa fa-check" aria-hidden="true"></i>
         <p class=folder-text4>ううううううううううううううううううううううううううううううううううううううううううううう</p>
-      </div>
+      </div> --}}
 
       <div class="top-droppable folder tooltiper tooltiper-up" data-tooltip="0 file" id="folder">
-        <i class="fa fa-check" aria-hidden="true"></i>
-        <p class=folder-text5>ううううううううううううううううううううううううううううううううううううううううううううう</p>
-      </div>
+            <i class="fa fa-check" aria-hidden="true"></i>
+            <div class="folder-3">
+              <h1>higa</h1>
+              <p class="folder-text2">
+                mother<br>
+                father<br>
+                sister<br>
+                brother<br>
+                grandfather<br>
+              </p>
+            </div>
+          </div>
+      {{-- 6 end --}}
 
     </div>
 
