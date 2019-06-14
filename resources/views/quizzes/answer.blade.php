@@ -17,6 +17,11 @@ Answer
 			<img src="./img/quiz_seikai.png" alt="正解">
 
 				<br>
+			<p>第{{ $qnum }}問の正解は...</p>
+			<p>{{ $answer }}</p>
+			<p>あなたの選択肢</p>
+			<p>{{ $choose_answer	 }}</p>
+
 				<br>
 
 			{{--  --}}
@@ -62,6 +67,10 @@ Answer
 			<p>不正解</p>
 			<img src="./img/quiz_hazure.png" alt="正解">
 				<br>
+				<p>第{{ $qnum }}問の正解は...</p>
+			<p>{{ $answer }}</p>
+			<p>あなたの選択肢</p>
+			<p>{{ $choose_answer	 }}</p>
 				<br>
 			@if($qnum < 10 )
 					{{-- 問題が1~9問目までの場合、問題画面に戻る --}}
@@ -97,16 +106,6 @@ Answer
 		</div>
 
 @endif
-
-
-<p>第{{ $qnum }}問の正解は...</p>
-<p>{{ $answer }}</p>
-<p>あなたの選択肢</p>
-<p>{{ $choose_answer	 }}</p>
-<p>{{ $id_array[1] }}</p>
-
-
-
 
 
 @endsection

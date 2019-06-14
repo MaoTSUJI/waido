@@ -39,7 +39,7 @@ QuizList
 						@for($i=0; $i<4; $i++)
 							<div></div>
 							<input type="radio" name="choose_answer" value="{{ $choices[$i] }}" id="{{ $choices[$i] }}" class="">
-							<label for="{{ $choices[$i] }}">{{ $choices[$i] }}</label>
+							<label for="{{ $choices[$i] }}" class="choice">{{ $choices[$i] }}</label>
 
 							<br>
 						@endfor
@@ -72,16 +72,14 @@ QuizList
 			</div>
 			<!-- ハイビスカスを使って問題数を表す -->
 			<div class="hibiscus">
-				<img class="hibiscus1" src="./img/flower_hibiscus.png" alt="問題数" width="40px">
-				<img class="hibiscus2" src="./img/flower_hibiscus.png" alt="問題数" width="40px">
-				<img class="hibiscus2" src="./img/flower_hibiscus.png" alt="問題数" width="40px">
-				<img class="hibiscus2" src="./img/flower_hibiscus.png" alt="問題数" width="40px">
-				<img class="hibiscus2" src="./img/flower_hibiscus.png" alt="問題数" width="40px">
-				<img class="hibiscus2" src="./img/flower_hibiscus.png" alt="問題数" width="40px">
-				<img class="hibiscus2" src="./img/flower_hibiscus.png" alt="問題数" width="40px">
-				<img class="hibiscus2" src="./img/flower_hibiscus.png" alt="問題数" width="40px">
-				<img class="hibiscus2" src="./img/flower_hibiscus.png" alt="問題数" width="40px">
-				<img class="hibiscus2" src="./img/flower_hibiscus.png" alt="問題数" width="40px">
+				@for($j=0; $j<=$qnum; $j++)
+					<img class="hibiscus1" src="./img/flower_hibiscus.png" alt="問題数" width="40px">
+				@endfor
+				
+				@for($k=0; $k<=(10-$qnum); $k++)
+					<img class="hibiscus2" src="./img/flower_hibiscus.png" alt="問題数" width="40px">
+				@endfor
+
 
 			</div>
 
