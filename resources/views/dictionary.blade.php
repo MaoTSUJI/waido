@@ -23,7 +23,7 @@ QuizList
 
 <body>
   <div>
-    <div id="all_ranking" class="ranking container">
+    <div id="all_ranking" class="ranking_container">
       {{-- コピー開始 --}}
     <div id="wrapper" style="width: 100%;">
     <div class="left">
