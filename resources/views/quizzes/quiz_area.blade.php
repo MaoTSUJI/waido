@@ -16,11 +16,11 @@ QuizList
 				<img class="flower" src="./img/quiz{{ ($qnum)+1 }}.png" alt="第1問" width="500px">
 				{{-- <p>{{ $area($_POST['area_eng']) }}</p> --}}
 
-				<h2><img class="flower" src="./img/flower_hibiscus.png" alt="ハイビスカス" width="40px">{{ $quiz }}<img class="flower" src="./img/flower_hibiscus.png" alt="ハイビスカス" width="40px"></h2>
-				<br>
-				<br>
-
-				<!-- ↑クイズ -->
+				<h2 class="quizword">
+					<img class="flower" src="./img/flower_hibiscus.png" alt="ハイビスカス" width="40px">
+					{{ $quiz }}
+					<img class="flower" src="./img/flower_hibiscus.png" alt="ハイビスカス" width="40px">
+				</h2>
 
 				{{-- <a class="hint" href="#">
 					<i class="fas fa-comment-alt fa-3x"></i>
@@ -28,23 +28,20 @@ QuizList
 					<i class="fas fa-lightbulb fa-3x"></i>
 						<br>
 					<p style="color:black">ヒント</p>
-				</a>
-				<br>
-				<br> --}}
+				</a>	--}}
 
 				<!-- ↓四択 -->
-					<form action="{{ route('quiz.answer') }}" method="POST" class="four" name="form1">
+					<form action="{{ route('quiz.answer') }}" method="POST" class="form" name="form1">
 						@csrf
 						{{-- 選択肢を４つ表示 --}}
-						@for($i=0; $i<4; $i++)
-							<div></div>
-							<input type="radio" name="choose_answer" value="{{ $choices[$i] }}" id="{{ $choices[$i] }}" class="">
-							<label for="{{ $choices[$i] }}" class="choice">{{ $choices[$i] }}</label>
+						<div class="four-choices">
+								@for($i=0; $i<4; $i++)
+									<input type="radio" name="choose_answer" value="{{ $choices[$i] }}" id="{{ $choices[$i] }}" class="">
+									<label for="{{ $choices[$i] }}" class="choice">{{ $choices[$i] }}</label>
+								@endfor
+						</div>
 
-							<br>
-						@endfor
-
-							<a style="font-size:16px;" class="cp_btn" href="javascript:form1.submit()">解答</a>
+						<a style="font-size:16px;" class="cp_btn to-answer" href="javascript:form1.submit()">解答</a>
 
 						{{-- 選択肢た地域情報を次の画面に返す --}}
 						<input type="hidden" name="quiz" value="{{ $quiz }}">
@@ -60,32 +57,17 @@ QuizList
 
 					</form>
 
-					<br>
-					<br>
-
-				{{-- @if($_SERVER['REQUEST_METHOD'] === 'POST')
-					@if($_POST['answer'] == "$quizzes[$_POST['qnum']]['miyako_'. $_POST{'name'}]]")
-					<p>正解！</p>
-					@endif
-				@endif --}}
-
 			</div>
+
 			<!-- ハイビスカスを使って問題数を表す -->
 			<div class="hibiscus">
 				@for($j=0; $j<=$qnum; $j++)
 					<img class="hibiscus1" src="./img/flower_hibiscus.png" alt="問題数" width="40px">
 				@endfor
-				
 				@for($k=0; $k<=(10-$qnum); $k++)
 					<img class="hibiscus2" src="./img/flower_hibiscus.png" alt="問題数" width="40px">
 				@endfor
-
-
 			</div>
-
-				<br>
-				<br>
-				<br>
 
 		</div>
 
