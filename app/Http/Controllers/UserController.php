@@ -36,6 +36,10 @@ class UserController extends Controller
 
         $user = new User(); //Userモデルをインスタンス化
 
+        // dd($userinfo["name"], $userinfo->name);
+
+        // $user["name"]=
+
         $user->name = $userinfo->name;  //画面で入力された名前を代入
         $user->email = $userinfo->email;
         $user->password = Hash::make($userinfo->password);
@@ -51,9 +55,47 @@ class UserController extends Controller
         }
 
     // マイページ機能
-    public function mypage(){
+    //#1 
+    //     public function home() {
 
-            return view('auth.mypage');
+    //     $cnt = Proverb::count();    //prooverbsテーブルのレコード数を取得
+        
+    //     $proverb = Proverb::find(rand(1,$cnt));
+    //     // proverbsテーブルのデータのランダムなレコードを取得
+
+    //     // return view('diaries.index', ['diaries' => $diaries]);
+    //     return view('home',['proverb'=> $proverb]);
+    //     //view(C, [B => A]);
+    //     // Aの変数を、Bの変数名に変えてCのViewに送る
+    // }
+
+    //#2
+        // whereメソッドを使ったパターン
+        // $login_user = Auth::user();、user()は組み込み関数？
+        // $diaries = Diary::where('user_id',1)->get();->の意味は
+        // // where('カラム名',値);
+        // SELECT * FROM diaries　WHERE id=1
+        // SELECT * FROM diaries　WHERE user_id=1
+        // dd($login_user->id);
+        // dd($diaries);
+
+        // Modelのリレーションを使ったパターン
+        // $login_user = Auth::user();
+        // $diaries = $login_user->diaries;
+        // dd($diaries);ddの確認
+
+        // return view('diaries.mypage',['diaries'=>$diaries]);
+
+    public function mypage(){
+        $userinfo = Auth::user();
+        // dd($userinfo);
+        $name = $userinfo->name;
+        $email = $userinfo->email;
+        // dd($user);
+
+        return view('auth.mypage',['name'=>$name,'email'=>$email]);
+        //もしくは$name,$emailを消してreturn view('auth.mypage',['userinfo'=>$userinfo]);を使用する
+
         }
 
     // ログアウト機能

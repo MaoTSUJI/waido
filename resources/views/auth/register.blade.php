@@ -1,5 +1,9 @@
 @extends('layout')
 
+@section('tittle')
+Signup
+@endsection
+
 @section('content')
 
 <div class="container1">
