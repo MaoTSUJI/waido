@@ -25,7 +25,6 @@ input[type="radio"]:checked + label {
 .choice{
 	font-size: 30px;	/**/
 	display: block;	/* ブロックレベル要素化する */
-	float: left;	/* 要素の左寄せ・回り込を指定する */
 	margin: 5px;	/* ボックス外側の余白を指定する */
 	width: 600px;	 /*ボックスの横幅を指定する*/
 	/*height: 45px;	 ボックスの高さを指定する */
