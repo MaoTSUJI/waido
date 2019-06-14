@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
+use Illuminate\Support\Facades\Hash;
 use App\User;  //Userのクラスを使えるようにする
 // use App\Http\Requests\CreateUser; //バリデーションのCreateUsaerを使う
 
@@ -37,7 +38,7 @@ class UserController extends Controller
 
         $user->name = $userinfo->name;  //画面で入力された名前を代入
         $user->email = $userinfo->email;
-        $user->password = $userinfo->password;
+        $user->password = Hash::make($userinfo->password);
         $user->save();
 
             return view('auth.signup_thanks');

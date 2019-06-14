@@ -16,9 +16,8 @@ class QuizController extends Controller
   //一覧画面を表示
 	public function home() {
 
-        $cnt = Proverb::count();    //prooverbsテーブルのレコード数を取得
         
-        $proverb = Proverb::find(rand(1,$cnt));
+        $proverb = Proverb::inRandomOrder()->limit(1)->first();
         // proverbsテーブルのデータのランダムなレコードを取得
 
     	// return view('diaries.index', ['diaries' => $diaries]);

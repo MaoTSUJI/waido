@@ -138,7 +138,7 @@ form.cp_btn, a.cp_btn:hover:before{
 	left:0;
 	height: 100%;
 }
-form.cp_btn, a.cp_btn:hover:after{
+form.cp_btn, a.cp_btn:hover:after
 	top: 0px;
 	right: 0;
 	height: 100%;
@@ -224,6 +224,7 @@ form.cp_btn , a.cp_btn{
 	text-decoration: none;
 	font-weight: bold;
 	color: #33CC99;
+	margin: 5px;
 }
 
 form.cp_btn, a.cp_btn:before, form.cp_btn, a.cp_btn:after {
@@ -416,4 +417,19 @@ button.cp_btn1:hover:after{
 .ribbon {
 	margin-bottom: 30px;
 }
-S
+
+.container1 {
+	text-align: center;
+	font-family: 'Noto Serif JP', serif;
+	width:100%;
+	padding-bottom: 150px;
+	padding-top: 160px;
+}
+
+.container2 {
+	text-align: center;
+	font-family: 'Noto Serif JP', serif;
+	width:100%;
+	padding-bottom: 143px;
+	padding-top: 140px;	
+}
