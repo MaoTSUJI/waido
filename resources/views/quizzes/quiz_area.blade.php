@@ -61,10 +61,10 @@ QuizList
 
 			<!-- ハイビスカスを使って問題数を表す -->
 			<div class="hibiscus">
-				@for($j=0; $j<=$qnum; $j++)
+				@for($j=1; $j<=$qnum; $j++)
 					<img class="hibiscus1" src="./img/flower_hibiscus.png" alt="問題数" width="40px">
 				@endfor
-				@for($k=0; $k<=(10-$qnum); $k++)
+				@for($k=1; $k<=(10-$qnum); $k++)
 					<img class="hibiscus2" src="./img/flower_hibiscus.png" alt="問題数" width="40px">
 				@endfor
 			</div>

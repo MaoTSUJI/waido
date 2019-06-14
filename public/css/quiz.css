@@ -3,11 +3,12 @@
 }
 
 .form{
+	text-align: center;
 	margin-left: auto;
 	margin-right: auto;
 }
 
-.fourchoices{
+.four-choices{
 	text-align: center;
 	margin-left: auto;
 	margin-right: auto;
@@ -25,7 +26,7 @@ input[type="radio"]:checked + label {
 .choice{
 	font-size: 30px;	/**/
 	display: block;	/* ブロックレベル要素化する */
-	margin: 5px;	/* ボックス外側の余白を指定する */
+	margin: auto;	/* ボックス外側の余白を指定する */
 	width: 600px;	 /*ボックスの横幅を指定する*/
 	/*height: 45px;	 ボックスの高さを指定する */
 	padding: 10px;	/* ボックス内の余白を指定する */
