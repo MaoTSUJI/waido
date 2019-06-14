@@ -50,7 +50,7 @@ login
                                     <input class="form-check-input" type="checkbox" name="remember" id="remember" {{ old('remember') ? 'checked' : '' }}>
 
                                     <label class="form-check-label" for="remember">
-                                        {{ __('私のこと忘れちゃったの？') }}
+                                        {{ __('パスワードを忘れた方は') }}
                                     </label>
                                 </div>
                             </div>
