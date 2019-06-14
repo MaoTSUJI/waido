@@ -63,9 +63,10 @@ h1{font-size:50px;margin-bottom:30px}
 	height: 180px;
 }
 
-.folder-text{
+.folder-text {
 	height: 180px!important;
 	border: solid 3px blue;
+
 }
 
 .folder-text1{
@@ -97,6 +98,9 @@ h1{font-size:50px;margin-bottom:30px}
   margin-top:130px;
 }
 
+.folder-1{
+  width: -50px!important;
+}
 
 /*#folder button{
   color: red;
