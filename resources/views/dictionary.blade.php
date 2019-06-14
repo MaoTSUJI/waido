@@ -30,7 +30,7 @@ QuizList
 
       <div class="top-droppable folder tooltiper tooltiper-up" data-tooltip="0 file" id="folder">
         <i class="fa fa-check" aria-hidden="true"></i>
-        <h1>name</h1>
+        <h1 class="aisatu">挨拶</h1>
           <p class="folder-text">
             higa house<br>
             幹樹<br>
