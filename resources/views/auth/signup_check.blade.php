@@ -10,7 +10,7 @@ Signup_check
     <div class="row justify-content-center">
         <div class="col-md-8">
             <div class="card mt-5 mb-5">
-                <div class="text-md-center">{{ __('ユーザー登録') }}</div>
+                <div class="card-header">{{ __('ユーザー登録') }}</div></div>
                 {{-- ただ受けるだけの場所 --}}
                         {{-- {{$_POST['name']}} --}}
                         <div class="form-group row">
@@ -43,10 +43,10 @@ Signup_check
 
                         <div class="form-group row mb-0">
                             <div class="col-md-6 offset-md-4">
-                                <button type="button" class="btn btn-primary" value="back" name="action" onclick="history.back()" >
+                                <button type="button" class="cp_btn1" value="back" name="action" onclick="history.back()" >
                                     {{ __('戻る') }}
                                 </button>
-                                <button type="submit" class="btn btn-primary" value="submit" name="action" >
+                                <button type="submit" class="cp_btn1" value="submit" name="action" >
                                     {{ __('登録する') }}
                                 </button>
                             </div>
