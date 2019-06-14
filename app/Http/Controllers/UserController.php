@@ -88,10 +88,13 @@ class UserController extends Controller
 
     public function mypage(){
         $userinfo = Auth::user();
-        $user = $userinfo->user;
-        // dd($diaries);
+        // dd($userinfo);
+        $name = $userinfo->name;
+        $email = $userinfo->email;
+        // dd($user);
 
-        return view('auth.mypage',['user'=>$user]);
+        return view('auth.mypage',['name'=>$name,'email'=>$email]);
+        //もしくは$name,$emailを消してreturn view('auth.mypage',['userinfo'=>$userinfo]);を使用する
 
         }
 
