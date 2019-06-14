@@ -1,3 +1,17 @@
+.quizword{
+	margin-bottom: 30px;
+}
+
+.form{
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.fourchoices{
+	text-align: center;
+	margin-left: auto;
+	margin-right: auto;
+}
 
 input[type=radio] {
 	display: none; /* ラジオボタンを非表示にする */
@@ -9,28 +23,21 @@ input[type="radio"]:checked + label {
 }
 
 .choice{
+	font-size: 30px;	/**/
 	display: block;	/* ブロックレベル要素化する */
 	float: left;	/* 要素の左寄せ・回り込を指定する */
 	margin: 5px;	/* ボックス外側の余白を指定する */
-/*	width: 100px;	 ボックスの横幅を指定する 	*/
+	width: 600px;	 /*ボックスの横幅を指定する*/
 	/*height: 45px;	 ボックスの高さを指定する */
-	padding-left: 5px;	/* ボックス内左側の余白を指定する */
-	padding-right: 5px;	/* ボックス内御右側の余白を指定する */
+	padding: 10px;	/* ボックス内の余白を指定する */
+	margin: 10px;	/* ボックス外	の余白を指定する */
 	color: #b20000;	/* フォントの色を指定 */
 	text-align: center;	/* テキストのセンタリングを指定する */
 	line-height: 45px;	/* 行の高さを指定する */
 	cursor: pointer;	/* マウスカーソルの形（リンクカーソル）を指定する */
 	border: 2px solid #006DD9;/* ボックスの境界線を実線で指定する */
 	border-radius: 5px;	/* 角丸を指定する */
-}
 
-
-
-.btn-flat-dashed-filled {
- 
-	display: inline-block;
-	width:600px;
-	padding: 0.5em 1em;
 	text-decoration: none;
 	color: #67c5ff;
 	border: dashed 1px #67c5ff;
@@ -39,32 +46,19 @@ input[type="radio"]:checked + label {
 	transition: .4s;
 }
 
-.btn-flat-dashed-filled:hover {
+.choice:hover {
 	background: #cbedff;
 	color: #FFF;
 }
 
-.btn-flat-dashed-filled {
-	display: inline-block;
-	padding: 1em 1em;
-	text-decoration: none;
-	color: #67c5ff;
-	border: dashed 1px #67c5ff;
-	background: #f2fcff;
-	border-radius: 3px;
-	transition: .4s;
+.to-answer{
+	margin: 10px;
 }
 
-.btn-flat-dashed-filled:hover {
-	background: #cbedff;
-	color: #FFF;
+.hibiscus{
+	margin-top:10px;
+	text-align: center;
 }
-
-
-
-
-
-
 
 
 
