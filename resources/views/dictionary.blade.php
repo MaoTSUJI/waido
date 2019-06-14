@@ -23,7 +23,7 @@ QuizList
 
 <body>
   <div>
-    <div id="all_ranking" class="ranking_container">
+    <div id="all_ranking" class="ranking container">
       {{-- コピー開始 --}}
     <div id="wrapper" style="width: 100%;">
     <div class="left">
@@ -46,6 +46,7 @@ QuizList
 
       <div class="top-droppable folder tooltiper tooltiper-up" data-tooltip="0 file" id="folder">
         <i class="fa fa-check" aria-hidden="true"></i>
+        <div class="folder-2">
         <h1>食べ物</h1>
         <p class="folder-text1">
           ゴーヤー<br>
@@ -55,9 +56,11 @@ QuizList
           ジューシー<br>
         </p>
       </div>
+      </div>
 
       <div class="top-droppable folder tooltiper tooltiper-up" data-tooltip="0 file" id="folder">
         <i class="fa fa-check" aria-hidden="true"></i>
+        <div class="folder-3">
         <h1>家族</h1>
         <p class="folder-text2">
           mother<br>
@@ -67,12 +70,28 @@ QuizList
           grandfather<br>
         </p>
       </div>
+      </div>
+
 
       <div class="top-droppable folder tooltiper tooltiper-up" data-tooltip="0 file" id="folder">
         <i class="fa fa-check" aria-hidden="true"></i>
+        <div class="folder-3">
+        <h1>higa</h1>
+        <p class="folder-text2">
+          mother<br>
+          father<br>
+          sister<br>
+          brother<br>
+          grandfather<br>
+        </p>
+      </div>
+      </div>
+      {{-- <div class="top-droppable folder tooltiper tooltiper-up" data-tooltip="0 file" id="folder">
+        <i class="fa fa-check" aria-hidden="true"></i>
+        <h1>motoki</h1>
         <p class="folder-text3">Folder 4ももおももももももももおおおおおおおおおおおおおおおおおおおおおおおおお</p>
       </div>
-
+ --}}
       <div class="top-droppable folder tooltiper tooltiper-up" data-tooltip="0 file" id="folder">
         <i class="fa fa-check" aria-hidden="true"></i>
         <p class=folder-text4>ううううううううううううううううううううううううううううううううううううううううううううう</p>
