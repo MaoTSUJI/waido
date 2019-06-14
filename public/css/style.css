@@ -138,7 +138,7 @@ form.cp_btn, a.cp_btn:hover:before{
 	left:0;
 	height: 100%;
 }
-form.cp_btn, a.cp_btn:hover:after{
+form.cp_btn, a.cp_btn:hover:after
 	top: 0px;
 	right: 0;
 	height: 100%;
@@ -224,6 +224,7 @@ form.cp_btn , a.cp_btn{
 	text-decoration: none;
 	font-weight: bold;
 	color: #33CC99;
+	margin: 5px;
 }
 
 form.cp_btn, a.cp_btn:before, form.cp_btn, a.cp_btn:after {
@@ -434,6 +435,7 @@ button.cp_btn1:hover:after{
 	padding-bottom: 213px;
 }
 
+
 .container3 {
 	text-align: center;
 	font-family: 'Noto Serif JP', serif;
@@ -461,7 +463,6 @@ button.cp_btn1:hover:after{
 .ranking_container {
 	padding-bottom: 500px;
 }
-
 
 
 
