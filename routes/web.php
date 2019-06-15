@@ -43,7 +43,7 @@ Route::post('/signup_check/','UserController@signup_check')->name('auth.signup_c
 Route::post('/signup_thanks/','UserController@signup_thanks')->name('auth.signup_thanks');
 
 //ログイン画面に遷移
-Route::POST('/login/', 'UserController@login')->name('login');
+Route::post('/login/', 'UserController@login')->name('login');
 
 //サンクス画面に遷移
 Route::get('/specialthanks/', 'QuizController@specialthanks')->name('specialthanks');

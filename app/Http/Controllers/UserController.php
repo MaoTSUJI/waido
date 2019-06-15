@@ -51,8 +51,13 @@ class UserController extends Controller
     // ログイン機能
     public function login(){
 
+        dd('hello');
+
             return view('auth.login');
         }
+
+
+
 
     // マイページ機能
     //#1 
