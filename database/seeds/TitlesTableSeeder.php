@@ -46,7 +46,7 @@ class TitlesTableSeeder extends Seeder
 		        ],
 		        [
 		            'title' => 'ナンヨウハギ',
-		            'img_url'  => 'nayouhagi.png',
+		            'img_url'  => 'nanyouhagi.png',
 		            'correct_num' => '4',
 		        ],
 		        [
