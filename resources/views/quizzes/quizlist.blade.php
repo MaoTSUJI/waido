@@ -18,14 +18,21 @@ QuizList
 
 
 			<div class="map" style="position: relative;">
-				<img class="mb-3 miyakomap" src=img/miyakomap.png alt="マップ" usemap="miyako" width="80%" >
+
+{{-- 				<img class="mb-3 miyakomap" src=img/miyakomap.png alt="マップ" usemap="miyako" width="80%" >
 				<map name="miyako">
 						<area shape="" coords="" href="" alt="" onmouseover="" onfocus="" onmouseout="" onfocus="" >
 						<area shape="" coords="" href="" alt="" onmouseover="" onfocus="" onmouseout="" onfocus="" >
 						<area shape="" coords="" href="" alt="" onmouseover="" onfocus="" onmouseout="" onfocus="" >
-				</map>
+				</map> --}}
 
-				
+				<img class="mb-3 miyakomap" src=img/miyakomap.png alt="マップ" usemap="#ImageMap" width="80%" >
+				<map name="ImageMap">
+					<area shape="rect" coords="210,47,728,420" href="#" alt="" />
+
+					<area shape="rect" coords="129,540,270,667" href="#" alt="" />
+					<area shape="rect" coords="408,420,901,595" href="#" alt="" />
+				</map>
 				
 					@foreach($areas as $area)
 						<div style="position: absolute; top: 30px; left: {{ ($area->id-1)*200+100 }}px;">
