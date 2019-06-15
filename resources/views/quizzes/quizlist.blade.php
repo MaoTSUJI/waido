@@ -18,7 +18,7 @@ QuizList
 
 
 			<div class="map" style="position: relative;">
-				<img class="miyakomap" src=img/miyakomap.png alt="マップ" usemap="miyako" width="80%" >
+				<img class="mb-3 miyakomap" src=img/miyakomap.png alt="マップ" usemap="miyako" width="80%" >
 				<map name="miyako">
 						<area shape="" coords="" href="" alt="" onmouseover="" onfocus="" onmouseout="" onfocus="" >
 						<area shape="" coords="" href="" alt="" onmouseover="" onfocus="" onmouseout="" onfocus="" >
