@@ -26,18 +26,7 @@ QuizList_start
 				@endfor
 			</form>
 
-								@foreach($areas as $area)
-						<div style="position: absolute; top: 30px; left: {{ ($area->id-1)*200+100 }}px;">
-							<form method="post" name="form1" action="{{ route('quiz.quizlist_start') }}" style="display:inline;">
-								@csrf
-							  <input type="hidden" name="area_jpn" value="{{ $area->area }}">
-							  <input type="hidden" name="area_id" value="{{ $area->id }}">
-								<input type="hidden" name="area_eng" value="{{ $area->english }}">
-							  <a class="cp_btn" href="javascript:form1[{{ $area->id -1 }}].submit()">{{ $area->area }}</a>
-								</form>
-						</div>
-					@endforeach
-
+			
 
 			{{-- <form method="post" name="form1" action="{{ route('quiz.quiz_area') }}">
 					@csrf
