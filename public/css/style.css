@@ -460,6 +460,13 @@ button.cp_btn1:hover:after{
 	padding-bottom: 500px;
 }
 
-
+.proverb p {
+	position: absolute;
+	color:white;
+	font-size:50px;
+	font-family: 'Noto Serif JP', serif;
+	padding-top:70px;
+	padding-left:40px;
+}
 
 
