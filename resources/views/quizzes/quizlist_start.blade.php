@@ -26,7 +26,7 @@ QuizList_start
 				@endfor
 			</form>
 
-
+			
 
 			{{-- <form method="post" name="form1" action="{{ route('quiz.quiz_area') }}">
 					@csrf

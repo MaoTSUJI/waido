@@ -29,6 +29,20 @@ QuizList
 					<area shape="poly" coords="504,444,508,452,511,457,515,464,518,473,517,479,516,486,517,493,510,496,504,496,498,499,493,499,493,494,491,490,484,494,482,486,475,480,472,475,472,472,476,467,475,457,472,466,467,473,463,477,461,483,460,488,461,492,467,501,470,511,472,520,475,527,477,534,484,534,489,539,495,547,504,552,513,556,524,562,531,564,539,572,554,578,563,584,580,581,589,579,597,571,615,568,627,558,647,539,660,523,667,506,669,481,669,462,667,459,658,441,645,429,629,424,608,421,590,419,574,418,555,417,530,420,517,424,507,429,500,433,500,437,506,446,511,455,531,450" href="#" alt="" />
 				</map>
 
+								@foreach($areas as $area)
+						<div style="position: absolute; top: 30px; left: {{ ($area->id-1)*200+100 }}px;">
+							<form method="post" name="form1" action="{{ route('quiz.quizlist_start') }}" style="display:inline;">
+								@csrf
+							  <input type="hidden" name="area_jpn" value="{{ $area->area }}">
+							  <input type="hidden" name="area_id" value="{{ $area->id }}">
+								<input type="hidden" name="area_eng" value="{{ $area->english }}">
+							  <a class="cp_btn" href="javascript:form1[{{ $area->id -1 }}].submit()">{{ $area->area }}</a>
+								</form>
+						</div>
+					@endforeach
+
+
+
 			</div>
 		</div>
 	</div>
