@@ -10,7 +10,7 @@ Answer
 @if($answer == $choose_answer)
 	{{-- 正解したときの画面 --}}
 	{{-- <h3>正解！</h3> --}}
-	<div id="answer" class="kaitou">
+	<div id="answer" class="kaitou area">
 			<img src="./img/answer.png" alt="解答" width="500px">
 			<br>
 			<p>正解</p>
@@ -61,7 +61,7 @@ Answer
 @else()
 	{{-- 不正解のときの画面 --}}
 {{-- 	<h3>不正解！</h3> --}}
-	<div id="answer" class="kaitou">
+	<div id="answer" class="kaitou area">
 			<img src="./img/answer.png" alt="解答" width="500px">
 			<br>
 			<p>不正解</p>
