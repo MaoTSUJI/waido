@@ -98,21 +98,21 @@ h1{font-size:50px;margin-bottom:30px}
   margin-top:130px;
 }
 
-.folder-1{
+/*.folder-1{
   position: relative;
   top: 50px;
-}
+}*/
 
 .folder-2{
   position: relative;
-  top: 80px
+  top: 90px
 }
 
-.folder-3{
+/*.folder-3{
   position: relative;
   top: 100px
 
-}
+}*/
 
 /*#folder button{
   color: red;
@@ -149,8 +149,14 @@ h1{font-size:50px;margin-bottom:30px}
   margin-right: 50px;
 }
 
+.rankingcontainer{
+  margin-left: 40px;
+}
 
-.folder{width:200px;height:150px;background:rgba(0,0,0,0);transition:.2s background-color ease-out;text-align:center}
+
+
+
+.folder{width:230px;height:150px;background:rgba(0,0,0,0);transition:.2s background-color ease-out;text-align:center}
 .folder i.fa-folder{height:90px!important;width:100%!important;line-height:100px!important;margin:10px auto!important;font-size:90px!important;transition:.2s all ease-out}
 .folder i.fa-check{color:#fff;background:rgba(0,0,0,.1);border-radius:50%;width:60px;height:60px;text-align:center;line-height:60px;position:absolute;left:0;right:0;top:34px;margin:auto;pointer-events:none;transform:scale(0);opacity:0;font-size:24px}
 .folder.item-dropped i.fa-check{animation:animateValidation 1s linear}

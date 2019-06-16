@@ -34,9 +34,9 @@ QuizList
             <div class="folder-2">
               <h1 class="aisatu">家族</h1>
               <p class="folder-text2">
-                higa house<br>
-                幹樹<br>
-                mizuki<br>
+                家族　ヤーニンジュ　<br>
+                おじい　シュー<br>
+                おばあ　アンナ<br>
                 serina<br>
                 yuko<br>
                 kenei<br>
@@ -117,7 +117,7 @@ QuizList
         <p class=folder-text4>ううううううううううううううううううううううううううううううううううううううううううううう</p>
       </div> --}}
 
-      <div class="top-droppable folder tooltiper tooltiper-up" data-tooltip="0 file" id="folder">
+          <div class="top-droppable folder tooltiper tooltiper-up" data-tooltip="0 file" id="folder">
             <i class="fa fa-check" aria-hidden="true"></i>
             <div class="folder-2">
               <h1>気持ち</h1>
@@ -132,7 +132,7 @@ QuizList
           </div>
       {{-- 6 end --}}
 
-    <div class="top-droppable folder tooltiper tooltiper-up" data-tooltip="0 file" id="folder">
+          <div class="top-droppable folder tooltiper tooltiper-up" data-tooltip="0 file" id="folder">
             <i class="fa fa-check" aria-hidden="true"></i>
             <div class="folder-2">
               <h1>higa</h1>
@@ -147,7 +147,7 @@ QuizList
           </div>
       {{-- 7end --}}
 
-      <div class="top-droppable folder tooltiper tooltiper-up" data-tooltip="0 file" id="folder">
+          <div class="top-droppable folder tooltiper tooltiper-up" data-tooltip="0 file" id="folder">
             <i class="fa fa-check" aria-hidden="true"></i>
             <div class="folder-2">
               <h1>higa</h1>
@@ -162,7 +162,7 @@ QuizList
           </div>
       {{-- 8 end --}}
 
-      <div class="top-droppable folder tooltiper tooltiper-up" data-tooltip="0 file" id="folder">
+          <div class="top-droppable folder tooltiper tooltiper-up" data-tooltip="0 file" id="folder">
             <i class="fa fa-check" aria-hidden="true"></i>
             <div class="folder-2">
               <h1>higa</h1>
