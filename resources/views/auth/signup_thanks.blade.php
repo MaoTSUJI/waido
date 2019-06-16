@@ -31,7 +31,8 @@ Signup_thanks
                                  <div class="form-group row">
                                     <label for="password" class="col-md-4 col-form-label text-md-right">{{ __('パスワード') }}</label>
                                     <div class="col-md-6">
-                                        <p type="password">{{$_POST['password']}} </p>
+                                        <p>・・・・・・・・・・</p>
+                                        {{-- <p type="password">{{$_POST['password']}} </p> --}}
                                     </div>
                                 </div>
                                 <div>

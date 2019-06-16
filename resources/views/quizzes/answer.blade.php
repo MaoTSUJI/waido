@@ -10,7 +10,7 @@ Answer
 @if($answer == $choose_answer)
 	{{-- 正解したときの画面 --}}
 	{{-- <h3>正解！</h3> --}}
-	<div id="answer" class="kaitou">
+	<div id="answer" class="kaitou area">
 			<img src="./img/answer.png" alt="解答" width="500px">
 			<br>
 			<p>正解</p>
@@ -61,7 +61,7 @@ Answer
 @else()
 	{{-- 不正解のときの画面 --}}
 {{-- 	<h3>不正解！</h3> --}}
-	<div id="answer" class="kaitou">
+	<div id="answer" class="kaitou area">
 			<img src="./img/answer.png" alt="解答" width="500px">
 			<br>
 			<p>不正解</p>
@@ -74,7 +74,7 @@ Answer
 				<br>
 			@if($qnum < 10 )
 					{{-- 問題が1~9問目までの場合、問題画面に戻る --}}
-					<form action="{{ route('quiz.quiz_area') }}" method="POST" class="btn-flat-dashed-filled" name="form1">
+					<form action="{{ route('quiz.quiz_area') }}" method="POST" class="" name="form1">
 						<a style="font-size:16px;" class="cp_btn" href="javascript:form1.submit()">次の問題</a>
 						@csrf
 						<input type="hidden" name="area_jpn" value="{{ $_POST['area_jpn'] }}">
@@ -89,7 +89,7 @@ Answer
 
 				@else
 					{{-- 問題が10問目の場合、結果画面に遷移 --}}
-					<form action="{{ route('quiz.result') }}" method="POST" class="btn-flat-dashed-filled" name="form1">
+					<form action="{{ route('quiz.result') }}" method="POST" class="" name="form1">
 						<a style="font-size:16px;" class="cp_btn" href="javascript:form1.submit()">結果発表</a>
 						@csrf
 						<input type="hidden" name="area_jpn" value="{{ $_POST['area_jpn'] }}">
