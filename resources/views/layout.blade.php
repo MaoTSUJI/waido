@@ -19,7 +19,7 @@
     <link href="https://fonts.googleapis.com/css?family=Kosugi+Maru&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Noto+Serif+JP&display=swap" rel="stylesheet">
     {{-- MAPのレスポンシブ --}}
-    <script src="/js/jquery-3.4.1.min.js"></script>
+{{--     <script src="/js/jquery-3.4.1.min.js"></script>
     <script src="/js/jquery.rwdImageMaps.js"></script>
     <script src="/js/jquery.rwdImageMaps.min.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
@@ -34,7 +34,7 @@
         $(document).ready(function(e) {
             $('img[usemap]').rwdImageMaps();
         });
-    </script>
+    </script> --}}
 
 
 </head>
