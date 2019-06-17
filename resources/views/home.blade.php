@@ -30,7 +30,7 @@ Home Page!!
 	{{-- サイト説明 --}}
 	<div class="container">
 		<h3>みゃーくふつを救え</h3>　
-		<img src="./img/logo.png" alt="わいどーロゴ" width="400px">
+		<img src="./img/waido_logo.png" alt="わいどーロゴ" width="400px">
 		<h3>Concept</h3>
 		<p>	{{-- わいどーとは、宮古島の方言で「がんばろう」という意味です。<br>
 			宮古島の方言は「みゃーくふつ」と呼ばれています。<br>

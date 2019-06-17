@@ -106,6 +106,16 @@ span::after {
 	content:"』";
 }
 
+div.proverb > p {
+	position: absolute;
+	font-size: 50px;
+	color: white;
+	font-family: 'Noto Serif JP', serif;
+	text-align: left;
+	padding-top: 30px;
+	padding-left:50px;
+}
+
 form.cp_btn, a.cp_btn, {
 	display: inline-block;
 	position: relative;
@@ -375,6 +385,12 @@ button.cp_btn1 {
 	margin-bottom: 60px;
 }
 
+.form-group1 {
+	text-align: center;
+	
+}
+
+
 button.cp_btn1:before, button.cp_btn1:after {
 	content: '';
 	position: absolute;
@@ -433,6 +449,7 @@ button.cp_btn1:hover:after{
 
 
 .container3 {
+	/*singup_check.blade.php*/
 	text-align: center;
 	font-family: 'Noto Serif JP', serif;
 	width:100%;
@@ -441,11 +458,17 @@ button.cp_btn1:hover:after{
 }
 
 .container4 {
+	/*signup_thanks.blade.php*/
 	text-align: center;
 	font-family: 'Noto Serif JP', serif;
 	width:100%;
 	padding-top: 160px;	
 	padding-bottom: 120px;
+
+}
+
+.card-header {
+	background-color:#FFFAF0
 }
 
 .container5 {
@@ -460,6 +483,53 @@ button.cp_btn1:hover:after{
 	padding-bottom: 500px;
 }
 
+button.cp_btn2 {
+	background-color: white;
+    border: none;
+    cursor: pointer;
+    outline: none;
+    padding: 0;
+    display: inline-block;
+	position: relative;
+	width: 160px;
+	padding: 0.8em;
+	text-align: center;
+	border-top: 2px solid #33CC99;
+	border-bottom: 2px solid #33CC99;
+	text-decoration: none;
+	font-weight: bold;
+	color: #33CC99;
+	margin-top: 20px;
+	margin-bottom: 30px;
+	width: 200px;
+}
+
+button.cp_btn2:before, button.cp_btn2:after {
+	content: '';
+	position: absolute;
+	top: -7px;
+	width: 2px;
+	height: calc(100% + 14px);
+	background-color: #33CC99;
+	transition: .3s;
+}
+button.cp_btn2:before {
+	left: 7px;
+}
+button.cp_btn2:after {
+	right: 7px;
+}
+button.cp_btn2:hover:before{
+	top: 0px;
+	left:0;
+	height: 100%;
+}
+button.cp_btn2:hover:after{
+	top: 0px;
+	right: 0;
+	height: 100%;
+}
+
 .proverb p {
 	position: absolute;
 	color:white;
@@ -471,6 +541,7 @@ button.cp_btn1:hover:after{
 
 .icon{
 	margin-right: 3px;
+
 
 }
 
