@@ -43,17 +43,21 @@ Route::post('/signup_check/','UserController@signup_check')->name('auth.signup_c
 Route::post('/signup_thanks/','UserController@signup_thanks')->name('auth.signup_thanks');
 
 //ログイン画面に遷移
-Route::POST('/login/', 'UserController@login')->name('login');
+Route::post('/login/', 'UserController@login')->name('login');
 
 //サンクス画面に遷移
 Route::get('/specialthanks/', 'QuizController@specialthanks')->name('specialthanks');
 
 Route::group(['middleware'=>'auth'], function(){
 //ログインした状態じゃないと入れない画面
+	
 //マイページ画面
 Route::get('/mypage/', 'UserController@mypage')->name('mypage');
 
 //マイページ修正画面へ
+Route::post('/auth.modify/', 'UserController@modify')->name('auth.modify');
+
+//メールアドレス確認等機能 
 Route::post('/verify/', 'UserController@verify')->name('verify');
 
 });

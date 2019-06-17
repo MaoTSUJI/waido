@@ -90,12 +90,6 @@
                         <a class="nav-link px-2" href="{{ route('dictionary') }}">List</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link px-2" href="{{ route('register') }}">Register</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link px-2" href="{{ route('login') }}">Login</a>
-                    </li>
-                    <li class="nav-item">
                         <a class="nav-link px-2" href="{{ route('mypage') }}">My page</a>
                     </li>
                     <li class="nav-item dropdown" style="list-style: none;">
