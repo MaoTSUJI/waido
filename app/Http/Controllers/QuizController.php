@@ -16,7 +16,6 @@ class QuizController extends Controller
   //一覧画面を表示
 	public function home() {
 
-        
         $proverb = Proverb::inRandomOrder()->limit(1)->first();
         // proverbsテーブルのデータのランダムなレコードを取得
 
