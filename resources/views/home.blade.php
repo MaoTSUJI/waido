@@ -32,6 +32,7 @@ Home Page!!
 		<h3>みゃーくふつを救え</h3>　
 		<img src="./img/waido_logo.png" alt="わいどーロゴ" width="400px">
 		<h3>Concept</h3>
+
 		<p>	{{-- わいどーとは、宮古島の方言で「がんばろう」という意味です。<br>
 			宮古島の方言は「みゃーくふつ」と呼ばれています。<br>
 			しかし、そのみゃーくふつが2009年にユネスコの発表する<a href="http://www.unesco.org/culture/languages-atlas/en/atlasmap/language-id-1973.html">消滅危機言語</a>に指定されてしまいました。<br>
@@ -64,11 +65,11 @@ Home Page!!
 			<br>
 			<br>
 		</p>
-		<div class=container>
-			<a href="{{ route('quiz.quizlist') }}" class="cp_btn">Start</a>
+	</div>
+		<div class=containerb>
+			<a href="{{ route('quiz.quizlist') }}" class="cp_btn">スタート</a>
 			<br>
 			<br>
 		</div>
-	</div>
 
 @endsection
