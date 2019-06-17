@@ -55,7 +55,7 @@ Route::group(['middleware'=>'auth'], function(){
 Route::get('/mypage/', 'UserController@mypage')->name('mypage');
 
 //マイページ修正画面へ
-Route::post('/modify/', 'UserController@modify')->name('modify');
+Route::post('/auth.modify/', 'UserController@modify')->name('auth.modify');
 
 //メールアドレス確認等機能 
 Route::post('/verify/', 'UserController@verify')->name('verify');

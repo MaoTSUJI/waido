@@ -46,6 +46,8 @@ class UserController extends Controller
         $user->save();
 
             return view('auth.signup_thanks');
+            
+            // ログインして表示できるようにする
         }
 
     // ログイン機能

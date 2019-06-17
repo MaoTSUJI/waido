@@ -19,26 +19,21 @@ Modify
                             <p>{{ $name }}</p>
                        </div>
 
-
                        <div class="form-group row">
                           <label for="email" class="col-md-4 col-form-label text-md-right">{{ __('メールアドレス') }}</label>
                              <p>{{ $email }}</p>
                           </div>
 
-                   
-
-                        <div class="form-group row">
-                            <label for="result" class="col-md-4 col-form-label text-md-right">{{ __('成績') }}</label>
-                              <p></p>
-                        </div>
-
                         <div class="form-group row mb-0">
                             <div class="col-md-6 offset-md-4">
                                 <button type="submit" class="btn btn-primary">
-                                    {{ __('修正する') }}
+                                    {{ __('修正確定する') }}
                                 </button>
                             </div>
                         </div>
+
+                        <button type="button" class="btn btn-light"><a class="nav-link" href="{{ route('home') }}">{{ __('修正確定する') }}<span class="sr-only">(current)</span></a></button>
+
                 </div>
             </div>
         </div>

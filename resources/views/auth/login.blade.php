@@ -50,7 +50,7 @@ login
                                     <input class="form-check-input" type="checkbox" name="remember" id="remember" {{ old('remember') ? 'checked' : '' }}>
 
                                     <label class="form-check-label" for="remember">
-                                        {{ __('パスワードを忘れた方は') }}
+                                        {{ __('パスワードを保存する') }}
                                     </label>
                                 </div>
                             </div>
@@ -64,7 +64,7 @@ login
 
                                 @if (Route::has('password.request'))
                                     <a class="btn btn-link" href="{{ route('password.request') }}">
-                                        {{ __('Forgot Your Password?') }}
+                                        {{ __('パスワードを忘れた方は') }}
                                     </a>
                                 @endif
                             </div>

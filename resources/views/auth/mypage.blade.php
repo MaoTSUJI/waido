@@ -32,13 +32,15 @@ Mypage
                               <p></p>
                         </div>
 
-                        <div class="form-group row mb-0">
+                        {{-- <div class="form-group row mb-0">
                             <div class="col-md-6 offset-md-4">
                                 <button type="submit" class="btn btn-primary">
                                     {{ __('修正する') }}
                                 </button>
                             </div>
-                        </div>
+                        </div> --}}
+
+                         <button type="button" class="btn btn-primary"><a class="nav-link" href="{{ route('auth.modify') }}">{{ __('修正する') }}{{-- <span class="sr-only">(current)</span> --}}</a></button>
                 </div>
             </div>
         </div>
