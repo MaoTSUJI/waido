@@ -23,7 +23,7 @@ input[type="radio"]:checked + label {
 
 .choice{
 	font-size: 30px;	/**/
-	display: block;	/* ブロックレベル要素化する */
+	display: inline-block;	/* ブロックレベル要素化する */
 	margin: 0 auto;	/* ボックス外側の余白を指定する */
 	width: 600px;	 /*ボックスの横幅を指定する*/
 	/*height: 45px;	 ボックスの高さを指定する */
