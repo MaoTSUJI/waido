@@ -7,7 +7,7 @@ Mypage
 @section('content')
 
 
-<div class="container">
+<div class="container5">
     <div class="row justify-content-center">
         <div class="col-md-8">
             <div class="card">
@@ -40,7 +40,7 @@ Mypage
                             </div>
                         </div> --}}
 
-                         <button type="button" class="btn btn-primary"><a class="nav-link" href="{{ route('auth.modify') }}">{{ __('修正する') }}{{-- <span class="sr-only">(current)</span> --}}</a></button>
+                         <button type="button" class="cp_btn2" width="20px"><a class="nav-link" href="{{ route('auth.modify') }}">{{ __('修正する') }}{{-- <span class="sr-only">(current)</span> --}}</a></button>
                 </div>
             </div>
         </div>
