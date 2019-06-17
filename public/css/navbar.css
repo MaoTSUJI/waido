@@ -6,7 +6,8 @@
 .navbar-nav .nav-item a {
     color: white;
     font-weight: 700;
-    font-family: 'Acme', sans-serif;
+/*    font-family: 'Acme', sans-serif;
+*/  font-family: 'Permanent Marker', cursive;
     transition: 1s ease;
     padding: 10px;
     font-size: 25px;

@@ -272,6 +272,9 @@ form.cp_btn, a.cp_btn:hover:after{
 	display: block;
 	margin-left: auto;
     margin-right: auto;
+	margin-bottom: 50px;
+	padding-top: 20px;
+
 
 }
 
@@ -296,7 +299,7 @@ table {
 
 .container {
 	text-align: center;
-	font-size:20px;
+	font-size:19px;
 	font-family: 'Noto Serif JP', serif;
 	background-color:#FFFAF0;
 	width:100%;
@@ -306,15 +309,25 @@ table {
 
 }
 
-div.container > h3 {
-	text-align: left;
+div.container > h2 {
+	text-align: center;
 	padding:10px 5px;
+	font-size: 40px;
+	font-family: 'Permanent Marker', cursive;
 
 }
 
-div.container > p {
+div.container > h3 {
+	text-align: center;
+	padding:10px 5px;
+	color: #33CC99;
+	font-size: 20px;
+
+}
+
+/*div.container > p {
 	background-color: 
-}
+}*/
 
 .containerb {
 	text-align: center;
@@ -479,6 +492,17 @@ button.cp_btn1:hover:after{
 
 }
 
+.container5 {
+	/*signup_thanks.blade.php*/
+	text-align: center;
+	font-family: 'Noto Serif JP', serif;
+	width:100%;
+	padding-top: 160px;	
+	padding-bottom: 120px;
+	font-size: 18px;
+
+}
+
 .card-header {
 	background-color:#FFFAF0
 }
@@ -489,6 +513,7 @@ button.cp_btn1:hover:after{
 	width:100%;
 	padding-top: 160px;
 	padding-bottom: 150px;
+	text-align: center;
 }
 
 .ranking_container {
@@ -553,8 +578,21 @@ button.cp_btn2:hover:after{
 
 .icon{
 	margin-right: 3px;
-
-
 }
 
+.kakunin2, .col-md-8 {
+	margin: 0 auto;
+}
 
+.col-md-6 {
+	margin: 0 auto;
+	padding-top: px;
+}
+
+.btn-link {
+	color:#33CC99;
+}
+
+.card-body {
+	text-align: center;
+}
