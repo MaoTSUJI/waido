@@ -30,7 +30,7 @@ QuizList
 							  <input type="hidden" name="area_jpn" value="{{ $area->area }}">
 							  <input type="hidden" name="area_id" value="{{ $area->id }}">
 								<input type="hidden" name="area_eng" value="{{ $area->english }}">
-							  <a class="cp_btn" href="javascript:form1[{{ $area->id -1 }}].submit()">{{ $area->area }}周辺</a>
+							  <a class="btn-circle-border-double" href="javascript:form1[{{ $area->id -1 }}].submit()">{{ $area->area }}周辺</a>
 								</form>
 						</div>
 					@endforeach

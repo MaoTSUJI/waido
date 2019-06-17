@@ -596,3 +596,22 @@ button.cp_btn2:hover:after{
 .card-body {
 	text-align: center;
 }
+
+.btn-circle-border-double {
+  display: inline-block;
+  text-decoration: none;
+  color: #33CC99;;
+  width: 120px;
+  height: 120px;
+  line-height: 120px;
+  border-radius: 50%;
+  border: double 4px #33CC99;;
+  text-align: center;
+  overflow: hidden;
+  transition: .6s;
+}
+
+.btn-circle-border-double:hover {
+  -webkit-transform: rotateY(360deg);
+  transform: rotateY(360deg);
+}
