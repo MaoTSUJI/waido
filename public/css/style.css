@@ -298,9 +298,12 @@ table {
 	text-align: center;
 	font-size:20px;
 	font-family: 'Noto Serif JP', serif;
-	/*background-color:#FFFAF0;*/
+	background-color:#FFFAF0;
 	width:100%;
+	padding-top:50px;
 	padding-bottom: 10px;
+	margin-top: 50px;
+
 }
 
 div.container > h3 {
@@ -311,6 +314,14 @@ div.container > h3 {
 
 div.container > p {
 	background-color: 
+}
+
+.containerb {
+	text-align: center;
+	font-size:20px;
+	font-family: 'Noto Serif JP', serif;
+	margin-top: 50px;
+
 }
 
 .quiz {
@@ -421,6 +432,7 @@ button.cp_btn1:hover:after{
 	float: right;
 	margin-right:30px;
 }
+
 .cute1 {
 	float: left;
 	margin-left:30px;
