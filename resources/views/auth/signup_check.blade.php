@@ -5,14 +5,13 @@ Signup_check
 @endsection
 
 @section('content')
-{{-- ここに中身をかく --}}
-<div class="container3">
+
+<div class="container1">
     <div class="row justify-content-center">
         <div class="col-md-8">
-            <div class="card mt-5 mb-5">
-                <div class="card-header">{{ __('ユーザー登録') }}</div></div>
-                {{-- ただ受けるだけの場所 --}}
-                        {{-- {{$_POST['name']}} --}}
+            <div class="card">
+                <div class="card-header">{{ __('ユーザー登録') }}</div>
+
                         <div class="form-group row">
                             <label for="name" class="col-md-4 col-form-label text-md-right">{{ __('ユーザー名') }}</label>
                             <div class="col-md-6">

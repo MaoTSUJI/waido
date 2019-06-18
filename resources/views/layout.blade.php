@@ -92,8 +92,8 @@
                                 {{ Auth::user()->name }}
                             </a>
 
-                        <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
-                            <a class="dropdown-item" href="{{ route('logout') }}"
+                        <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown" style="padding: 0;">
+                            <a class="dropdown-item" style="background-color:#444444;margin: 0;"href="{{ route('logout') }}"
                                onclick="event.preventDefault();
                                              document.getElementById('logout-form').submit();">
                                 {{ __('Logout') }}
