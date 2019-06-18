@@ -50,14 +50,14 @@ Route::get('/specialthanks/', 'QuizController@specialthanks')->name('specialthan
 
 Route::group(['middleware'=>'auth'], function(){
 //ログインした状態じゃないと入れない画面
-	
+
 //マイページ画面
 Route::get('/mypage/', 'UserController@mypage')->name('mypage');
 
 //マイページ修正画面へ
 Route::post('/modify/', 'UserController@modify')->name('auth.modify');
 
-//メールアドレス確認等機能 
+//メールアドレス確認等機能
 Route::post('/verify/', 'UserController@verify')->name('verify');
 
 });
