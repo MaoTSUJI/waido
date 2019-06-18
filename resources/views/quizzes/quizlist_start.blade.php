@@ -9,7 +9,7 @@ QuizList_start
 
 <div class=contents>
 		<div id="main_box" class="quiz3 area">
-			<img class="ribbon" src="img/quiz_start.png" alt="クイズをスタート！" width="500px">
+			<img class="ribbon" src="img/quiz_start.png" alt="クイズをスタート！">
 			<br>
 			<p><font size="5">選択地域：{{ $_POST['area_jpn'] }}</font></p>
 

@@ -9,7 +9,7 @@ QuizList
 
 	<div id="main_box" class="area">
 		<div>
-			<img class="ribbon" src="img/area_select.png" alt="地域選択" width="500px">
+			<img class="ribbon" src="img/area_select.png" alt="地域選択">
 
 			<div class="map" style="position: relative;">
 
