@@ -13,13 +13,30 @@
 	<link rel="stylesheet" href="/css/navbar.css">
     <link rel="stylesheet" href="/css/style.css">
     <link rel="stylesheet" href="/css/quiz.css">
+    <link rel="stylesheet" href="/css/quizlist.css">
     <link href="https://fonts.googleapis.com/css?family=Kosugi+Maru&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Noto+Serif+JP&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Acme&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Kosugi+Maru&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Noto+Serif+JP&display=swap" rel="stylesheet">
-
-
+    <link href="https://fonts.googleapis.com/css?family=Permanent+Marker&display=swap" rel="stylesheet">
+    {{-- MAPのレスポンシブ --}}
+    {{-- <script src="/js/jquery-3.4.1.min.js"></script> --}}
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="/js/jquery.rwdImageMaps.js"></script>
+    {{-- <script src="/js/jquery.rwdImageMaps.min.js"></script> --}}
+    <script>
+        $(document).ready(function(){
+        　$("p").click(function(){
+        　　$(this).text((new Date()).toLocaleString());
+        　});
+        });
+    </script>
+    <script>
+        $(document).ready(function(e) {
+            $('#quizmap').rwdImageMaps();
+        });
+    </script>
 
 </head>
 <body>
@@ -72,12 +89,6 @@
                     </li>
                     <li class="nav-item">
                         <a class="nav-link px-2" href="{{ route('dictionary') }}">List</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link px-2" href="{{ route('register') }}">Register</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link px-2" href="{{ route('login') }}">Login</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link px-2" href="{{ route('mypage') }}">My page</a>
@@ -161,8 +172,8 @@
         <a href="http://line.me/R/msg/text/?http://qiita.com/katsuma"><i class="fab fa-line"></i></a>
 
         <p class="pagetop">©2019 M5</p> --}}
-    <img src="./img/sisaright.png" alt="シーサー" height="100px" class="cute">
-    <img src="./img/sisaleft.png" alt="シーサー" height="100px" class="cute1">
+    <img src="./img/sisaright.png" alt="シーサー" height="150px" class="cute">
+    <img src="./img/sisaleft.png" alt="シーサー" height="150px" class="cute1">
     <div class="bottom section-padding">
         <div class="acontainer">
             <div class="row">

@@ -106,6 +106,16 @@ span::after {
 	content:"』";
 }
 
+div.proverb > p {
+	position: absolute;
+	font-size: 50px;
+	color: white;
+	font-family: 'Noto Serif JP', serif;
+	text-align: left;
+	padding-top: 30px;
+	padding-left:50px;
+}
+
 form.cp_btn, a.cp_btn, {
 	display: inline-block;
 	position: relative;
@@ -262,6 +272,9 @@ form.cp_btn, a.cp_btn:hover:after{
 	display: block;
 	margin-left: auto;
     margin-right: auto;
+	margin-bottom: 50px;
+	padding-top: 20px;
+
 
 }
 
@@ -286,21 +299,42 @@ table {
 
 .container {
 	text-align: center;
-	font-size:20px;
+	font-size:19px;
 	font-family: 'Noto Serif JP', serif;
-	/*background-color:#FFFAF0;*/
+	background-color:#FFFAF0;
 	width:100%;
+	padding-top:50px;
 	padding-bottom: 10px;
+	margin-top: 50px;
+
+}
+
+div.container > h2 {
+	text-align: center;
+	padding:10px 5px;
+	font-size: 40px;
+	font-family: 'Permanent Marker', cursive;
+
 }
 
 div.container > h3 {
-	text-align: left;
+	text-align: center;
 	padding:10px 5px;
+	color: #33CC99;
+	font-size: 20px;
 
 }
 
-div.container > p {
+/*div.container > p {
 	background-color: 
+}*/
+
+.containerb {
+	text-align: center;
+	font-size:20px;
+	font-family: 'Noto Serif JP', serif;
+	margin-top: 50px;
+
 }
 
 .quiz {
@@ -375,6 +409,12 @@ button.cp_btn1 {
 	margin-bottom: 60px;
 }
 
+.form-group1 {
+	text-align: center;
+	
+}
+
+
 button.cp_btn1:before, button.cp_btn1:after {
 	content: '';
 	position: absolute;
@@ -405,6 +445,7 @@ button.cp_btn1:hover:after{
 	float: right;
 	margin-right:30px;
 }
+
 .cute1 {
 	float: left;
 	margin-left:30px;
@@ -433,6 +474,7 @@ button.cp_btn1:hover:after{
 
 
 .container3 {
+	/*singup_check.blade.php*/
 	text-align: center;
 	font-family: 'Noto Serif JP', serif;
 	width:100%;
@@ -441,11 +483,28 @@ button.cp_btn1:hover:after{
 }
 
 .container4 {
+	/*signup_thanks.blade.php*/
 	text-align: center;
 	font-family: 'Noto Serif JP', serif;
 	width:100%;
 	padding-top: 160px;	
 	padding-bottom: 120px;
+
+}
+
+.container5 {
+	/*signup_thanks.blade.php*/
+	text-align: center;
+	font-family: 'Noto Serif JP', serif;
+	width:100%;
+	padding-top: 160px;	
+	padding-bottom: 120px;
+	font-size: 18px;
+
+}
+
+.card-header {
+	background-color:#FFFAF0
 }
 
 .container5 {
@@ -454,10 +513,58 @@ button.cp_btn1:hover:after{
 	width:100%;
 	padding-top: 160px;
 	padding-bottom: 150px;
+	text-align: center;
 }
 
 .ranking_container {
 	padding-bottom: 500px;
+}
+
+button.cp_btn2 {
+	background-color: white;
+    border: none;
+    cursor: pointer;
+    outline: none;
+    padding: 0;
+    display: inline-block;
+	position: relative;
+	width: 160px;
+	padding: 0.8em;
+	text-align: center;
+	border-top: 2px solid #33CC99;
+	border-bottom: 2px solid #33CC99;
+	text-decoration: none;
+	font-weight: bold;
+	color: #33CC99;
+	margin-top: 20px;
+	margin-bottom: 30px;
+	width: 200px;
+}
+
+button.cp_btn2:before, button.cp_btn2:after {
+	content: '';
+	position: absolute;
+	top: -7px;
+	width: 2px;
+	height: calc(100% + 14px);
+	background-color: #33CC99;
+	transition: .3s;
+}
+button.cp_btn2:before {
+	left: 7px;
+}
+button.cp_btn2:after {
+	right: 7px;
+}
+button.cp_btn2:hover:before{
+	top: 0px;
+	left:0;
+	height: 100%;
+}
+button.cp_btn2:hover:after{
+	top: 0px;
+	right: 0;
+	height: 100%;
 }
 
 .proverb p {
@@ -471,7 +578,40 @@ button.cp_btn1:hover:after{
 
 .icon{
 	margin-right: 3px;
-
 }
 
+.kakunin2, .col-md-8 {
+	margin: 0 auto;
+}
 
+.col-md-6 {
+	margin: 0 auto;
+	padding-top: px;
+}
+
+.btn-link {
+	color:#33CC99;
+}
+
+.card-body {
+	text-align: center;
+}
+
+.btn-circle-border-double {
+  display: inline-block;
+  text-decoration: none;
+  color: #33CC99;;
+  width: 120px;
+  height: 120px;
+  line-height: 120px;
+  border-radius: 50%;
+  border: double 4px #33CC99;;
+  text-align: center;
+  overflow: hidden;
+  transition: .6s;
+}
+
+.btn-circle-border-double:hover {
+  -webkit-transform: rotateY(360deg);
+  transform: rotateY(360deg);
+}

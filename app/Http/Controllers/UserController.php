@@ -46,13 +46,20 @@ class UserController extends Controller
         $user->save();
 
             return view('auth.signup_thanks');
+            
+            // ログインして表示できるようにする
         }
 
     // ログイン機能
     public function login(){
 
+        dd('hello');
+
             return view('auth.login');
         }
+
+
+
 
     // マイページ機能
     //#1 
@@ -98,6 +105,13 @@ class UserController extends Controller
 
         }
 
+    // マイページ情報修正機能
+        public function modify(){
+
+            return view('modify');
+
+        }
+
     // ログアウト機能
     public function logout(){
 
@@ -105,6 +119,7 @@ class UserController extends Controller
 
         }
 
+    // メールアドレス確認機能
     public function verify(){
 
             return view('verify');
