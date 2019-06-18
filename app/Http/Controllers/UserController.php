@@ -45,10 +45,20 @@ class UserController extends Controller
         $user->password = Hash::make($userinfo->password);
         $user->save();
 
+        // if (Auth::attempt($user)) {
+        //     // 認証に成功した
+        //     return redirect()->intended('auth.signup_thanks');
+        // }
             return view('auth.signup_thanks');
-            
+
             // ログインして表示できるようにする
         }
+
+    // public function authenticate(Request $request)
+    // {
+    //     $userinfo = $request->only('email', 'password');
+
+    // }
 
     // ログイン機能
     public function login(){
@@ -108,7 +118,7 @@ class UserController extends Controller
     // マイページ情報修正機能
         public function modify(){
 
-            return view('modify');
+            return view('auth.modify');
 
         }
 
