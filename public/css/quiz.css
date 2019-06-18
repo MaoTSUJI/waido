@@ -54,11 +54,21 @@ input[type="radio"]:checked + label {
 }
 
 .hibiscus{
-	margin-top:10px;
 	text-align: center;
+	padding-bottom: 40px;
 }
 
+img.hibiscus{
+	padding:30;
+}
 
+img.hibiscus2 {
+	opacity: 0.4;
+}
 
+.kotae {
+	text-align: center;
+	margin-top: 20px;
+}
 
 

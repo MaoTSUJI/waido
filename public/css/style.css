@@ -11,6 +11,7 @@ button, input[type="submit"]{
 }
 label.cp_btn , a.cp_btn{
 	display: inline-block;
+	font-family: 'Noto Serif JP', serif;
 	position: relative;
 	width: 160px;
 	padding: 0.8em;
@@ -20,7 +21,6 @@ label.cp_btn , a.cp_btn{
 	text-decoration: none;
 	font-weight: bold;
 	color: #33CC99;
-	font-family: 'Noto Serif JP', serif;
 }
 
 label.cp_btn, a.cp_btn:before, label.cp_btn, a.cp_btn:after {
@@ -73,8 +73,8 @@ body {
 }
 
 .quiz {
-	height: 800px;
-/*	position: absolute;
+/*	height: 800px;
+*//*	position: absolute;
 */	color: white;
 	text-align: center;
 }
@@ -137,7 +137,6 @@ form.cp_btn, a.cp_btn, {
 	text-decoration: none;
 	font-weight: bold;
 	color: #33CC99;
-	font-family: 'Noto Serif JP', serif;
 }
 form.cp_btn, a.cp_btn:before, form.cp_btn, a.cp_btn:after {
 	content: '';
@@ -224,17 +223,10 @@ for.go_ranking, .town {
 	color: #FFF;
 }*/
 
-img.hibiscus{
-	padding:30;
-}
-
-img.hibiscus2 {
-	opacity: 0.4;
-}
-
 
 form.cp_btn , a.cp_btn{
 	display: inline-block;
+	font-family: 'Noto Serif JP', serif;
 	position: relative;
 	width: 160px;
 	padding: 0.8em;
@@ -245,7 +237,6 @@ form.cp_btn , a.cp_btn{
 	font-weight: bold;
 	color: #33CC99;
 	margin: 5px;
-	font-family: 'Noto Serif JP', serif;
 }
 
 form.cp_btn, a.cp_btn:before, form.cp_btn, a.cp_btn:after {
@@ -303,7 +294,6 @@ table {
 #all_ranking {
 	font-size:30px;
 	font-family: 'Kosugi Maru', sans-serif;
-	padding-top: 0px;
 
 }
 
@@ -401,6 +391,7 @@ p.quiz3 {
 
 button.cp_btn1 {
 	background-color: transparent;
+	font-family: 'Noto Serif JP', serif;
     border: none;
     cursor: pointer;
     outline: none;
@@ -541,6 +532,7 @@ button.cp_btn1:hover:after{
 
 button.cp_btn2 {
 	background-color: white;
+	font-family: 'Noto Serif JP', serif;
     border: none;
     cursor: pointer;
     outline: none;
@@ -558,7 +550,6 @@ button.cp_btn2 {
 	margin-top: 20px;
 	margin-bottom: 30px;
 	width: 200px;
-	font-family: 'Noto Serif JP', serif;
 }
 
 button.cp_btn2:before, button.cp_btn2:after {
