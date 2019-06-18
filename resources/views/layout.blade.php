@@ -25,13 +25,7 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script src="/js/jquery.rwdImageMaps.js"></script>
     {{-- <script src="/js/jquery.rwdImageMaps.min.js"></script> --}}
-    <script>
-        $(document).ready(function(){
-        　$("p").click(function(){
-        　　$(this).text((new Date()).toLocaleString());
-        　});
-        });
-    </script>
+
     <script>
         $(document).ready(function(e) {
             $('#quizmap').rwdImageMaps();
