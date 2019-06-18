@@ -37,9 +37,9 @@ QuizList
                 家族　ヤーニンジュ　<br>
                 おじい　シュー<br>
                 おばあ　アンナ<br>
-                serina<br>
-                yuko<br>
-                kenei<br>
+                おとう　ンッザ<br>
+                おかあ　ンマー<br>
+                兄貴　スンジャ<br>
             　</p>
             </div>
           </div>
@@ -51,11 +51,11 @@ QuizList
             <div class="folder-2">
               <h1>食べ物</h1>
               <p class="folder-text2">
-                ゴーヤー<br>
-                スパム<br>
-                島唐辛子<br>
-                油味噌<br>
-                ジューシー<br>
+                ゴーヤー　ガウラ<br>
+                らっかせい　ズマミ<br>
+                ダイコン　フニャヤ<br>
+                キャベツ　タマナ<br>
+                ニンニク　ピー<br>
               </p>
             </div>
           </div>
@@ -66,7 +66,7 @@ QuizList
             <div class="folder-2">
               <h1>挨拶</h1>
               <p class="folder-text2">
-                mother<br>
+                ありがとう　タンディガタンディ<br>
                 father<br>
                 sister<br>
                 brother<br>
@@ -225,22 +225,22 @@ QuizList
     <div class="close-folder-content"><i class="fa fa-times" aria-hidden="true"></i></div>
     <h2><i class="fa fa-folder" aria-hidden="true"></i><span>Folder 1</span></h2>
   </div>
-  
+
   <div class="top-droppable folder-content easeout2 closed" id="folder2-content">
     <div class="close-folder-content"><i class="fa fa-times" aria-hidden="true"></i></div>
     <h2><i class="fa fa-folder" aria-hidden="true"></i><span>Folder 2</span></h2>
   </div>
-  
+
   <div class="top-droppable folder-content easeout2 closed" id="folder3-content">
     <div class="close-folder-content"><i class="fa fa-times" aria-hidden="true"></i></div>
     <h2><i class="fa fa-folder" aria-hidden="true"></i><span>Folder 3</span></h2>
   </div>
-  
+
   <div class="top-droppable folder-content easeout2 closed" id="folder4-content">
     <div class="close-folder-content"><i class="fa fa-times" aria-hidden="true"></i></div>
     <h2><i class="fa fa-folder" aria-hidden="true"></i><span>Folder 4</span></h2>
   </div>
-  
+
   <div class="top-droppable folder-content easeout2 closed" id="folder5-content">
     <div class="close-folder-content"><i class="fa fa-times" aria-hidden="true"></i></div>
     <h2><i class="fa fa-folder" aria-hidden="true"></i><span>Folder 5</span></h2>
