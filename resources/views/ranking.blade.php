@@ -11,7 +11,7 @@ Ranking
 		<div id="all_ranking" class="ranking container">
 		　		<br>
 			<div class="ranking">
-				<img class="ranking_ribbon" src="./img/ranking.png" alt="ランキング" width="697px">
+				<img class="ranking_ribbon" src="./img/ranking.png" alt="ランキング">
 			</div>
 			<div class="ranking">
 				<table>

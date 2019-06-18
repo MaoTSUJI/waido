@@ -20,6 +20,7 @@ label.cp_btn , a.cp_btn{
 	text-decoration: none;
 	font-weight: bold;
 	color: #33CC99;
+	font-family: 'Noto Serif JP', serif;
 }
 
 label.cp_btn, a.cp_btn:before, label.cp_btn, a.cp_btn:after {
@@ -53,13 +54,21 @@ body {
 /*    ここまで追加2019012 9am    */
 /*    ここから追加2019012 10am    */
 .area{
-		text-align: center;
-		padding-bottom: 0px;
-		background-color: #FFFAF0;
-    width:90%;
-		display: block;
-		margin-left: auto;
+	text-align: center;
+	padding-bottom: 40px;
+	background-color: #FFFAF0;
+    width:70%;
+	display: block;
+	margin-left: auto;
     margin-right: auto;
+    margin-top: 50px;
+}
+
+.map {
+	width: 80%;
+	margin-left: auto;
+	margin-right: auto;
+	margin-bottom: 100px;
 
 }
 
@@ -68,7 +77,6 @@ body {
 /*	position: absolute;
 */	color: white;
 	text-align: center;
-	padding-bottom: 0px;
 }
 
 /*    ここまで追加2019012 10am    */
@@ -89,11 +97,13 @@ body {
     display: inline-block;
     text-align: center;
     font-size: 40px;
+    margin-top: 30px;
 }
 
 
 img.ribbon {
 	opacity: 0.8;
+	margin-bottom: 0px;
 }
 
 span::before {
@@ -127,6 +137,7 @@ form.cp_btn, a.cp_btn, {
 	text-decoration: none;
 	font-weight: bold;
 	color: #33CC99;
+	font-family: 'Noto Serif JP', serif;
 }
 form.cp_btn, a.cp_btn:before, form.cp_btn, a.cp_btn:after {
 	content: '';
@@ -177,7 +188,6 @@ for.go_ranking, .town {
 	margin-left: auto;
     margin-right: auto;
 }
-
 /*.btn-flat-dashed-filled {
  
 	display: inline-block;
@@ -235,6 +245,7 @@ form.cp_btn , a.cp_btn{
 	font-weight: bold;
 	color: #33CC99;
 	margin: 5px;
+	font-family: 'Noto Serif JP', serif;
 }
 
 form.cp_btn, a.cp_btn:before, form.cp_btn, a.cp_btn:after {
@@ -268,12 +279,11 @@ form.cp_btn, a.cp_btn:hover:after{
 	position: relative;
     text-align: center;
     /*background-color: #FFFAF0;*/
-    width:90%;
+    width:80%;
 	display: block;
 	margin-left: auto;
     margin-right: auto;
 	margin-bottom: 50px;
-	padding-top: 20px;
 
 
 }
@@ -293,6 +303,7 @@ table {
 #all_ranking {
 	font-size:30px;
 	font-family: 'Kosugi Maru', sans-serif;
+	padding-top: 0px;
 
 }
 
@@ -303,7 +314,6 @@ table {
 	font-family: 'Noto Serif JP', serif;
 	background-color:#FFFAF0;
 	width:100%;
-	padding-top:50px;
 	padding-bottom: 10px;
 	margin-top: 50px;
 
@@ -407,6 +417,7 @@ button.cp_btn1 {
 	color: #33CC99;
 	margin-top: 50px;
 	margin-bottom: 60px;
+	font-family: 'Noto Serif JP', serif;
 }
 
 .form-group1 {
@@ -444,16 +455,25 @@ button.cp_btn1:hover:after{
 .cute {
 	float: right;
 	margin-right:30px;
+	width:15%;
 }
 
 .cute1 {
 	float: left;
 	margin-left:30px;
+	width:15%;
 }
 
 .ribbon {
 	margin-bottom: 30px;
+	width:60%;
 }
+
+.ranking_ribbon {
+	width:69%;
+	padding-top: 0px;
+}
+
 
 
 .container1 {
@@ -539,6 +559,7 @@ button.cp_btn2 {
 	margin-top: 20px;
 	margin-bottom: 30px;
 	width: 200px;
+	font-family: 'Noto Serif JP', serif;
 }
 
 button.cp_btn2:before, button.cp_btn2:after {
