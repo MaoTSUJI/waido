@@ -14,9 +14,9 @@ QuizList
 		<img class="result" src="./img/result.png" alt="結果発表">
 			<p class="score">正解率<strong>{{ $correct_num * 10 }}</strong>%</p>
 			<br>
-		<span>あなたは
+		<span>あなたのみゃーくふつレベルは
 			<strong>{{ $title }}</strong>
-			!</span>
+			!!</span>
 			<br>
 			<br>
 		<img src="./img/{{ $img_url }}" alt="妖怪の写真" width="250px">
@@ -36,8 +36,11 @@ QuizList
 		</div>
 
 
-		<a href="http://twitter.com/share?url=[シェアするURL]&text=[ツイート内テキスト]&via=[ツイート内に含むユーザ名]&related=[ツイート後に表示されるユーザー]&hashtags=[ハッシュタグ]" target="_blank" class="cp_btn"><i class="fab fa-twitter icon"></i>  ツイート</a>
-		<a href="https://www.facebook.com/sharer/sharer.php?u=http://qiita.com/katsuma" target="_blank" class="cp_btn"><i class="fab fa-facebook-f icon"></i>  シェア</a>
+		<a href="http://twitter.com/share?url=https://waido.herokuapp.com/&text=【みゃーくふつを救え　わいどー】%0aあなたのみゃーくふつレベルは{{ $title }}です。%0a&hashtags=みゃーくふつ, 宮古島方言, 絶滅危機言語, みゃーくふつを救え, わいどー" target="_blank" class="cp_btn">
+	{{-- 	<a href="https://twitter.com/intent/tweet?text=テキストテキスト%0a改行もできるし%20スペースも&url=https://www.url.url/&hashtags=タグ,二つ目" rel="nofollow" class="cp_btn"> --}}
+
+			<i class="fab fa-twitter icon"></i>  ツイート</a>
+		<a href="https://www.facebook.com/sharer/sharer.php?u=https://waido.herokuapp.com/" target="_blank" class="cp_btn"><i class="fab fa-facebook-f icon"></i>  シェア</a>
 			<br>
 			<br>
 		<a class="go_ranking" href="{{ route('ranking') }}"><i class="fas fa-trophy"></i> ランキングをみる</a>
