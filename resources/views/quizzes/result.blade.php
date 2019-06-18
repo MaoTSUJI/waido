@@ -36,7 +36,7 @@ QuizList
 		</div>
 
 
-		<a href="http://twitter.com/share?url=[シェアするURL]&text=[ツイート内テキスト]&via=[ツイート内に含むユーザ名]&related=[ツイート後に表示されるユーザー]&hashtags=[ハッシュタグ]" target="_blank" class="cp_btn"><i class="fab fa-twitter icon"></i>  ツイート</a>
+		<a href="http://twitter.com/share?url=[https://waido.herokuapp.com/]&text=[あなたのみゃーくふつレベルは{{ $title }}です。]&via=[ツイート内に含むユーザ名]&related=[ツイート後に表示されるユーザー]&hashtags=[#みゃーくふつ #宮古島方言 #絶滅危機言語 #みゃーくふつを救え #わいどー]" target="_blank" class="cp_btn"><i class="fab fa-twitter icon"></i>  ツイート</a>
 		<a href="https://www.facebook.com/sharer/sharer.php?u=http://qiita.com/katsuma" target="_blank" class="cp_btn"><i class="fab fa-facebook-f icon"></i>  シェア</a>
 			<br>
 			<br>
