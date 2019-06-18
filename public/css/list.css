@@ -27,7 +27,7 @@ h1{font-size:50px;margin-bottom:30px}
 .folder{
 	/*border: solid;*/
   position: absolute;
-  margin-top: -40px;
+  margin-top: -50px;
   margin-bottom: 30px;
   box-sizing: border-box;
   position: relative;
@@ -127,14 +127,20 @@ h1{font-size:50px;margin-bottom:30px}
 /*.main div {
     display: none;
 }*/
+
 .tooltiper-up p{
-  overflow: scroll;
-  height: 18em;
+  overflow:auto;
+  white-space: nowrap;
+  height: 20em;
+  right: 40em;
   line-height: 2.25;
   margin-bottom: 20px;
   color: #464646;
   font-size: 20px;
+  background-color: skyblue
 }
+
+
 /*.tooltiper-up p:first-line{
   font-size: 20px
 }*/
@@ -149,9 +155,13 @@ h1{font-size:50px;margin-bottom:30px}
   margin-right: 50px;
 }
 
-.rankingcontainer{
-  margin-left: 40px;
+.left{
+  position: relative;
+  top: -70px;
+  left: 35px;
 }
+
+
 
 
 
@@ -165,7 +175,7 @@ h1{font-size:50px;margin-bottom:30px}
 40%,80%{transform:scale(1);opacity:1}
 100%{transform:scale(0);opacity:0}
 }
-.folder p{cursor:default;opacity:.5;transition:.2s all ease-out}
+.folder p{cursor:default;transition:.2s all ease-out}
 /*.folder:hover .fa-folder{transform:scale(1.1)!important}*/
 /*.folder:hover p{transform:translateY(6px);opacity:1}*/
 /*.tooltiper .tooltip,.tooltiper-up .tooltip{font-size:.7rem;background:rgba(0,0,0,.7);padding:5px 10px;border-radius:5px;line-height:1.4em;opacity:0}*/
