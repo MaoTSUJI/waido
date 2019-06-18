@@ -364,6 +364,12 @@ div.container > h3 {
 
 a.nav-link {
 	color:#33CC99;
+
+}
+
+a.nav-link2 {
+	color:#33CC99;
+	width: 120%;
 }
 
 
@@ -419,6 +425,8 @@ button.cp_btn1 {
 	margin-bottom: 60px;
 }
 
+
+
 .form-group1 {
 	text-align: center;
 	
@@ -450,6 +458,58 @@ button.cp_btn1:hover:after{
 	right: 0;
 	height: 100%;
 }
+
+
+
+/*-------------thanks ボタン---------------*/
+
+button.thanks {
+	background-color: transparent;
+  border: none;
+  cursor: pointer;
+  outline: none;
+  padding: 0;
+  display: inline-block;
+	position: relative;
+	width: 160px;
+	padding: 0.8em;
+	text-align: center;
+	border-top: 2px solid #33CC99;
+	border-bottom: 2px solid #33CC99;
+	text-decoration: none;
+	font-weight: bold;
+	color: #33CC99;
+	margin-top: 50px;
+	margin-bottom: 60px;
+}
+
+button.thanks:before, button.thanks:after {
+	content: '';
+	position: absolute;
+	top: -7px;
+	width: 2px;
+	height: calc(100% + 14px);
+	background-color: #33CC99;
+	transition: .3s;
+}
+button.thanks:before {
+	left: 7px;
+}
+button.thanks:after {
+	right: 7px;
+}
+button.thanks:hover:before{
+	top: 0px;
+	left:0;
+	height: 100%;
+}
+button.thanks:hover:after{
+	top: 0px;
+	right: 0;
+	height: 100%;
+}
+
+
 
 .cute {
 	float: right;
