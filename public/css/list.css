@@ -65,36 +65,36 @@ h1{font-size:50px;margin-bottom:30px}
 
 .folder-text {
 	height: 180px!important;
-	border: solid 3px blue;
+	border: solid 3px #33CC99;
 
 }
 
 .folder-text1{
   height: 180px!important;
-  border: solid 3px blue;
+  border: solid 3px #33CC99;
 }
 
 .folder-text2{
   height: 180px!important;
-  border: solid 3px blue;
+  border: solid 3px #33CC99;
 }
 
 .folder-text3{
   height: 180px!important;
-  border: solid 3px blue;
+  border: solid 3px #33CC99;
   margin-top:130px;
 }
 
 .folder-text4{
   height: 180px!important;
-  border: solid 3px blue;
+  border: solid 3px #33CC99;
   margin-top:130px;
 
 }
 
 .folder-text5{
   height: 180px!important;
-  border: solid 3px blue;
+  border: solid 3px #33CC99;
   margin-top:130px;
 }
 
@@ -137,7 +137,8 @@ h1{font-size:50px;margin-bottom:30px}
   margin-bottom: 20px;
   color: #464646;
   font-size: 20px;
-  background-color: skyblue
+  background-color: white;
+
 }
 
 
