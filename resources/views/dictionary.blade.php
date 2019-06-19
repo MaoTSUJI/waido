@@ -101,13 +101,13 @@ QuizList
           <div class="top-droppable folder tooltiper tooltiper-up" data-tooltip="0 file" id="folder">
             <i class="fa fa-check" aria-hidden="true"></i>
             <div class="folder-2">
-              <h1>期間</h1>
+              <h1>体</h1>
               <p class="folder-text2">
-                mother<br>
-                father<br>
-                sister<br>
-                brother<br>
-                grandfather<br>
+                頭　カナマイ<br>
+                後頭部　ウッス<br>
+                脳　ヌー<br>
+                髪　アカ<br>
+                白髪　ッスサッギ<br>
               </p>
             </div>
           </div>
@@ -122,11 +122,11 @@ QuizList
             <div class="folder-2">
               <h1>気持ち</h1>
               <p class="folder-text2">
-                mother<br>
-                father<br>
-                sister<br>
-                brother<br>
-                grandfather<br>
+                綺麗　アパラギ<br>
+                楽しい　プカラスムヌ<br>
+                恥ずかしい　バカスムヌ<br>
+                かわいそう　ツンダラサ<br>
+                こわい　ウトゥルス<br>
               </p>
             </div>
           </div>
@@ -135,13 +135,13 @@ QuizList
           <div class="top-droppable folder tooltiper tooltiper-up" data-tooltip="0 file" id="folder">
             <i class="fa fa-check" aria-hidden="true"></i>
             <div class="folder-2">
-              <h1>higa</h1>
+              <h1>動物</h1>
               <p class="folder-text2">
-                mother<br>
-                father<br>
-                sister<br>
-                brother<br>
-                grandfather<br>
+                犬　イン<br>
+                ねこ　マユ<br>
+                馬　ヌーマ<br>
+                ヤギ　ヒンジャ<br>
+                鳥　トゥ<br>
               </p>
             </div>
           </div>
@@ -150,13 +150,12 @@ QuizList
           <div class="top-droppable folder tooltiper tooltiper-up" data-tooltip="0 file" id="folder">
             <i class="fa fa-check" aria-hidden="true"></i>
             <div class="folder-2">
-              <h1>higa</h1>
+              <h1>方角</h1>
               <p class="folder-text2">
-                mother<br>
-                father<br>
-                sister<br>
-                brother<br>
-                grandfather<br>
+                南　ンマ<br>
+                東　アガイ<br>
+                北　イー<br>
+                西　ンス<br>
               </p>
             </div>
           </div>
@@ -165,13 +164,13 @@ QuizList
           <div class="top-droppable folder tooltiper tooltiper-up" data-tooltip="0 file" id="folder">
             <i class="fa fa-check" aria-hidden="true"></i>
             <div class="folder-2">
-              <h1>higa</h1>
+              <h1>自然</h1>
               <p class="folder-text2">
-                mother<br>
-                father<br>
-                sister<br>
-                brother<br>
-                grandfather<br>
+                雨　アミ<br>
+                風　カジ<br>
+                空　ティン<br>
+                太陽　ティダ<br>
+                海　イン<br>
               </p>
             </div>
           </div>
