@@ -23,7 +23,7 @@ Ranking
 							<th>
 								<p>名前</p>
 							</th>
-							<th>
+							<th nowrap>
 								<p>総合スコア</p>
 							</th>
 							<th>
