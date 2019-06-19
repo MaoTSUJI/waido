@@ -11,6 +11,7 @@ button, input[type="submit"]{
 }
 label.cp_btn , a.cp_btn{
 	display: inline-block;
+	font-family: 'Noto Serif JP', serif;
 	position: relative;
 	width: 160px;
 	padding: 0.8em;
@@ -20,7 +21,6 @@ label.cp_btn , a.cp_btn{
 	text-decoration: none;
 	font-weight: bold;
 	color: #33CC99;
-	font-family: 'Noto Serif JP', serif;
 }
 
 label.cp_btn, a.cp_btn:before, label.cp_btn, a.cp_btn:after {
@@ -73,8 +73,8 @@ body {
 }
 
 .quiz {
-	height: 800px;
-/*	position: absolute;
+/*	height: 800px;
+*//*	position: absolute;
 */	color: white;
 	text-align: center;
 }
@@ -91,13 +91,22 @@ body {
 }
 
 .score {
-    color:#33CC99;
+    color:black;
     width:600px;
     height: 100%;
     display: inline-block;
     text-align: center;
     font-size: 40px;
-    margin-top: 30px;
+ /*   margin-top: 30px;*/
+}
+
+strong {
+	color: #33CC99;
+	font-size:60px;
+}
+
+span {
+	font-size:20px;
 }
 
 
@@ -105,16 +114,16 @@ img.ribbon {
 	opacity: 0.8;
 	margin-bottom: 0px;
 }
-
+/*
 span::before {
 	content:"『";
-	/*::beforeと::afterを使用することで記述を加えることが可能。
-	そして検索エンジンにはひっかがらない*/
+	::beforeと::afterを使用することで記述を加えることが可能。
+	そして検索エンジンにはひっかがらない
 }
 
 span::after {
 	content:"』";
-}
+}*/
 
 div.proverb > p {
 	position: absolute;
@@ -137,7 +146,6 @@ form.cp_btn, a.cp_btn, {
 	text-decoration: none;
 	font-weight: bold;
 	color: #33CC99;
-	font-family: 'Noto Serif JP', serif;
 }
 form.cp_btn, a.cp_btn:before, form.cp_btn, a.cp_btn:after {
 	content: '';
@@ -159,15 +167,20 @@ form.cp_btn, a.cp_btn:hover:before{
 	left:0;
 	height: 100%;
 }
-form.cp_btn, a.cp_btn:hover:after
+form.cp_btn, a.cp_btn:hover:after{
 	top: 0px;
 	right: 0;
 	height: 100%;
 }
 
-for.go_ranking, .town {
-	color:black;
+.go_ranking:hover,.town:hover {
+	color:#1AEB99;
 }
+a.go_ranking,.town {
+	color:#152C1D;
+}
+
+
 
 /*ーーーーーーーーーーーーーーーー*/
 /*問題表示*/
@@ -224,17 +237,10 @@ for.go_ranking, .town {
 	color: #FFF;
 }*/
 
-img.hibiscus{
-	padding:30;
-}
-
-img.hibiscus2 {
-	opacity: 0.4;
-}
-
 
 form.cp_btn , a.cp_btn{
 	display: inline-block;
+	font-family: 'Noto Serif JP', serif;
 	position: relative;
 	width: 160px;
 	padding: 0.8em;
@@ -245,7 +251,6 @@ form.cp_btn , a.cp_btn{
 	font-weight: bold;
 	color: #33CC99;
 	margin: 5px;
-	font-family: 'Noto Serif JP', serif;
 }
 
 form.cp_btn, a.cp_btn:before, form.cp_btn, a.cp_btn:after {
@@ -303,7 +308,6 @@ table {
 #all_ranking {
 	font-size:30px;
 	font-family: 'Kosugi Maru', sans-serif;
-	padding-top: 0px;
 
 }
 
@@ -386,11 +390,6 @@ div.kaitou > p {
 	font-size:30px;
 }
 
-strong {
-	color: #33CC99;
-	font-size:29px<a href="#" class="cp_btn">次の問題</a>;
-}
-
 h2{
 	color: black;
 }
@@ -407,6 +406,7 @@ p.quiz3 {
 
 button.cp_btn1 {
 	background-color: transparent;
+	font-family: 'Noto Serif JP', serif;
     border: none;
     cursor: pointer;
     outline: none;
@@ -601,6 +601,7 @@ button.thanks:hover:after{
 
 button.cp_btn2 {
 	background-color: white;
+	font-family: 'Noto Serif JP', serif;
     border: none;
     cursor: pointer;
     outline: none;
@@ -618,7 +619,6 @@ button.cp_btn2 {
 	margin-top: 20px;
 	margin-bottom: 30px;
 	width: 200px;
-	font-family: 'Noto Serif JP', serif;
 }
 
 button.cp_btn2:before, button.cp_btn2:after {

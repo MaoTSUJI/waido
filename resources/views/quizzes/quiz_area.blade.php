@@ -42,7 +42,7 @@ QuizList
 								@endfor
 						</div>
 
-						<a style="font-size:16px;" class="cp_btn to-answer" href="javascript:form1.submit()">解答</a>
+						{{-- <a style="font-size:16px;" class="cp_btn to-answer" href="javascript:form1.submit()">解答</a> --}}
 
 						{{-- 選択肢た地域情報を次の画面に返す --}}
 						<input type="hidden" name="quiz" value="{{ $quiz }}">
@@ -55,6 +55,11 @@ QuizList
 						@for($i=0; $i<10; $i++)
 							<input type="hidden" name="idnum_{{ (string)$i }}" value="{{ $id_array[$i] }}">
 						@endfor
+
+						<div class="kotae">
+						<a style="font-size:16px;" class="cp_btn to-answer" href="javascript:form1.submit()">解答</a>
+						</div>
+
 
 					</form>
 
@@ -69,9 +74,9 @@ QuizList
 					<img class="hibiscus2" src="./img/flower_hibiscus.png" alt="問題数" width="40px">
 				@endfor
 			</div>
-
 		</div>
 
+			
 
 </body>
 

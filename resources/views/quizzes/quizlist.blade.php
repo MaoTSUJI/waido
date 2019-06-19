@@ -24,13 +24,13 @@ QuizList
 				</map>
 
 					@foreach($areas as $area)
-						<div class="link-area{{ strval($area->id) }}">
+						<div class="btn-circle-border-double link-area{{ strval($area->id) }}">
 							<form method="post" name="form1" action="{{ route('quiz.quizlist_start') }}" style="display:inline;">
 								@csrf
 							  <input type="hidden" name="area_jpn" value="{{ $area->area }}">
 							  <input type="hidden" name="area_id" value="{{ $area->id }}">
 								<input type="hidden" name="area_eng" value="{{ $area->english }}">
-							  <a class="btn-circle-border-double" href="javascript:form1[{{ $area->id -1 }}].submit()">{{ $area->area }}周辺</a>
+							  <a class="" href="javascript:form1[{{ $area->id -1 }}].submit()">{{ $area->area }}周辺</a>
 								</form>
 						</div>
 					@endforeach
