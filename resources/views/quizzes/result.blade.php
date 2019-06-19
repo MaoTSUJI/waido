@@ -23,6 +23,7 @@ QuizList
 		<img src="./img/{{ $img_url }}" alt="妖怪の写真" width="250px">
 			<!-- 正解数に応じて妖怪を自動変更させる -->
 			<br>
+			<br>
 		{{-- クイズスタート画面に遷移 --}}
 		<div>
 			<form action="{{ route('quiz.quizlist_start') }}" method="post" class="" name="form1">

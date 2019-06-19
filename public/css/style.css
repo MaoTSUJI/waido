@@ -105,6 +105,10 @@ strong {
 	font-size:60px;
 }
 
+span {
+	font-size:20px;
+}
+
 
 img.ribbon {
 	opacity: 0.8;
@@ -169,8 +173,11 @@ form.cp_btn, a.cp_btn:hover:after{
 	height: 100%;
 }
 
-.go_ranking,.town {
-	color:#22FFFF;
+.go_ranking:hover,.town:hover {
+	color:#1AEB99;
+}
+a.go_ranking,.town {
+	color:#152C1D;
 }
 
 
