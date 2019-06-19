@@ -24,6 +24,9 @@ Ranking
 								<p>名前</p>
 							</th>
 							<th>
+								<p>総合スコア</p>
+							</th>
+							<th>
 								<p>動物名</p>
 							</th>
 							<th>
@@ -36,6 +39,9 @@ Ranking
 							</td>
 							<td>
 								ガーヒー
+							</td>
+							<td>
+								604pt
 							</td>
 							<td>
 								キジムナー
@@ -52,6 +58,9 @@ Ranking
 								TsujiMao
 							</td>
 							<td>
+								486pt
+							</td>
+							<td>
 								ジンベイザメ
 							</td>
 							<td>
@@ -64,6 +73,9 @@ Ranking
 							</td>
 							<td>
 								まさき
+							</td>
+							<td>
+								438px
 							</td>
 							<td>
 								ジュゴン
@@ -80,6 +92,9 @@ Ranking
 								Mariko
 							</td>
 							<td>
+								417pt
+							</td>
+							<td>
 								イルカ
 							</td>
 							<td>
@@ -92,6 +107,9 @@ Ranking
 							</td>
 							<td>
 								Shinya
+							</td>
+							<td>
+								395pt
 							</td>
 							<td>
 								ウミガメ
