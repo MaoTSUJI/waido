@@ -91,13 +91,18 @@ body {
 }
 
 .score {
-    color:#33CC99;
+    color:black;
     width:600px;
     height: 100%;
     display: inline-block;
     text-align: center;
     font-size: 40px;
-    margin-top: 30px;
+ /*   margin-top: 30px;*/
+}
+
+strong {
+	color: #33CC99;
+	font-size:60px;
 }
 
 
@@ -105,16 +110,16 @@ img.ribbon {
 	opacity: 0.8;
 	margin-bottom: 0px;
 }
-
+/*
 span::before {
 	content:"『";
-	/*::beforeと::afterを使用することで記述を加えることが可能。
-	そして検索エンジンにはひっかがらない*/
+	::beforeと::afterを使用することで記述を加えることが可能。
+	そして検索エンジンにはひっかがらない
 }
 
 span::after {
 	content:"』";
-}
+}*/
 
 div.proverb > p {
 	position: absolute;
@@ -158,15 +163,17 @@ form.cp_btn, a.cp_btn:hover:before{
 	left:0;
 	height: 100%;
 }
-form.cp_btn, a.cp_btn:hover:after
+form.cp_btn, a.cp_btn:hover:after{
 	top: 0px;
 	right: 0;
 	height: 100%;
 }
 
-for.go_ranking, .town {
-	color:black;
+.go_ranking,.town {
+	color:#22FFFF;
 }
+
+
 
 /*ーーーーーーーーーーーーーーーー*/
 /*問題表示*/
@@ -374,11 +381,6 @@ a.nav-link2 {
 
 div.kaitou > p {
 	font-size:30px;
-}
-
-strong {
-	color: #33CC99;
-	font-size:29px<a href="#" class="cp_btn">次の問題</a>;
 }
 
 h2{
