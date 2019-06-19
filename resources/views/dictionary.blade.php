@@ -67,9 +67,9 @@ QuizList
               <h1>挨拶</h1>
               <p class="folder-text2">
                 ありがとう　タンディガタンディ<br>
-                father<br>
-                sister<br>
-                brother<br>
+                今日は、いい天気です　キャウヤジャウヒカズ<br>
+                やめとけ　フダウリ<br>
+                まだ　ンナガミ<br>
                 grandfather<br>
               </p>
             </div>
@@ -82,11 +82,11 @@ QuizList
             <div class="folder-2">
               <h1>時間</h1>
               <p class="folder-text2">
-                mother<br>
-                father<br>
-                sister<br>
-                brother<br>
-                grandfather<br>
+                朝　シトゥムヌ<br>
+                昼　ヒーマ<br>
+                夕　ユサラビ<br>
+                今日　キュウ<br>
+                一日中　ヒトゥイガマース<br>
               </p>
             </div>
           </div>
