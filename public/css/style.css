@@ -97,12 +97,17 @@ body {
     display: inline-block;
     text-align: center;
     font-size: 40px;
+
  /*   margin-top: 30px;*/
+}
+
+.scpre strong {
+	color: #33CC99;
+	font-size:60px;
 }
 
 strong {
 	color: #33CC99;
-	font-size:60px;
 }
 
 span {
@@ -432,6 +437,9 @@ button.cp_btn1 {
 	
 }
 
+.form-group {
+	margin-top: 20px;
+}
 
 button.cp_btn1:before, button.cp_btn1:after {
 	content: '';
