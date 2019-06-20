@@ -30,7 +30,7 @@ Ranking
 								<p>動物名</p>
 							</th>
 							<th>
-								<p>動物</p>
+								<p>キャラクター</p>
 							</th>
 						</tr>
 						<tr>
@@ -43,11 +43,11 @@ Ranking
 							<td>
 								604pt
 							</td>
-							<td>
+							<td nowrap>
 								キジムナー
 							</td>
 							<td>
-									<img src="./img/kijimuna-.png" alt="キジムナー" width="150px">
+								<img src="./img/kijimuna-.png" alt="キジムナー" width="150px">
 							</td>
 						</tr>
 						<tr>
@@ -60,7 +60,7 @@ Ranking
 							<td>
 								486pt
 							</td>
-							<td>
+							<td nowrap>
 								ジンベイザメ
 							</td>
 							<td>
