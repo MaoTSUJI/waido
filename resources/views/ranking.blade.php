@@ -14,7 +14,7 @@ Ranking
 				<img class="ranking_ribbon" src="./img/ranking.png" alt="ランキング">
 			</div>
 			<div class="ranking">
-				<table>
+				<table class="demo03">
 					<tbody>
 						<tr>
 							<th>
@@ -47,7 +47,7 @@ Ranking
 								キジムナー
 							</td>
 							<td>
-								<img src="./img/kijimuna-.png" alt="キジムナー" width="150px">
+									<img src="./img/kijimuna-.png" alt="キジムナー" width="150px">
 							</td>
 						</tr>
 						<tr>
