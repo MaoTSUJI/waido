@@ -14,7 +14,7 @@ Ranking
 				<img class="ranking_ribbon" src="./img/ranking.png" alt="ランキング">
 			</div>
 			<div class="ranking">
-				<table>
+				<table class="demo03">
 					<tbody>
 						<tr>
 							<th>
@@ -22,6 +22,9 @@ Ranking
 							</th>
 							<th>
 								<p>名前</p>
+							</th>
+							<th nowrap>
+								<p>総合スコア</p>
 							</th>
 							<th>
 								<p>動物名</p>
@@ -38,10 +41,13 @@ Ranking
 								ガーヒー
 							</td>
 							<td>
+								604pt
+							</td>
+							<td>
 								キジムナー
 							</td>
 							<td>
-								<img src="./img/kijimuna-.png" alt="キジムナー" width="150px">
+									<img src="./img/kijimuna-.png" alt="キジムナー" width="150px">
 							</td>
 						</tr>
 						<tr>
@@ -50,6 +56,9 @@ Ranking
 							</td>
 							<td>
 								TsujiMao
+							</td>
+							<td>
+								486pt
 							</td>
 							<td>
 								ジンベイザメ
@@ -66,6 +75,9 @@ Ranking
 								まさき
 							</td>
 							<td>
+								438px
+							</td>
+							<td>
 								ジュゴン
 							</td>
 							<td>
@@ -80,6 +92,9 @@ Ranking
 								Mariko
 							</td>
 							<td>
+								417pt
+							</td>
+							<td>
 								イルカ
 							</td>
 							<td>
@@ -92,6 +107,9 @@ Ranking
 							</td>
 							<td>
 								Shinya
+							</td>
+							<td>
+								395pt
 							</td>
 							<td>
 								ウミガメ
