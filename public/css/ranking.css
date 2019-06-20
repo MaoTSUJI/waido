@@ -1,0 +1,20 @@
+section table { width: 100%; }
+section th, section td  { padding: 10px; border: 1px solid #ddd; }
+section th  { background: #f4f4f4; }
+.demo03 th, .demo03 td  { width: 20%; text-align: left; }
+@media only screen and (max-width: 480px) { 
+  .demo03 { margin: 0 -10px; }
+  .demo03 tr {
+    display:block;
+    margin-bottom: 10px;
+  }
+  .demo03 th {
+    display:block;
+    width: 100%;
+  }
+  .demo03 td {
+    display: list-item;
+    width: 90%;
+    margin-left: 10%;
+    border:none;
+  }
